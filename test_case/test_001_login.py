@@ -1,8 +1,9 @@
 import requests
 import pytest
 from conftest import api_date
+from config.config import server_ip
 
-url = 'http://192.168.30.11:10060/supervisor' + '/admin/sysadmin/login'
+url = server_ip() + '/admin/sysadmin/login'
 headers = {'Content-Type': 'application/json'}
 json = {
     "password": "string",
@@ -24,13 +25,16 @@ def test_login_001(phone, password):
         "phone": phone,
         "rememberMe": True
     }
+
     r = requests.post(url=url, json=json_date, headers=headers)
+
     assert r.status_code == 200
-    assert '用户列表', '角色列表' in r.text
-    assert '单位列表', '参建单位列表' in r.text
+    assert r.json()["data"] is not None
+    assert r.json()["message"] == "成功"
+    assert r.json()["status"] == "0"
 
 
-# @pytest.mark.parametrize('phone, password', [(' ', ' '), ('admin', '123'), ('13168775547', None)])
+# @pytest.mark.parametrize('phone, password', api_date["login_fail"])
 # def test_login_002(phone, password):
 #     """
 #     参数登录失败
@@ -45,7 +49,9 @@ def test_login_001(phone, password):
 #     }
 #     r = requests.post(url=url, json=json_date, headers=headers)
 #     assert r.status_code == 200
-#     assert r.json()['date'] == 0
+#     assert r.json()['data'] is None
+#     assert r.json()["message"] == "手机号或密码不存在" or "password,不能为空" or "phone,不能为空"
+#     assert r.json()["status"] == "100005" or "100001"
 
 
 if __name__ == '__main__':

@@ -1,0 +1,44 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "test_login_001[admin-admin]",
+    "uid" : "44ccd28494559d9a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1592292449027,
+      "stop" : 1592292449074,
+      "duration" : 47
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "'admin'", "'admin'" ]
+  }, {
+    "name" : "test_login_001[13168747-123456]",
+    "uid" : "f9239212d503b6a7",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1592292449074,
+      "stop" : 1592292449074,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "'123456'", "'13168747'" ]
+  }, {
+    "name" : "test_login_001[13168548-123456]",
+    "uid" : "d305f306e934e46e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1592292449143,
+      "stop" : 1592292449159,
+      "duration" : 16
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "'123456'", "'13168548'" ]
+  } ]
+}

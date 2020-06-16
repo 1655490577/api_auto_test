@@ -19,4 +19,4 @@ def get_data(yaml_file_name):
         return yaml_data
 
 
-api_date = get_data('test1.yml')
+api_date = get_data('api_data.yml')

@@ -1,0 +1,39 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert None is not None",
+      "children" : [ {
+        "name" : "test_login_001[13168747-123456]",
+        "uid" : "f9239212d503b6a7",
+        "parentUid" : "1c103f4d22bc3ec7e9ffca4daf59af4a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1592292449074,
+          "stop" : 1592292449074,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'123456'", "'13168747'" ]
+      }, {
+        "name" : "test_login_001[13168548-123456]",
+        "uid" : "d305f306e934e46e",
+        "parentUid" : "1c103f4d22bc3ec7e9ffca4daf59af4a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1592292449143,
+          "stop" : 1592292449159,
+          "duration" : 16
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'123456'", "'13168548'" ]
+      } ],
+      "uid" : "1c103f4d22bc3ec7e9ffca4daf59af4a"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}
