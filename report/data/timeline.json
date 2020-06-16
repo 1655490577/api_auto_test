@@ -4,87 +4,87 @@
   "children" : [ {
     "name" : "DESKTOP-S9OTJ8G",
     "children" : [ {
-      "name" : "9908-MainThread",
+      "name" : "10384-MainThread",
       "children" : [ {
-        "name" : "登录失败",
-        "uid" : "280a872553f00db3",
-        "parentUid" : "1b6ae92df2c52f4dd7b5d7afde8b8475",
+        "name" : "使用不同的正确账号登录系统",
+        "uid" : "95be52ba12a40f17",
+        "parentUid" : "d9c25a9e5d9b0591f05d011f3536bb68",
         "status" : "failed",
         "time" : {
-          "start" : 1592300302415,
-          "stop" : 1592300302446,
-          "duration" : 31
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'admin'", "'admin'" ]
-      }, {
-        "name" : "登录成功",
-        "uid" : "140f870c5c75f523",
-        "parentUid" : "1b6ae92df2c52f4dd7b5d7afde8b8475",
-        "status" : "failed",
-        "time" : {
-          "start" : 1592300302393,
-          "stop" : 1592300302393,
-          "duration" : 0
+          "start" : 1592304294864,
+          "stop" : 1592304294876,
+          "duration" : 12
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'123456'", "'13168548'" ]
       }, {
-        "name" : "登录失败",
-        "uid" : "11df0fe0edd1a2e0",
-        "parentUid" : "1b6ae92df2c52f4dd7b5d7afde8b8475",
+        "name" : "使用不同的错误账号登录系统",
+        "uid" : "b29becb5a71cc9ab",
+        "parentUid" : "d9c25a9e5d9b0591f05d011f3536bb68",
         "status" : "passed",
         "time" : {
-          "start" : 1592300302415,
-          "stop" : 1592300302415,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'354634'", "'13168547'" ]
-      }, {
-        "name" : "登录成功",
-        "uid" : "a77fd3918c7a5262",
-        "parentUid" : "1b6ae92df2c52f4dd7b5d7afde8b8475",
-        "status" : "failed",
-        "time" : {
-          "start" : 1592300302315,
-          "stop" : 1592300302315,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'123456'", "'13168747'" ]
-      }, {
-        "name" : "登录失败",
-        "uid" : "a4bcdc32a0177206",
-        "parentUid" : "1b6ae92df2c52f4dd7b5d7afde8b8475",
-        "status" : "passed",
-        "time" : {
-          "start" : 1592300302393,
-          "stop" : 1592300302409,
-          "duration" : 16
+          "start" : 1592304294881,
+          "stop" : 1592304294900,
+          "duration" : 19
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "''", "'admin'" ]
       }, {
-        "name" : "登录成功",
-        "uid" : "e6b7d1348a3c7bca",
-        "parentUid" : "1b6ae92df2c52f4dd7b5d7afde8b8475",
+        "name" : "使用不同的正确账号登录系统",
+        "uid" : "8d843c405cbfe3ba",
+        "parentUid" : "d9c25a9e5d9b0591f05d011f3536bb68",
         "status" : "passed",
         "time" : {
-          "start" : 1592300302277,
-          "stop" : 1592300302308,
-          "duration" : 31
+          "start" : 1592304294720,
+          "stop" : 1592304294775,
+          "duration" : 55
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'admin'", "'admin'" ]
+      }, {
+        "name" : "使用不同的错误账号登录系统",
+        "uid" : "370d082e34b2ecc4",
+        "parentUid" : "d9c25a9e5d9b0591f05d011f3536bb68",
+        "status" : "passed",
+        "time" : {
+          "start" : 1592304294907,
+          "stop" : 1592304294919,
+          "duration" : 12
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'354634'", "'13168547'" ]
+      }, {
+        "name" : "使用不同的错误账号登录系统",
+        "uid" : "5c9639c7f4fb609d",
+        "parentUid" : "d9c25a9e5d9b0591f05d011f3536bb68",
+        "status" : "failed",
+        "time" : {
+          "start" : 1592304294922,
+          "stop" : 1592304294950,
+          "duration" : 28
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'admin'", "'admin'" ]
+      }, {
+        "name" : "使用不同的正确账号登录系统",
+        "uid" : "85c6d0bd52398819",
+        "parentUid" : "d9c25a9e5d9b0591f05d011f3536bb68",
+        "status" : "failed",
+        "time" : {
+          "start" : 1592304294785,
+          "stop" : 1592304294795,
+          "duration" : 10
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'123456'", "'13168747'" ]
       } ],
-      "uid" : "1b6ae92df2c52f4dd7b5d7afde8b8475"
+      "uid" : "d9c25a9e5d9b0591f05d011f3536bb68"
     } ],
     "uid" : "793f18e6cede065dc9e43f9faf6830ba"
   } ]

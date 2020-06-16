@@ -1,12 +1,12 @@
 {
-  "uid" : "e6b7d1348a3c7bca",
-  "name" : "登录成功",
-  "fullName" : "test_case.test_001_login#test_login_001",
-  "historyId" : "c903d0038cb5bd9a90f8e6a55682d2e3",
+  "uid" : "8d843c405cbfe3ba",
+  "name" : "使用不同的正确账号登录系统",
+  "fullName" : "test_case.test_001_login.TestLogin#test_login_001",
+  "historyId" : "017b71e78fa771ae01e49de8a341d3e0",
   "time" : {
-    "start" : 1592300302277,
-    "stop" : 1592300302308,
-    "duration" : 31
+    "start" : 1592304294720,
+    "stop" : 1592304294775,
+    "duration" : 55
   },
   "description" : "登录成功测试用例",
   "descriptionHtml" : "<p>登录成功测试用例</p>\n",
@@ -14,57 +14,31 @@
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ ],
-  "testStage" : {
-    "description" : "登录成功测试用例",
-    "status" : "passed",
-    "steps" : [ {
-      "name" : "使用不同的正确账号登录系统",
-      "time" : {
-        "start" : 1592300302277,
-        "stop" : 1592300302308,
-        "duration" : 31
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ {
-        "name" : "phone",
-        "value" : "'admin'"
-      }, {
-        "name" : "password",
-        "value" : "'admin'"
-      } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    } ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "stepsCount" : 1,
-    "hasContent" : true,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
-  },
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "feature",
-    "value" : "测试模块01"
+    "value" : "登录"
+  }, {
+    "name" : "story",
+    "value" : "正确登录"
   }, {
     "name" : "severity",
     "value" : "critical"
   }, {
     "name" : "suite",
-    "value" : "测试套件"
+    "value" : "测试套件001"
   }, {
     "name" : "parentSuite",
     "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
   }, {
     "name" : "host",
     "value" : "DESKTOP-S9OTJ8G"
   }, {
     "name" : "thread",
-    "value" : "9908-MainThread"
+    "value" : "10384-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -98,6 +72,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "e6b7d1348a3c7bca.json",
+  "source" : "8d843c405cbfe3ba.json",
   "parameterValues" : [ "'admin'", "'admin'" ]
 }

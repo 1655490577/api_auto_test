@@ -1,5 +1,5 @@
 {
-  "2466d26f3f513dab976ec0906864f529" : {
+  "30384b8bfe3e0a9a65432365963f768b" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -9,16 +9,16 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "11df0fe0edd1a2e0",
+      "uid" : "370d082e34b2ecc4",
       "status" : "passed",
       "time" : {
-        "start" : 1592300302415,
-        "stop" : 1592300302415,
-        "duration" : 0
+        "start" : 1592304294907,
+        "stop" : 1592304294919,
+        "duration" : 12
       }
     } ]
   },
-  "8ae01cf693315db1ca23a3c746f56f65" : {
+  "c7d548be6900090d82d20d057b53c8eb" : {
     "statistic" : {
       "failed" : 1,
       "broken" : 0,
@@ -28,75 +28,17 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "280a872553f00db3",
-      "status" : "failed",
-      "statusDetails" : "AssertionError: assert {'menuList': [{'children': [{'children': [{...}, {...}, {...}, {...}], 'icon': '', 'id': '144596599002103813', 'name':...-39a61df5f088', 'sysAdmin': {'area': '', 'areaCode': '', 'branchCode': '', 'branchId': '', ...}, 'token': '1836830285'} is None",
-      "time" : {
-        "start" : 1592300302415,
-        "stop" : 1592300302446,
-        "duration" : 31
-      }
-    } ]
-  },
-  "c903d0038cb5bd9a90f8e6a55682d2e3" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "e6b7d1348a3c7bca",
-      "status" : "passed",
-      "time" : {
-        "start" : 1592300302277,
-        "stop" : 1592300302308,
-        "duration" : 31
-      }
-    } ]
-  },
-  "c516963da504fbe9659c58f14f174c6e" : {
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "a77fd3918c7a5262",
+      "uid" : "85c6d0bd52398819",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert None is not None",
       "time" : {
-        "start" : 1592300302315,
-        "stop" : 1592300302315,
-        "duration" : 0
+        "start" : 1592304294785,
+        "stop" : 1592304294795,
+        "duration" : 10
       }
     } ]
   },
-  "189f62260bf5c1839aab3449ae743970" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "a4bcdc32a0177206",
-      "status" : "passed",
-      "time" : {
-        "start" : 1592300302393,
-        "stop" : 1592300302409,
-        "duration" : 16
-      }
-    } ]
-  },
-  "aebca10eca10a27b0dc336f9b94cdbbd" : {
+  "5589be40ef0afca15c8ef9ee74507db3" : {
     "statistic" : {
       "failed" : 1,
       "broken" : 0,
@@ -106,13 +48,71 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "140f870c5c75f523",
+      "uid" : "95be52ba12a40f17",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert None is not None",
       "time" : {
-        "start" : 1592300302393,
-        "stop" : 1592300302393,
-        "duration" : 0
+        "start" : 1592304294864,
+        "stop" : 1592304294876,
+        "duration" : 12
+      }
+    } ]
+  },
+  "93dd208197a4756427a9c0665c148c54" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5c9639c7f4fb609d",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert {'menuList': [{'children': [{'children': [{...}, {...}, {...}, {...}], 'icon': '', 'id': '144596599002103813', 'name':...-41f5428e721d', 'sysAdmin': {'area': '', 'areaCode': '', 'branchCode': '', 'branchId': '', ...}, 'token': '1707617929'} is None",
+      "time" : {
+        "start" : 1592304294922,
+        "stop" : 1592304294950,
+        "duration" : 28
+      }
+    } ]
+  },
+  "9e1e1bb718dee4cb23ab1f339c2f55fa" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b29becb5a71cc9ab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592304294881,
+        "stop" : 1592304294900,
+        "duration" : 19
+      }
+    } ]
+  },
+  "017b71e78fa771ae01e49de8a341d3e0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8d843c405cbfe3ba",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592304294720,
+        "stop" : 1592304294775,
+        "duration" : 55
       }
     } ]
   }

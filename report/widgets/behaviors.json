@@ -1,26 +1,15 @@
 {
-  "total" : 2,
+  "total" : 1,
   "items" : [ {
-    "uid" : "edc39a5b20e9a832de33da97310b6e23",
-    "name" : "测试模块01",
+    "uid" : "6e12e06fb17fec92464fd1fd24bca881",
+    "name" : "登录",
     "statistic" : {
       "failed" : 2,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
-      "total" : 3
-    }
-  }, {
-    "uid" : "f4c1220cadf19fb41b68e31988f70775",
-    "name" : "测试模块02",
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 2,
-      "unknown" : 0,
-      "total" : 3
+      "total" : 2
     }
   } ]
 }
