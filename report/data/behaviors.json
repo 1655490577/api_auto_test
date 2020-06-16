@@ -2,43 +2,90 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : "test_login_001[admin-admin]",
-    "uid" : "44ccd28494559d9a",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1592292449027,
-      "stop" : 1592292449074,
-      "duration" : 47
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "'admin'", "'admin'" ]
+    "name" : "测试模块01",
+    "children" : [ {
+      "name" : "登录成功",
+      "uid" : "e6b7d1348a3c7bca",
+      "parentUid" : "edc39a5b20e9a832de33da97310b6e23",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592300302277,
+        "stop" : 1592300302308,
+        "duration" : 31
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'admin'", "'admin'" ]
+    }, {
+      "name" : "登录成功",
+      "uid" : "a77fd3918c7a5262",
+      "parentUid" : "edc39a5b20e9a832de33da97310b6e23",
+      "status" : "failed",
+      "time" : {
+        "start" : 1592300302315,
+        "stop" : 1592300302315,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'123456'", "'13168747'" ]
+    }, {
+      "name" : "登录成功",
+      "uid" : "140f870c5c75f523",
+      "parentUid" : "edc39a5b20e9a832de33da97310b6e23",
+      "status" : "failed",
+      "time" : {
+        "start" : 1592300302393,
+        "stop" : 1592300302393,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'123456'", "'13168548'" ]
+    } ],
+    "uid" : "edc39a5b20e9a832de33da97310b6e23"
   }, {
-    "name" : "test_login_001[13168747-123456]",
-    "uid" : "f9239212d503b6a7",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "failed",
-    "time" : {
-      "start" : 1592292449074,
-      "stop" : 1592292449074,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "'123456'", "'13168747'" ]
-  }, {
-    "name" : "test_login_001[13168548-123456]",
-    "uid" : "d305f306e934e46e",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "failed",
-    "time" : {
-      "start" : 1592292449143,
-      "stop" : 1592292449159,
-      "duration" : 16
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "'123456'", "'13168548'" ]
+    "name" : "测试模块02",
+    "children" : [ {
+      "name" : "登录失败",
+      "uid" : "a4bcdc32a0177206",
+      "parentUid" : "f4c1220cadf19fb41b68e31988f70775",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592300302393,
+        "stop" : 1592300302409,
+        "duration" : 16
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "''", "'admin'" ]
+    }, {
+      "name" : "登录失败",
+      "uid" : "11df0fe0edd1a2e0",
+      "parentUid" : "f4c1220cadf19fb41b68e31988f70775",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592300302415,
+        "stop" : 1592300302415,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'354634'", "'13168547'" ]
+    }, {
+      "name" : "登录失败",
+      "uid" : "280a872553f00db3",
+      "parentUid" : "f4c1220cadf19fb41b68e31988f70775",
+      "status" : "failed",
+      "time" : {
+        "start" : 1592300302415,
+        "stop" : 1592300302446,
+        "duration" : 31
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'admin'", "'admin'" ]
+    } ],
+    "uid" : "f4c1220cadf19fb41b68e31988f70775"
   } ]
 }

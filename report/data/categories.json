@@ -6,33 +6,50 @@
     "children" : [ {
       "name" : "AssertionError: assert None is not None",
       "children" : [ {
-        "name" : "test_login_001[13168747-123456]",
-        "uid" : "f9239212d503b6a7",
+        "name" : "登录成功",
+        "uid" : "a77fd3918c7a5262",
         "parentUid" : "1c103f4d22bc3ec7e9ffca4daf59af4a",
         "status" : "failed",
         "time" : {
-          "start" : 1592292449074,
-          "stop" : 1592292449074,
+          "start" : 1592300302315,
+          "stop" : 1592300302315,
           "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'123456'", "'13168747'" ]
       }, {
-        "name" : "test_login_001[13168548-123456]",
-        "uid" : "d305f306e934e46e",
+        "name" : "登录成功",
+        "uid" : "140f870c5c75f523",
         "parentUid" : "1c103f4d22bc3ec7e9ffca4daf59af4a",
         "status" : "failed",
         "time" : {
-          "start" : 1592292449143,
-          "stop" : 1592292449159,
-          "duration" : 16
+          "start" : 1592300302393,
+          "stop" : 1592300302393,
+          "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'123456'", "'13168548'" ]
       } ],
       "uid" : "1c103f4d22bc3ec7e9ffca4daf59af4a"
+    }, {
+      "name" : "AssertionError: assert {'menuList': [{'children': [{'children': [{...}, {...}, {...}, {...}], 'icon': '', 'id': '144596599002103813', 'name':...-39a61df5f088', 'sysAdmin': {'area': '', 'areaCode': '', 'branchCode': '', 'branchId': '', ...}, 'token': '1836830285'} is None",
+      "children" : [ {
+        "name" : "登录失败",
+        "uid" : "280a872553f00db3",
+        "parentUid" : "2d9a01749a052f9f78d6f7bd4ae78fe2",
+        "status" : "failed",
+        "time" : {
+          "start" : 1592300302415,
+          "stop" : 1592300302446,
+          "duration" : 31
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'admin'", "'admin'" ]
+      } ],
+      "uid" : "2d9a01749a052f9f78d6f7bd4ae78fe2"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ]

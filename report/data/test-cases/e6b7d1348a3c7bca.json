@@ -1,0 +1,103 @@
+{
+  "uid" : "e6b7d1348a3c7bca",
+  "name" : "登录成功",
+  "fullName" : "test_case.test_001_login#test_login_001",
+  "historyId" : "c903d0038cb5bd9a90f8e6a55682d2e3",
+  "time" : {
+    "start" : 1592300302277,
+    "stop" : 1592300302308,
+    "duration" : 31
+  },
+  "description" : "登录成功测试用例",
+  "descriptionHtml" : "<p>登录成功测试用例</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "登录成功测试用例",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "使用不同的正确账号登录系统",
+      "time" : {
+        "start" : 1592300302277,
+        "stop" : 1592300302308,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phone",
+        "value" : "'admin'"
+      }, {
+        "name" : "password",
+        "value" : "'admin'"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试模块01"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "suite",
+    "value" : "测试套件"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-S9OTJ8G"
+  }, {
+    "name" : "thread",
+    "value" : "9908-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_001_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "password",
+    "value" : "'admin'"
+  }, {
+    "name" : "phone",
+    "value" : "'admin'"
+  } ],
+  "links" : [ {
+    "name" : "点击我跳转禅道",
+    "url" : "http://bug.com/user-login-Lw==.html",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e6b7d1348a3c7bca.json",
+  "parameterValues" : [ "'admin'", "'admin'" ]
+}

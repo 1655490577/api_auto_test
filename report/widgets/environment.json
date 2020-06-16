@@ -1,1 +1,10 @@
-[ ]
+[ {
+  "values" : [ "Production" ],
+  "name" : "Stand"
+}, {
+  "values" : [ "63.0" ],
+  "name" : "Browser.Version"
+}, {
+  "values" : [ "Chrome" ],
+  "name" : "Browser"
+} ]

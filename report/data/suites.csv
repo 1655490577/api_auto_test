@@ -1,19 +1,7 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Tue Jun 16 15:27:29 CST 2020","Tue Jun 16 15:27:29 CST 2020","47","test_case","test_001_login","","","","test_login_001[admin-admin]","
-    参数可以登录成功(管理员账号)
-    :param phone: 登录手机号
-    :param password: 登录密码
-    :return:
-    "
-"failed","Tue Jun 16 15:27:29 CST 2020","Tue Jun 16 15:27:29 CST 2020","0","test_case","test_001_login","","","","test_login_001[13168747-123456]","
-    参数可以登录成功(管理员账号)
-    :param phone: 登录手机号
-    :param password: 登录密码
-    :return:
-    "
-"failed","Tue Jun 16 15:27:29 CST 2020","Tue Jun 16 15:27:29 CST 2020","16","test_case","test_001_login","","","","test_login_001[13168548-123456]","
-    参数可以登录成功(管理员账号)
-    :param phone: 登录手机号
-    :param password: 登录密码
-    :return:
-    "
+"failed","Tue Jun 16 17:38:22 CST 2020","Tue Jun 16 17:38:22 CST 2020","0","test_case","测试套件","","","","登录成功","登录成功测试用例"
+"passed","Tue Jun 16 17:38:22 CST 2020","Tue Jun 16 17:38:22 CST 2020","16","test_case","测试套件2","","","","登录失败","登录失败测试用例"
+"passed","Tue Jun 16 17:38:22 CST 2020","Tue Jun 16 17:38:22 CST 2020","31","test_case","测试套件","","","","登录成功","登录成功测试用例"
+"failed","Tue Jun 16 17:38:22 CST 2020","Tue Jun 16 17:38:22 CST 2020","0","test_case","测试套件","","","","登录成功","登录成功测试用例"
+"passed","Tue Jun 16 17:38:22 CST 2020","Tue Jun 16 17:38:22 CST 2020","0","test_case","测试套件2","","","","登录失败","登录失败测试用例"
+"failed","Tue Jun 16 17:38:22 CST 2020","Tue Jun 16 17:38:22 CST 2020","31","test_case","测试套件2","","","","登录失败","登录失败测试用例"
