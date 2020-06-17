@@ -1,7 +1,7 @@
 import requests
 import pytest
 import allure
-from conftest import api_date
+from common.get_data import api_date
 from config.config import server_ip
 
 
