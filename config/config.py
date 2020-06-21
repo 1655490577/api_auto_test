@@ -8,6 +8,6 @@ def server_ip():
     server_ip_inside：str  内网地址
     :return:
     """
-    server_ip_outside = 'http://dev-server-supervisor-api/supervisor'
+    server_ip_outside = 'http://api.supervisor.dev.hbyrzx.top/supervisor'
     server_ip_inside = 'http://192.168.30.11:10060/supervisor'
-    return server_ip_inside
+    return server_ip_outside

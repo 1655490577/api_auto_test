@@ -5,8 +5,6 @@ from common.get_data import api_date
 from config.config import server_ip
 
 
-@allure.feature("登录")  # 功能名称
-@allure.suite("测试套件001")
 class TestLogin():
 
     url = server_ip() + '/admin/sysadmin/login'
@@ -17,13 +15,7 @@ class TestLogin():
         "rememberMe": True
     }
 
-    @allure.title("使用不同的正确账号登录系统")  # 用例标题自定义
-    # @allure.step("使用不同的正确账号登录系统")  # 测试步骤描述
-    @allure.story('正确登录')  # 子功能
-    @allure.description('登录成功测试用例')  # 对应用例里面的描述
-    @allure.testcase('http://bug.com/user-login-Lw==.html', name='点击我跳转禅道')
     @pytest.mark.parametrize('phone, password', api_date["login_success"])
-    @allure.severity('critical')  # 用例优先级
     def test_login_001(self, phone, password):
         """
         用例描述：
@@ -45,13 +37,7 @@ class TestLogin():
         assert r.json()["message"] == "成功"
         assert r.json()["status"] == "0"
 
-    @allure.title("使用不同的错误账号登录系统")  # 用例标题自定义
-    # @allure.step("使用不同的错误账号登录系统")  # 测试步骤描述
-    @allure.story('失败登录')   # 子功能
-    @allure.description('登录失败测试用例')  # 对应用例里面的描述
-    @allure.testcase('http://www.baidu.com', name='点击我跳转百度')
     @pytest.mark.parametrize('phone, password', api_date["login_fail"])
-    @allure.severity('blocker')
     def test_login_002(self, phone, password):
         """
         用例描述：

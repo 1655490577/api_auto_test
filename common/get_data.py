@@ -3,7 +3,7 @@ import os
 from common.get_data_object import data
 
 
-BASE_PATH = os.path.dirname(os.path.abspath(__file__))  # 获取当前项目的绝对路径
+BASE_PATH = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))  # 获取当前项目的绝对路径
 
 
 def get_data(yaml_file_name):
