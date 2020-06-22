@@ -1,3 +1,15 @@
+test system:
+  - ["13168775546","123456",True]
+
+test company:
+  - ["13168775547","123456",True]
+
+test department:
+  - ["13168775548","123456",True]
+
+test group:
+  - ["13168775549","123456",True]
+
 login_success:
   - ["13168775546","123456",True]
   - ["13168775546","123456",False]
