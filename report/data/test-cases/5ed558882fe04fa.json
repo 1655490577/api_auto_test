@@ -1,0 +1,73 @@
+{
+  "uid" : "5ed558882fe04fa",
+  "name" : "test_login_002[13168775548-13-True]",
+  "fullName" : "test_case.test_001_login.TestLogin#test_login_002",
+  "historyId" : "0879c4d50675840f93e11385c6e63bc9",
+  "time" : {
+    "start" : 1592808513715,
+    "stop" : 1592808513863,
+    "duration" : 148
+  },
+  "description" : "\n        用例描述：\n        参数输入错误\n        :param phone: 登录手机号\n        :param password: 登录密码\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    用例描述：\n    参数输入错误\n    :param phone: 登录手机号\n    :param password: 登录密码\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "正确手机号，错误密码/错误手机号，正确密码，登录失败"
+  }, {
+    "name" : "feature",
+    "value" : "登录功能"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_001_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-S9OTJ8G"
+  }, {
+    "name" : "thread",
+    "value" : "9928-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_001_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "password",
+    "value" : "'13'"
+  }, {
+    "name" : "phone",
+    "value" : "'13168775548'"
+  }, {
+    "name" : "remember",
+    "value" : "True"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5ed558882fe04fa.json",
+  "parameterValues" : [ "'13'", "'13168775548'", "True" ]
+}

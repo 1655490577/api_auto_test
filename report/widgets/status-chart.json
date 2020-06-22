@@ -1,35 +1,25 @@
 [ {
-  "uid" : "95be52ba12a40f17",
-  "name" : "使用不同的正确账号登录系统",
+  "uid" : "5ed558882fe04fa",
+  "name" : "test_login_002[13168775548-13-True]",
   "time" : {
-    "start" : 1592304294864,
-    "stop" : 1592304294876,
-    "duration" : 12
-  },
-  "status" : "failed",
-  "severity" : "critical"
-}, {
-  "uid" : "370d082e34b2ecc4",
-  "name" : "使用不同的错误账号登录系统",
-  "time" : {
-    "start" : 1592304294907,
-    "stop" : 1592304294919,
-    "duration" : 12
+    "start" : 1592808513715,
+    "stop" : 1592808513863,
+    "duration" : 148
   },
   "status" : "passed",
-  "severity" : "blocker"
+  "severity" : "normal"
 }, {
-  "uid" : "85c6d0bd52398819",
-  "name" : "使用不同的正确账号登录系统",
+  "uid" : "f5568262f587f4a7",
+  "name" : "test_login_005[123456-True]",
   "time" : {
-    "start" : 1592304294785,
-    "stop" : 1592304294795,
-    "duration" : 10
+    "start" : 1592808514977,
+    "stop" : 1592808515105,
+    "duration" : 128
   },
-  "status" : "failed",
-  "severity" : "critical"
+  "status" : "passed",
+  "severity" : "normal"
 }, {
-  "uid" : "8d843c405cbfe3ba",
+  "uid" : "703bdbee66a6cde8",
   "name" : "使用不同的正确账号登录系统",
   "time" : {
     "start" : 1592304294720,
@@ -39,7 +29,77 @@
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "5c9639c7f4fb609d",
+  "uid" : "40a9354162f55169",
+  "name" : "test_login_001[13168775548-123456-False]",
+  "time" : {
+    "start" : 1592808512355,
+    "stop" : 1592808512538,
+    "duration" : 183
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ec56c500a85b2c8c",
+  "name" : "test_login_001[13168775546-123456-True]",
+  "time" : {
+    "start" : 1592808508283,
+    "stop" : 1592808508570,
+    "duration" : 287
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7e9d3869b563588a",
+  "name" : "test_login_002[13168775547-123-True]",
+  "time" : {
+    "start" : 1592808513200,
+    "stop" : 1592808513329,
+    "duration" : 129
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a354775f1974fe54",
+  "name" : "使用不同的正确账号登录系统",
+  "time" : {
+    "start" : 1592304294864,
+    "stop" : 1592304294876,
+    "duration" : 12
+  },
+  "status" : "failed",
+  "severity" : "critical"
+}, {
+  "uid" : "7b84924e6dd2df0f",
+  "name" : "test_login_002[13168775549-1223-True]",
+  "time" : {
+    "start" : 1592808513871,
+    "stop" : 1592808514000,
+    "duration" : 129
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f7bf04b3e57cc6ad",
+  "name" : "test_login_001[13168775548-123456-True]",
+  "time" : {
+    "start" : 1592808512188,
+    "stop" : 1592808512352,
+    "duration" : 164
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "83f6ed422c3b7a5d",
+  "name" : "test_login_002[13168775546-123-True]",
+  "time" : {
+    "start" : 1592808512934,
+    "stop" : 1592808513059,
+    "duration" : 125
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f6c3cd4c02d70203",
   "name" : "使用不同的错误账号登录系统",
   "time" : {
     "start" : 1592304294922,
@@ -49,7 +109,137 @@
   "status" : "failed",
   "severity" : "blocker"
 }, {
-  "uid" : "b29becb5a71cc9ab",
+  "uid" : "6e1ea37ad200723d",
+  "name" : "test_login_001[13168775549-123456-True]",
+  "time" : {
+    "start" : 1592808512541,
+    "stop" : 1592808512724,
+    "duration" : 183
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e6051a03310bd449",
+  "name" : "test_login_001[13168775546-123456-False]",
+  "time" : {
+    "start" : 1592808508573,
+    "stop" : 1592808508770,
+    "duration" : 197
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ef9f7de3e95f5ff1",
+  "name" : "test_login_004[13168775546-True]",
+  "time" : {
+    "start" : 1592808514845,
+    "stop" : 1592808514974,
+    "duration" : 129
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aa1b22a108921d6a",
+  "name" : "test_login_003[13168775547--True]",
+  "time" : {
+    "start" : 1592808514435,
+    "stop" : 1592808514570,
+    "duration" : 135
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a677549d141097c8",
+  "name" : "使用不同的正确账号登录系统",
+  "time" : {
+    "start" : 1592304294785,
+    "stop" : 1592304294795,
+    "duration" : 10
+  },
+  "status" : "failed",
+  "severity" : "critical"
+}, {
+  "uid" : "e25637552f335b12",
+  "name" : "test_login_001[13168775547-123456-True]",
+  "time" : {
+    "start" : 1592808508772,
+    "stop" : 1592808508974,
+    "duration" : 202
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4736579ad667cab1",
+  "name" : "test_login_002[13168775547-1234-True]",
+  "time" : {
+    "start" : 1592808513333,
+    "stop" : 1592808513713,
+    "duration" : 380
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c9bb623c80f02a2c",
+  "name" : "test_login_003[13168775548--True]",
+  "time" : {
+    "start" : 1592808514576,
+    "stop" : 1592808514703,
+    "duration" : 127
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dd2d801c111d807",
+  "name" : "test_login_001[13168775547-123456-False]",
+  "time" : {
+    "start" : 1592808508978,
+    "stop" : 1592808512185,
+    "duration" : 3207
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e16587f2663ba1c4",
+  "name" : "test_login_006[13168775546-123456]",
+  "time" : {
+    "start" : 1592808515108,
+    "stop" : 1592808515234,
+    "duration" : 126
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d19b87b815dc39b3",
+  "name" : "使用不同的错误账号登录系统",
+  "time" : {
+    "start" : 1592304294907,
+    "stop" : 1592304294919,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "7a01e88f00c03240",
+  "name" : "test_login_003[13168775549--True]",
+  "time" : {
+    "start" : 1592808514706,
+    "stop" : 1592808514843,
+    "duration" : 137
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8d8f79a1d9bb7c6a",
+  "name" : "test_login_003[13168775546--True0]",
+  "time" : {
+    "start" : 1592808514003,
+    "stop" : 1592808514165,
+    "duration" : 162
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bdb3356ba3e8fd0e",
   "name" : "使用不同的错误账号登录系统",
   "time" : {
     "start" : 1592304294881,
@@ -58,4 +248,44 @@
   },
   "status" : "passed",
   "severity" : "blocker"
+}, {
+  "uid" : "99157be2df5f70d4",
+  "name" : "test_login_002[1316877554-123456-True]",
+  "time" : {
+    "start" : 1592808513063,
+    "stop" : 1592808513197,
+    "duration" : 134
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "71ae83a3d2ff7dd7",
+  "name" : "test_login_003[-123456-True]",
+  "time" : {
+    "start" : 1592808514168,
+    "stop" : 1592808514302,
+    "duration" : 134
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eef1d0c54421515e",
+  "name" : "test_login_003[13168775546--True1]",
+  "time" : {
+    "start" : 1592808514305,
+    "stop" : 1592808514432,
+    "duration" : 127
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2e6454a6995d6fb9",
+  "name" : "test_login_001[13168775549-123456-False]",
+  "time" : {
+    "start" : 1592808512727,
+    "stop" : 1592808512931,
+    "duration" : 204
+  },
+  "status" : "passed",
+  "severity" : "normal"
 } ]

@@ -5,7 +5,8 @@ from common.get_data import api_date
 from config.config import server_ip
 
 
-class TestLogin():
+@allure.feature('登录功能')
+class TestLogin(object):
 
     url = server_ip() + '/admin/sysadmin/login'
     headers = {'Content-Type': 'application/json'}
@@ -15,11 +16,12 @@ class TestLogin():
         "rememberMe": True
     }
 
-    @pytest.mark.parametrize('phone, password', api_date["login_success"])
-    def test_login_001(self, phone, password):
+    @allure.story('正确账号，正确密码，登录成功')
+    @pytest.mark.parametrize('phone, password, remember', api_date["login_success"])
+    def test_login_001(self, phone, password, remember):
         """
         用例描述：
-        参数可以登录成功(管理员账号)
+        参数可以登录成功
         :param phone: 登录手机号
         :param password: 登录密码
         :return:
@@ -27,7 +29,7 @@ class TestLogin():
         json_date = {
             "password": password,
             "phone": phone,
-            "rememberMe": True
+            "rememberMe": remember
         }
 
         r = requests.post(url=self.url, json=json_date, headers=self.headers)
@@ -37,11 +39,12 @@ class TestLogin():
         assert r.json()["message"] == "成功"
         assert r.json()["status"] == "0"
 
-    @pytest.mark.parametrize('phone, password', api_date["login_fail"])
-    def test_login_002(self, phone, password):
+    @allure.story('正确手机号，错误密码/错误手机号，正确密码，登录失败')
+    @pytest.mark.parametrize('phone, password, remember', api_date["login_error_fail"])
+    def test_login_002(self, phone, password, remember):
         """
         用例描述：
-        参数登录失败
+        参数输入错误
         :param phone: 登录手机号
         :param password: 登录密码
         :return:
@@ -49,13 +52,92 @@ class TestLogin():
         json_date = {
             "password": password,
             "phone": phone,
-            "rememberMe": True
+            "rememberMe": remember
         }
         r = requests.post(url=self.url, json=json_date, headers=self.headers)
         assert r.status_code == 200
         assert r.json()['data'] is None
-        assert r.json()["message"] == "手机号或密码不存在" or "password,不能为空" or "phone,不能为空"
-        assert r.json()["status"] == "100005" or "100001"
+        assert r.json()["message"] == "手机号或密码不存在"
+        assert r.json()["status"] == "100005"
+
+    @allure.story('phone或password或rememberMe为空，登录失败')
+    @pytest.mark.parametrize('phone, password, remember', api_date["login_null_fail"])
+    def test_login_003(self, phone, password, remember):
+        """
+        用例描述：
+        参数输入为空
+        :param phone: 登录手机号
+        :param password: 登录密码
+        :return:
+        """
+        json_date = {
+            "password": password,
+            "phone": phone,
+            "rememberMe": remember
+        }
+        r = requests.post(url=self.url, json=json_date, headers=self.headers)
+        assert r.status_code == 200
+        assert r.json()['data'] is None
+        assert ",不能为空" in r.json()["message"]
+        assert r.json()["status"] == "100001"
+
+    @allure.story('参数password不传，登录失败')
+    @pytest.mark.parametrize('phone, remember', api_date["login_nopassword_fail"])
+    def test_login_004(self, phone, remember):
+        """
+        用例描述：
+        参数password不传
+        :param phone: 登录手机号
+        :return:
+        """
+        json_date = {
+            "phone": phone,
+            "rememberMe": remember
+        }
+        r = requests.post(url=self.url, json=json_date, headers=self.headers)
+        assert r.status_code == 200
+        assert r.json()['data'] is None
+        assert r.json()["message"] == "password,不能为空!"
+        assert r.json()["status"] == "100001"
+
+    @allure.story('参数phone不传，登录失败')
+    @pytest.mark.parametrize('password, remember', api_date["login_nophone_fail"])
+    def test_login_005(self, password, remember):
+        """
+        用例描述：
+        参数phone不传
+        :param password: 登录密码
+        :return:
+        """
+        json_date = {
+            "password": password,
+            "rememberMe": remember
+        }
+        r = requests.post(url=self.url, json=json_date, headers=self.headers)
+        assert r.status_code == 200
+        assert r.json()['data'] is None
+        assert r.json()["message"] == "phone,不能为空!"
+        assert r.json()["status"] == "100001"
+
+    @allure.story('参数rememberMe不传，登录失败')
+    @pytest.mark.parametrize('phone, password', api_date["login_norememberme_fail"])
+    def test_login_006(self, phone, password):
+        """
+        用例描述：
+        参数rememberMe不传
+        :param phone: 登录手机号
+        :param password: 登录密码
+        :return:
+        """
+        json_date = {
+            "password": password,
+            "phone": phone
+        }
+        r = requests.post(url=self.url, json=json_date, headers=self.headers)
+        assert r.status_code == 200
+        assert r.json()['data'] is None
+        assert r.json()["message"] == "rememberMe,不能为空!"
+        assert r.json()["status"] == "100001"
 
 
 if __name__ == '__main__':

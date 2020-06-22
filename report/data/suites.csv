@@ -1,7 +1,166 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"failed","Tue Jun 16 18:44:54 CST 2020","Tue Jun 16 18:44:54 CST 2020","12","test_case","测试套件001","TestLogin","","","使用不同的正确账号登录系统","登录成功测试用例"
-"passed","Tue Jun 16 18:44:54 CST 2020","Tue Jun 16 18:44:54 CST 2020","12","test_case","测试套件001","TestLogin","","","使用不同的错误账号登录系统","登录失败测试用例"
-"failed","Tue Jun 16 18:44:54 CST 2020","Tue Jun 16 18:44:54 CST 2020","10","test_case","测试套件001","TestLogin","","","使用不同的正确账号登录系统","登录成功测试用例"
+"passed","Mon Jun 22 14:48:33 CST 2020","Mon Jun 22 14:48:33 CST 2020","148","test_case","test_001_login","TestLogin","","","test_login_002[13168775548-13-True]","
+        用例描述：
+        参数输入错误
+        :param phone: 登录手机号
+        :param password: 登录密码
+        :return:
+        "
+"passed","Mon Jun 22 14:48:34 CST 2020","Mon Jun 22 14:48:35 CST 2020","128","test_case","test_001_login","TestLogin","","","test_login_005[123456-True]","
+        用例描述：
+        参数phone不传
+        :param password: 登录密码
+        :return:
+        "
 "passed","Tue Jun 16 18:44:54 CST 2020","Tue Jun 16 18:44:54 CST 2020","55","test_case","测试套件001","TestLogin","","","使用不同的正确账号登录系统","登录成功测试用例"
+"passed","Mon Jun 22 14:48:32 CST 2020","Mon Jun 22 14:48:32 CST 2020","183","test_case","test_001_login","TestLogin","","","test_login_001[13168775548-123456-False]","
+        用例描述：
+        参数可以登录成功
+        :param phone: 登录手机号
+        :param password: 登录密码
+        :return:
+        "
+"passed","Mon Jun 22 14:48:28 CST 2020","Mon Jun 22 14:48:28 CST 2020","287","test_case","test_001_login","TestLogin","","","test_login_001[13168775546-123456-True]","
+        用例描述：
+        参数可以登录成功
+        :param phone: 登录手机号
+        :param password: 登录密码
+        :return:
+        "
+"passed","Mon Jun 22 14:48:33 CST 2020","Mon Jun 22 14:48:33 CST 2020","129","test_case","test_001_login","TestLogin","","","test_login_002[13168775547-123-True]","
+        用例描述：
+        参数输入错误
+        :param phone: 登录手机号
+        :param password: 登录密码
+        :return:
+        "
+"failed","Tue Jun 16 18:44:54 CST 2020","Tue Jun 16 18:44:54 CST 2020","12","test_case","测试套件001","TestLogin","","","使用不同的正确账号登录系统","登录成功测试用例"
+"passed","Mon Jun 22 14:48:33 CST 2020","Mon Jun 22 14:48:34 CST 2020","129","test_case","test_001_login","TestLogin","","","test_login_002[13168775549-1223-True]","
+        用例描述：
+        参数输入错误
+        :param phone: 登录手机号
+        :param password: 登录密码
+        :return:
+        "
+"passed","Mon Jun 22 14:48:32 CST 2020","Mon Jun 22 14:48:32 CST 2020","164","test_case","test_001_login","TestLogin","","","test_login_001[13168775548-123456-True]","
+        用例描述：
+        参数可以登录成功
+        :param phone: 登录手机号
+        :param password: 登录密码
+        :return:
+        "
+"passed","Mon Jun 22 14:48:32 CST 2020","Mon Jun 22 14:48:33 CST 2020","125","test_case","test_001_login","TestLogin","","","test_login_002[13168775546-123-True]","
+        用例描述：
+        参数输入错误
+        :param phone: 登录手机号
+        :param password: 登录密码
+        :return:
+        "
 "failed","Tue Jun 16 18:44:54 CST 2020","Tue Jun 16 18:44:54 CST 2020","28","test_case","测试套件001","TestLogin","","","使用不同的错误账号登录系统","登录失败测试用例"
+"passed","Mon Jun 22 14:48:32 CST 2020","Mon Jun 22 14:48:32 CST 2020","183","test_case","test_001_login","TestLogin","","","test_login_001[13168775549-123456-True]","
+        用例描述：
+        参数可以登录成功
+        :param phone: 登录手机号
+        :param password: 登录密码
+        :return:
+        "
+"passed","Mon Jun 22 14:48:28 CST 2020","Mon Jun 22 14:48:28 CST 2020","197","test_case","test_001_login","TestLogin","","","test_login_001[13168775546-123456-False]","
+        用例描述：
+        参数可以登录成功
+        :param phone: 登录手机号
+        :param password: 登录密码
+        :return:
+        "
+"passed","Mon Jun 22 14:48:34 CST 2020","Mon Jun 22 14:48:34 CST 2020","129","test_case","test_001_login","TestLogin","","","test_login_004[13168775546-True]","
+        用例描述：
+        参数password不传
+        :param phone: 登录手机号
+        :return:
+        "
+"passed","Mon Jun 22 14:48:34 CST 2020","Mon Jun 22 14:48:34 CST 2020","135","test_case","test_001_login","TestLogin","","","test_login_003[13168775547--True]","
+        用例描述：
+        参数输入为空
+        :param phone: 登录手机号
+        :param password: 登录密码
+        :return:
+        "
+"failed","Tue Jun 16 18:44:54 CST 2020","Tue Jun 16 18:44:54 CST 2020","10","test_case","测试套件001","TestLogin","","","使用不同的正确账号登录系统","登录成功测试用例"
+"passed","Mon Jun 22 14:48:28 CST 2020","Mon Jun 22 14:48:28 CST 2020","202","test_case","test_001_login","TestLogin","","","test_login_001[13168775547-123456-True]","
+        用例描述：
+        参数可以登录成功
+        :param phone: 登录手机号
+        :param password: 登录密码
+        :return:
+        "
+"passed","Mon Jun 22 14:48:33 CST 2020","Mon Jun 22 14:48:33 CST 2020","380","test_case","test_001_login","TestLogin","","","test_login_002[13168775547-1234-True]","
+        用例描述：
+        参数输入错误
+        :param phone: 登录手机号
+        :param password: 登录密码
+        :return:
+        "
+"passed","Mon Jun 22 14:48:34 CST 2020","Mon Jun 22 14:48:34 CST 2020","127","test_case","test_001_login","TestLogin","","","test_login_003[13168775548--True]","
+        用例描述：
+        参数输入为空
+        :param phone: 登录手机号
+        :param password: 登录密码
+        :return:
+        "
+"passed","Mon Jun 22 14:48:28 CST 2020","Mon Jun 22 14:48:32 CST 2020","3207","test_case","test_001_login","TestLogin","","","test_login_001[13168775547-123456-False]","
+        用例描述：
+        参数可以登录成功
+        :param phone: 登录手机号
+        :param password: 登录密码
+        :return:
+        "
+"passed","Mon Jun 22 14:48:35 CST 2020","Mon Jun 22 14:48:35 CST 2020","126","test_case","test_001_login","TestLogin","","","test_login_006[13168775546-123456]","
+        用例描述：
+        参数rememberMe不传
+        :param phone: 登录手机号
+        :param password: 登录密码
+        :return:
+        "
+"passed","Tue Jun 16 18:44:54 CST 2020","Tue Jun 16 18:44:54 CST 2020","12","test_case","测试套件001","TestLogin","","","使用不同的错误账号登录系统","登录失败测试用例"
+"passed","Mon Jun 22 14:48:34 CST 2020","Mon Jun 22 14:48:34 CST 2020","137","test_case","test_001_login","TestLogin","","","test_login_003[13168775549--True]","
+        用例描述：
+        参数输入为空
+        :param phone: 登录手机号
+        :param password: 登录密码
+        :return:
+        "
+"passed","Mon Jun 22 14:48:34 CST 2020","Mon Jun 22 14:48:34 CST 2020","162","test_case","test_001_login","TestLogin","","","test_login_003[13168775546--True0]","
+        用例描述：
+        参数输入为空
+        :param phone: 登录手机号
+        :param password: 登录密码
+        :return:
+        "
 "passed","Tue Jun 16 18:44:54 CST 2020","Tue Jun 16 18:44:54 CST 2020","19","test_case","测试套件001","TestLogin","","","使用不同的错误账号登录系统","登录失败测试用例"
+"passed","Mon Jun 22 14:48:33 CST 2020","Mon Jun 22 14:48:33 CST 2020","134","test_case","test_001_login","TestLogin","","","test_login_002[1316877554-123456-True]","
+        用例描述：
+        参数输入错误
+        :param phone: 登录手机号
+        :param password: 登录密码
+        :return:
+        "
+"passed","Mon Jun 22 14:48:34 CST 2020","Mon Jun 22 14:48:34 CST 2020","134","test_case","test_001_login","TestLogin","","","test_login_003[-123456-True]","
+        用例描述：
+        参数输入为空
+        :param phone: 登录手机号
+        :param password: 登录密码
+        :return:
+        "
+"passed","Mon Jun 22 14:48:34 CST 2020","Mon Jun 22 14:48:34 CST 2020","127","test_case","test_001_login","TestLogin","","","test_login_003[13168775546--True1]","
+        用例描述：
+        参数输入为空
+        :param phone: 登录手机号
+        :param password: 登录密码
+        :return:
+        "
+"passed","Mon Jun 22 14:48:32 CST 2020","Mon Jun 22 14:48:32 CST 2020","204","test_case","test_001_login","TestLogin","","","test_login_001[13168775549-123456-False]","
+        用例描述：
+        参数可以登录成功
+        :param phone: 登录手机号
+        :param password: 登录密码
+        :return:
+        "

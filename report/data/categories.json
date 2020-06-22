@@ -7,7 +7,7 @@
       "name" : "AssertionError: assert None is not None",
       "children" : [ {
         "name" : "使用不同的正确账号登录系统",
-        "uid" : "85c6d0bd52398819",
+        "uid" : "a677549d141097c8",
         "parentUid" : "1c103f4d22bc3ec7e9ffca4daf59af4a",
         "status" : "failed",
         "time" : {
@@ -20,7 +20,7 @@
         "parameters" : [ "'123456'", "'13168747'" ]
       }, {
         "name" : "使用不同的正确账号登录系统",
-        "uid" : "95be52ba12a40f17",
+        "uid" : "a354775f1974fe54",
         "parentUid" : "1c103f4d22bc3ec7e9ffca4daf59af4a",
         "status" : "failed",
         "time" : {
@@ -37,7 +37,7 @@
       "name" : "AssertionError: assert {'menuList': [{'children': [{'children': [{...}, {...}, {...}, {...}], 'icon': '', 'id': '144596599002103813', 'name':...-41f5428e721d', 'sysAdmin': {'area': '', 'areaCode': '', 'branchCode': '', 'branchId': '', ...}, 'token': '1707617929'} is None",
       "children" : [ {
         "name" : "使用不同的错误账号登录系统",
-        "uid" : "5c9639c7f4fb609d",
+        "uid" : "f6c3cd4c02d70203",
         "parentUid" : "16857d9df150651138f24610d9f91f05",
         "status" : "failed",
         "time" : {
