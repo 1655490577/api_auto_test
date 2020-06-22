@@ -1,20 +1,11 @@
-import requests
 import pytest
 import allure
 from common.get_data import api_date
-from config.config import server_ip
+from api.api_public_method import login
 
 
 @allure.feature('登录功能')
 class TestLogin(object):
-
-    url = server_ip() + '/admin/sysadmin/login'
-    headers = {'Content-Type': 'application/json'}
-    json = {
-        "password": "string",
-        "phone": "string",
-        "rememberMe": True
-    }
 
     @allure.story('正确账号，正确密码，登录成功')
     @pytest.mark.parametrize('phone, password, remember', api_date["login_success"])
@@ -26,14 +17,7 @@ class TestLogin(object):
         :param password: 登录密码
         :return:
         """
-        json_date = {
-            "password": password,
-            "phone": phone,
-            "rememberMe": remember
-        }
-
-        r = requests.post(url=self.url, json=json_date, headers=self.headers)
-
+        r = login(phone=phone, password=password, rememberMe=remember)
         assert r.status_code == 200
         assert r.json()["data"] is not None
         assert r.json()["message"] == "成功"
@@ -49,12 +33,7 @@ class TestLogin(object):
         :param password: 登录密码
         :return:
         """
-        json_date = {
-            "password": password,
-            "phone": phone,
-            "rememberMe": remember
-        }
-        r = requests.post(url=self.url, json=json_date, headers=self.headers)
+        r = login(phone=phone, password=password, rememberMe=remember)
         assert r.status_code == 200
         assert r.json()['data'] is None
         assert r.json()["message"] == "手机号或密码不存在"
@@ -70,12 +49,7 @@ class TestLogin(object):
         :param password: 登录密码
         :return:
         """
-        json_date = {
-            "password": password,
-            "phone": phone,
-            "rememberMe": remember
-        }
-        r = requests.post(url=self.url, json=json_date, headers=self.headers)
+        r = login(phone=phone, password=password, rememberMe=remember)
         assert r.status_code == 200
         assert r.json()['data'] is None
         assert ",不能为空" in r.json()["message"]
@@ -90,11 +64,7 @@ class TestLogin(object):
         :param phone: 登录手机号
         :return:
         """
-        json_date = {
-            "phone": phone,
-            "rememberMe": remember
-        }
-        r = requests.post(url=self.url, json=json_date, headers=self.headers)
+        r = login(phone=phone, rememberMe=remember)
         assert r.status_code == 200
         assert r.json()['data'] is None
         assert r.json()["message"] == "password,不能为空!"
@@ -109,11 +79,7 @@ class TestLogin(object):
         :param password: 登录密码
         :return:
         """
-        json_date = {
-            "password": password,
-            "rememberMe": remember
-        }
-        r = requests.post(url=self.url, json=json_date, headers=self.headers)
+        r = login(password=password, rememberMe=remember)
         assert r.status_code == 200
         assert r.json()['data'] is None
         assert r.json()["message"] == "phone,不能为空!"
@@ -129,11 +95,7 @@ class TestLogin(object):
         :param password: 登录密码
         :return:
         """
-        json_date = {
-            "password": password,
-            "phone": phone
-        }
-        r = requests.post(url=self.url, json=json_date, headers=self.headers)
+        r = login(phone=phone, password=password)
         assert r.status_code == 200
         assert r.json()['data'] is None
         assert r.json()["message"] == "rememberMe,不能为空!"
