@@ -1,42 +1,22 @@
-import requests
 import pytest
 import allure
 from common.get_data import api_date
-from config.config import server_ip
+from common.get_token import *
+from api.api_public_method import change_password, login
 
 
 class Test_change_password(object):
 
-    url = server_ip() + '/admin/sysadmin/update'
-    headers = {'Content-Type': 'application/json'}
-    url2 = server_ip() + '/admin/sysadmin/login'
-    json = {
-        "id": '',
-        "name": "string",
-        "password": "string",
-        "token": "string",
-        "userid": "string"
-    }
+    @pytest.mark.parametrize('id,name,password,phone,userid', api_date["test_system"])
+    def test_update_password(self, id, name, password, phone, userid):
 
-    def test_update_password(self, login):
-        json1 = {
-            "id": login[1],
-            "name": login[0],
-            "password": "123456",
-            "token": login[2],
-            "userid": login[1]
-        }
-        r = requests.post(url=self.url, json=json1, headers=self.headers)
-        json2 = {
-            "password": "13168775546",
-            "phone": "123456",
-            "rememberMe": True
-        }
-        r2 = requests.post(url=self.url2, json=json2, headers=self.headers)
-        assert r.status_code == 200
-        assert r.json()["data"] is not None
-        assert r.json()["message"] == "成功"
-        assert r.json()["status"] == "0"
+        r1 = change_password(system_cookies, id=id,name=name,password=password,phone=phone,token=system_token,userid=userid)
+        r2 = login(phone=phone, password=password, rememberMe=True)
+
+        assert r1.status_code == 200
+        assert r1.json()["data"] is None
+        assert r1.json()["message"] == "成功"
+        assert r1.json()["status"] == "0"
         assert r2.status_code == 200
         assert r2.json()["data"] is not None
         assert r2.json()["message"] == "成功"

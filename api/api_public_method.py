@@ -10,9 +10,10 @@ def login(**kwargs):
     return r
 
 
-def change_password(**kwargs):
+def change_password(cookies, **kwargs):
     url = server_ip() + '/admin/sysadmin/update'
     headers = {'Content-Type': 'application/json'}
+    cookies = cookies
     jsons = kwargs
-    r = requests.post(url=url, json=jsons, headers=headers)
+    r = requests.post(url=url, json=jsons, headers=headers, cookies=cookies)
     return r

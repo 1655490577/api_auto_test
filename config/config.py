@@ -10,4 +10,5 @@ def server_ip():
     """
     server_ip_outside = 'http://api.supervisor.dev.hbyrzx.top/supervisor'
     server_ip_inside = 'http://192.168.30.11:10060/supervisor'
-    return server_ip_outside
+    test = 'http://192.168.30.252:8000/supervisor'
+    return server_ip_inside
