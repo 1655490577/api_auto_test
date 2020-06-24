@@ -1,0 +1,219 @@
+{
+  "uid" : "d44f5019302db1a1",
+  "name" : "test_update_password[259726329245597696-测试组用户-123456-13168775549-259726329245597696]",
+  "fullName" : "test_case.test_002_change_password.Test_change_password#test_update_password",
+  "historyId" : "2748b36b1e5f55fb2049318ecfa6a352",
+  "time" : {
+    "start" : 1592980865758,
+    "stop" : 1592980865840,
+    "duration" : 82
+  },
+  "description" : "\n        用例描述：\n        使用不同的账号登录并修改自己的密码，最后再修改回原密码\n        :param id: 需要修改密码的用户id\n        :param name: 当前登录用户的名称\n        :param password: 当前登录用户的密码\n        :param phone: 当前登录用户的手机号\n        :param userid: 当前登录用户的userid\n        ",
+  "descriptionHtml" : "<pre><code>    用例描述：\n    使用不同的账号登录并修改自己的密码，最后再修改回原密码\n    :param id: 需要修改密码的用户id\n    :param name: 当前登录用户的名称\n    :param password: 当前登录用户的密码\n    :param phone: 当前登录用户的手机号\n    :param userid: 当前登录用户的userid\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        用例描述：\n        使用不同的账号登录并修改自己的密码，最后再修改回原密码\n        :param id: 需要修改密码的用户id\n        :param name: 当前登录用户的名称\n        :param password: 当前登录用户的密码\n        :param phone: 当前登录用户的手机号\n        :param userid: 当前登录用户的userid\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤1 ==>> 登录并获取token,cookies",
+      "time" : {
+        "start" : 1592980865758,
+        "stop" : 1592980865775,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phone",
+        "value" : "'13168775549'"
+      }, {
+        "name" : "password",
+        "value" : "'123456'"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "步骤2 ==>> 修改密码为：原密码+'123'",
+      "time" : {
+        "start" : 1592980865775,
+        "stop" : 1592980865794,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "cookies",
+        "value" : "{'JSESSIONID': 'f86f8279-d685-4257-af07-a85193c54cc8', 'rememberMe': 'YSODl0xmEYKRLDFZPDB5LWCpsoBSrQ4eTAlWd91fp/tgC/yAofqe4ciBjt5NXBP3kQWyUhhav55DFR9r4uKJbIx2oG6l7kwr5uaNPbbT++SPdkjOTn4uCxG30UMPab5lvIqhzmsJHmFYEhn8KYj29UFatfESDlfiA98IYl12RV36EM03St9WX2BF309c3bnk9Y9wIjovbsgIAli4hPnu3l3zlhrp7bka4DjbNEbe/8Wh8tw2tpYFEqyS4tQ7ennjaYkf1sj3pqS8Qn9v487EvTcORQrl7Z5JTcRGD33mWyTbEwni4xaTPUYvoTE3Nqunsgist4/8PTM6bxBQNABOI5MR6e/HjywReHbZyLLyS/uyinf/0uEwJkqcgcXyZJB50gWUGWiQSILGh7NqHl3nOc8LjVrm/oVLebLfXxZp0BTp9nHLpp5Tbm3Rg/IWZsXKUkNV3opU4DusPGFRyIJdHM8+f2HM0SX4wzGpTKajKHpIC/xmoMwrO/P+sdixGOyWyRiEeyyGi6ItPTWN7liqFFKMwJjLkeW1go445QHcUMa2pSfxD+7MDVwlaALIVqzuh0StAj1sSJKfj81VtcgfHGfCyvHgqeNJZMnNkxKPfXDBiLEA32wmtP4M3s5dPSc3ElMG4NQFMhhZs8UI1jlFe+XVwPCxgyN2miAslOb7F2x7bbkKUHGL4hrmykon75oCVsfWWNBuGLD7IghaTbCPs9TqMWrSv+erDaF0TJNgyWIhek6RUkpuhpSPfIYunjumEFD+Rr0lh+EArWPb/Bu9YswnvHxfkl5AU9H6IxPIvTFR3jEV9XJIGP3rWJ8rV6N9+T6RKQPfro70viMi47hiJxr5Mzkpr4xfrmO/Xwr6LL38L3ebSPzoK12nbZ53PI30rUR97XwaNdKsMAcrXe1rbGn7baHi5W71doPO2RJBi4mO8PxKwBecEKzlqiSvtaMG1uhY/BRtxhMRIYAAbYBWNNMdafmkbJ4kJod6Iw/BFCp5P08+zowD4TVFDqxOKKgxGEv9BFFfjoRR39xtjV0JoJekwF8h0chUgEZFKC6ydB/uTPLFxLvfGdpUgDhllX7XsH05yneGVHaLiqGdAg8DBbBhHPIic6aUL2XyiwG02tY4pinz9+LBxLLCwZMlru1e7gZxg6LVOdBn49uGQiCfpkNEmti+3il0HZRPiTwTU+C/ssj2FdH/N6sZJMnS9NpR9ZcngEFLpSSvTVhmJc5sYVqtKbyKU+4nsUosESn9cwiIqbN9s5pbdq9FohLtigDjr50PqWuQEMJ/KAapyETMn2RXZ4V0kVRB9W5sxzc+umSLiJpl0uACVhg/A0wYRVsGWSfjiwGERTOxhLMG/7X9k7xAdZkwBDvoJcMWhaNYzIIlzPwPJsUHGXbCGX4lGjP0B2fFGpsfKqG6MN4xwCD74JkYv5rfabMvHtl0xlvgkwBIlA8AMdsFiP1qk1AVkoXx+GG7dD1EjCWVCMFZWfI402RdLc1tQIYUeVXNTTCYnEjWwdfktaLRw5hySSe/FiVJP4HVtCQD7r4bkOXrE+NKMNRePUwKDXFRHOHlc9Jn5geVlwWcxRiZuCcmW4N9HicRgS2xECU+EVTL9PPQGPz0BHFHLR7aDosimcYrFUMLkPGvP99849i/J/gW6wSOau//8/kreazJmemFXJXp8V6nuJpat7RGbSRcOHyPtXynJ4iMAWqiwbS2Eg=='}"
+      }, {
+        "name" : "id",
+        "value" : "'259726329245597696'"
+      }, {
+        "name" : "name",
+        "value" : "'测试组用户'"
+      }, {
+        "name" : "password",
+        "value" : "'123456'"
+      }, {
+        "name" : "phone",
+        "value" : "'13168775549'"
+      }, {
+        "name" : "token",
+        "value" : "'1405904260'"
+      }, {
+        "name" : "userid",
+        "value" : "'259726329245597696'"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "步骤3 ==>> 使用新密码重新登录系统",
+      "time" : {
+        "start" : 1592980865794,
+        "stop" : 1592980865807,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phone",
+        "value" : "'13168775549'"
+      }, {
+        "name" : "password",
+        "value" : "'123456'"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "步骤4 ==>> 重新登录并获取token,cookies",
+      "time" : {
+        "start" : 1592980865807,
+        "stop" : 1592980865819,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phone",
+        "value" : "'13168775549'"
+      }, {
+        "name" : "password",
+        "value" : "'123456'"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "步骤5 ==>> 把密码改回原来的密码",
+      "time" : {
+        "start" : 1592980865819,
+        "stop" : 1592980865839,
+        "duration" : 20
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "cookies2",
+        "value" : "{'JSESSIONID': 'e8aa41ee-af90-45a3-b758-c376b0951d88', 'rememberMe': 'ITSkOHxxll+Wi8P/rL0slQhJ59rL3CvGYKv70pkT6gcUbdWZlEM2uns4vAYSXAKYL7zFkZzo7Fds5UulIgOu3vk80eOzK89R9VNqc98EDsaoptn1WtlCVED6LhVrUwDuBf/gCTQs+8b4wWaVLPSSpmLABQJcPJ/5uiVdWR/SJpjR2xBUBKX5Sh2vahxylB+BIFO3W5O9NHI1g4MDoq8vXN9JJfD5tbocYPaBhFe1sYJpu8j0RlXwYQEhjNyxe8furBC6rj+m5buFrEZ2qF/PjEsu3wWCjzLY25auy9XCRd14AxjB99ctLsUfbEUO9EYMabBDBtzXFjU7faappAoudaQqti+7SS61OTfGYOlhbXZSnWksp849l08g0uAnK+GQ3cz2VyCLEgpWaeb6IbTkyNXqfjVWGtnjoJz1wsTImyhRVha0iyBUjtQcK6qqlBtUbFVnfuqx559Ib3eEt8KmSrdBYNbTuerOXUtvYbLRG6cSHlwmCOfLvTXhN2DICTEun1MVk+THL+n7yB4Rfkd4JVoFvxWhjWPYulnW4F0HS49Gp0vAeuDfe4h5Mdan92jQNEe9mg3HtUNiKa3Nfy2WNa03QGFKovdqKIzZ7hiRamRejjWo/OgIC8Lu+S7EQDdpzlacPo2HSWeXP6PPN+jKzqY+TxQb85Br/lqMEmdxRKYfAbkCZ+NMlFOzKAgJdXV/Is/dOSSb8NuXmKpMtbeWs50GyUEIm2EOCSScgcEmQNeSzS68Xm69SfEjfU213VW2jvfuhxi2mXRZzwiyOFijJumuMmqbRE/Ou0pWxFYf5MgGtlw9NE6g+fV2nDBcwECdiCurdv14SXonLe0eqWcoeGq/C858DCAqqLjLiEY8V+2MNvRiHPP4e6VJFHJ8imFSlG0oNJRyQ4nM4L+PLBHSXX3Cfs8FSASw/Ovck2g1RQZyF4p43woHbXzRe0s2xjSUgFAHyTAv+ZxZrc5Q0+iTajk8pqwUZyBSRsz1K0CTVCqLirfeKpnhsFWYwWsymPAdSkygdwb5Q9A0HFmtTneXkeAbLJX3k3HEkEWFdYbg8W0OTsyNyNtCENzUelsDqPQteeGfcFNBi6zhbW0fSl1yzABPpciEsrvgSRXnskuJB2IDh4ENBm3sbPzzdIp3eTfop8+EggGJYTHg96FKaNa1OAiz2158/Cu01ncycG9Mau0o2HmDJHD5c6xm2+7xnnc8n3GFHFK9gjYkzVHZehJBjafCf5tgWIxHUmJ+mwgLn7nKDe3YiItgExE16OhOE+n+DENRDuVcIp487sYLI2j/amBh8jZzAtN1GYpE4MBnCxyoQuLKWJQtC5nk6ItkMujSoAlQAHC67tjChw0EDmuwk+JlHbgujJvGcq8o9Jg5O1y3l5598vduK0lKWarFV/MkniTo8f+LOvXyvd/mvjpO1+f+EfHlGhWNX2Ktr1oLEJSAtjiP8uih2U7h9S/DvKlmqg4LqUw2PvNB5GJB5L4nTc/m3v59bX+9AHK6Nh2xvs4kO2YlJPRgz5JSJPPAWZE4jlT64eforBzLrrw/zUt2t6D7nIXQlTVvrbSJbujc5JrAW6uVkEufbXYEyZOX+rG8A3fr+72AoXoY1AzRrYr9uHxdtmRw5kHdV5C7pKj/CGWRmGWgRwnFhzVCPqwfIf8HtkaqIDY0SAYvZ1JwBwOr0vIcPiSGdrTIRJh+iRySXbk+Fwm4PCSCJA=='}"
+      }, {
+        "name" : "id",
+        "value" : "'259726329245597696'"
+      }, {
+        "name" : "name",
+        "value" : "'测试组用户'"
+      }, {
+        "name" : "password",
+        "value" : "'123456'"
+      }, {
+        "name" : "phone",
+        "value" : "'13168775549'"
+      }, {
+        "name" : "token2",
+        "value" : "'220218905'"
+      }, {
+        "name" : "userid",
+        "value" : "'259726329245597696'"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 5,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_002_change_password"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_change_password"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-S9OTJ8G"
+  }, {
+    "name" : "thread",
+    "value" : "6572-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_002_change_password"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "id",
+    "value" : "'259726329245597696'"
+  }, {
+    "name" : "name",
+    "value" : "'测试组用户'"
+  }, {
+    "name" : "password",
+    "value" : "'123456'"
+  }, {
+    "name" : "phone",
+    "value" : "'13168775549'"
+  }, {
+    "name" : "userid",
+    "value" : "'259726329245597696'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d44f5019302db1a1.json",
+  "parameterValues" : [ "'259726329245597696'", "'测试组用户'", "'123456'", "'13168775549'", "'259726329245597696'" ]
+}

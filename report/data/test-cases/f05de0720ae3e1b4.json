@@ -1,15 +1,15 @@
 {
-  "uid" : "c9bb623c80f02a2c",
-  "name" : "test_login_003[13168775548--True]",
-  "fullName" : "test_case.test_001_login.TestLogin#test_login_003",
-  "historyId" : "dd9e04c361226c6118eb2498fc7159c6",
+  "uid" : "f05de0720ae3e1b4",
+  "name" : "test_login_002[13168775548-13-True]",
+  "fullName" : "test_case.test_001_login.TestLogin#test_login_002",
+  "historyId" : "0879c4d50675840f93e11385c6e63bc9",
   "time" : {
-    "start" : 1592808514576,
-    "stop" : 1592808514703,
-    "duration" : 127
+    "start" : 1592980865318,
+    "stop" : 1592980865325,
+    "duration" : 7
   },
-  "description" : "\n        用例描述：\n        参数输入为空\n        :param phone: 登录手机号\n        :param password: 登录密码\n        :return:\n        ",
-  "descriptionHtml" : "<pre><code>    用例描述：\n    参数输入为空\n    :param phone: 登录手机号\n    :param password: 登录密码\n    :return:\n</code></pre>\n",
+  "description" : "\n        用例描述：\n        参数输入错误\n        :param phone: 登录手机号\n        :param password: 登录密码\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    用例描述：\n    参数输入错误\n    :param phone: 登录手机号\n    :param password: 登录密码\n    :return:\n</code></pre>\n",
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
@@ -20,7 +20,7 @@
     "value" : "登录功能"
   }, {
     "name" : "story",
-    "value" : "phone或password或rememberMe为空，登录失败"
+    "value" : "正确手机号，错误密码/错误手机号，正确密码，登录失败"
   }, {
     "name" : "parentSuite",
     "value" : "test_case"
@@ -35,7 +35,7 @@
     "value" : "DESKTOP-S9OTJ8G"
   }, {
     "name" : "thread",
-    "value" : "9928-MainThread"
+    "value" : "6572-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -51,7 +51,7 @@
   } ],
   "parameters" : [ {
     "name" : "password",
-    "value" : "''"
+    "value" : "'13'"
   }, {
     "name" : "phone",
     "value" : "'13168775548'"
@@ -68,6 +68,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "c9bb623c80f02a2c.json",
-  "parameterValues" : [ "''", "'13168775548'", "True" ]
+  "source" : "f05de0720ae3e1b4.json",
+  "parameterValues" : [ "'13'", "'13168775548'", "True" ]
 }

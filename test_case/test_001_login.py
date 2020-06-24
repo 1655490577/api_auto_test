@@ -1,6 +1,6 @@
 import pytest
 import allure
-from common.get_data import api_date
+from common.get_data import get_data
 from api.api_public_method import login
 
 
@@ -8,14 +8,13 @@ from api.api_public_method import login
 class TestLogin(object):
 
     @allure.story('正确账号，正确密码，登录成功')
-    @pytest.mark.parametrize('phone, password, remember', api_date["login_success"])
+    @pytest.mark.parametrize('phone, password, remember', get_data('login_data.yml')["login_success"])
     def test_login_001(self, phone, password, remember):
         """
         用例描述：
         参数可以登录成功
         :param phone: 登录手机号
         :param password: 登录密码
-        :return:
         """
         r = login(phone=phone, password=password, rememberMe=remember)
         assert r.status_code == 200
@@ -24,7 +23,7 @@ class TestLogin(object):
         assert r.json()["status"] == "0"
 
     @allure.story('正确手机号，错误密码/错误手机号，正确密码，登录失败')
-    @pytest.mark.parametrize('phone, password, remember', api_date["login_error_fail"])
+    @pytest.mark.parametrize('phone, password, remember', get_data('login_data.yml')["login_error_fail"])
     def test_login_002(self, phone, password, remember):
         """
         用例描述：
@@ -40,7 +39,7 @@ class TestLogin(object):
         assert r.json()["status"] == "100005"
 
     @allure.story('phone或password或rememberMe为空，登录失败')
-    @pytest.mark.parametrize('phone, password, remember', api_date["login_null_fail"])
+    @pytest.mark.parametrize('phone, password, remember', get_data('login_data.yml')["login_null_fail"])
     def test_login_003(self, phone, password, remember):
         """
         用例描述：
@@ -56,7 +55,7 @@ class TestLogin(object):
         assert r.json()["status"] == "100001"
 
     @allure.story('参数password不传，登录失败')
-    @pytest.mark.parametrize('phone, remember', api_date["login_nopassword_fail"])
+    @pytest.mark.parametrize('phone, remember', get_data('login_data.yml')["login_nopassword_fail"])
     def test_login_004(self, phone, remember):
         """
         用例描述：
@@ -71,7 +70,7 @@ class TestLogin(object):
         assert r.json()["status"] == "100001"
 
     @allure.story('参数phone不传，登录失败')
-    @pytest.mark.parametrize('password, remember', api_date["login_nophone_fail"])
+    @pytest.mark.parametrize('password, remember', get_data('login_data.yml')["login_nophone_fail"])
     def test_login_005(self, password, remember):
         """
         用例描述：
@@ -86,7 +85,7 @@ class TestLogin(object):
         assert r.json()["status"] == "100001"
 
     @allure.story('参数rememberMe不传，登录失败')
-    @pytest.mark.parametrize('phone, password', api_date["login_norememberme_fail"])
+    @pytest.mark.parametrize('phone, password', get_data('login_data.yml')["login_norememberme_fail"])
     def test_login_006(self, phone, password):
         """
         用例描述：

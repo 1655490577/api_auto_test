@@ -1,56 +1,5 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ {
-    "name" : "Product defects",
-    "children" : [ {
-      "name" : "AssertionError: assert None is not None",
-      "children" : [ {
-        "name" : "使用不同的正确账号登录系统",
-        "uid" : "a677549d141097c8",
-        "parentUid" : "1c103f4d22bc3ec7e9ffca4daf59af4a",
-        "status" : "failed",
-        "time" : {
-          "start" : 1592304294785,
-          "stop" : 1592304294795,
-          "duration" : 10
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'123456'", "'13168747'" ]
-      }, {
-        "name" : "使用不同的正确账号登录系统",
-        "uid" : "a354775f1974fe54",
-        "parentUid" : "1c103f4d22bc3ec7e9ffca4daf59af4a",
-        "status" : "failed",
-        "time" : {
-          "start" : 1592304294864,
-          "stop" : 1592304294876,
-          "duration" : 12
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'123456'", "'13168548'" ]
-      } ],
-      "uid" : "1c103f4d22bc3ec7e9ffca4daf59af4a"
-    }, {
-      "name" : "AssertionError: assert {'menuList': [{'children': [{'children': [{...}, {...}, {...}, {...}], 'icon': '', 'id': '144596599002103813', 'name':...-41f5428e721d', 'sysAdmin': {'area': '', 'areaCode': '', 'branchCode': '', 'branchId': '', ...}, 'token': '1707617929'} is None",
-      "children" : [ {
-        "name" : "使用不同的错误账号登录系统",
-        "uid" : "f6c3cd4c02d70203",
-        "parentUid" : "16857d9df150651138f24610d9f91f05",
-        "status" : "failed",
-        "time" : {
-          "start" : 1592304294922,
-          "stop" : 1592304294950,
-          "duration" : 28
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'admin'", "'admin'" ]
-      } ],
-      "uid" : "16857d9df150651138f24610d9f91f05"
-    } ],
-    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
-  } ]
+  "children" : [ ]
 }

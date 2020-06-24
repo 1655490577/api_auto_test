@@ -1,15 +1,15 @@
 {
-  "uid" : "f7bf04b3e57cc6ad",
-  "name" : "test_login_001[13168775548-123456-True]",
-  "fullName" : "test_case.test_001_login.TestLogin#test_login_001",
-  "historyId" : "eb5eea474ec5f8d806b6c259369215ee",
+  "uid" : "bf71d9324036a377",
+  "name" : "test_login_003[13168775548--True]",
+  "fullName" : "test_case.test_001_login.TestLogin#test_login_003",
+  "historyId" : "dd9e04c361226c6118eb2498fc7159c6",
   "time" : {
-    "start" : 1592808512188,
-    "stop" : 1592808512352,
-    "duration" : 164
+    "start" : 1592980865424,
+    "stop" : 1592980865429,
+    "duration" : 5
   },
-  "description" : "\n        用例描述：\n        参数可以登录成功\n        :param phone: 登录手机号\n        :param password: 登录密码\n        :return:\n        ",
-  "descriptionHtml" : "<pre><code>    用例描述：\n    参数可以登录成功\n    :param phone: 登录手机号\n    :param password: 登录密码\n    :return:\n</code></pre>\n",
+  "description" : "\n        用例描述：\n        参数输入为空\n        :param phone: 登录手机号\n        :param password: 登录密码\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    用例描述：\n    参数输入为空\n    :param phone: 登录手机号\n    :param password: 登录密码\n    :return:\n</code></pre>\n",
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
@@ -17,7 +17,7 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "story",
-    "value" : "正确账号，正确密码，登录成功"
+    "value" : "phone或password或rememberMe为空，登录失败"
   }, {
     "name" : "feature",
     "value" : "登录功能"
@@ -35,7 +35,7 @@
     "value" : "DESKTOP-S9OTJ8G"
   }, {
     "name" : "thread",
-    "value" : "9928-MainThread"
+    "value" : "6572-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -51,7 +51,7 @@
   } ],
   "parameters" : [ {
     "name" : "password",
-    "value" : "'123456'"
+    "value" : "''"
   }, {
     "name" : "phone",
     "value" : "'13168775548'"
@@ -68,6 +68,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "f7bf04b3e57cc6ad.json",
-  "parameterValues" : [ "'123456'", "'13168775548'", "True" ]
+  "source" : "bf71d9324036a377.json",
+  "parameterValues" : [ "''", "'13168775548'", "True" ]
 }

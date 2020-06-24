@@ -1,26 +1,26 @@
 {
-  "uid" : "99157be2df5f70d4",
-  "name" : "test_login_002[1316877554-123456-True]",
-  "fullName" : "test_case.test_001_login.TestLogin#test_login_002",
-  "historyId" : "00ff29d030eb37694923d001f065ece2",
+  "uid" : "62de1071a555575b",
+  "name" : "test_login_006[13168775546-123456]",
+  "fullName" : "test_case.test_001_login.TestLogin#test_login_006",
+  "historyId" : "391bdace81653edab56bfc09305a80f0",
   "time" : {
-    "start" : 1592808513063,
-    "stop" : 1592808513197,
-    "duration" : 134
+    "start" : 1592980865459,
+    "stop" : 1592980865465,
+    "duration" : 6
   },
-  "description" : "\n        用例描述：\n        参数输入错误\n        :param phone: 登录手机号\n        :param password: 登录密码\n        :return:\n        ",
-  "descriptionHtml" : "<pre><code>    用例描述：\n    参数输入错误\n    :param phone: 登录手机号\n    :param password: 登录密码\n    :return:\n</code></pre>\n",
+  "description" : "\n        用例描述：\n        参数rememberMe不传\n        :param phone: 登录手机号\n        :param password: 登录密码\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    用例描述：\n    参数rememberMe不传\n    :param phone: 登录手机号\n    :param password: 登录密码\n    :return:\n</code></pre>\n",
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ ],
   "afterStages" : [ ],
   "labels" : [ {
-    "name" : "story",
-    "value" : "正确手机号，错误密码/错误手机号，正确密码，登录失败"
-  }, {
     "name" : "feature",
     "value" : "登录功能"
+  }, {
+    "name" : "story",
+    "value" : "参数rememberMe不传，登录失败"
   }, {
     "name" : "parentSuite",
     "value" : "test_case"
@@ -35,7 +35,7 @@
     "value" : "DESKTOP-S9OTJ8G"
   }, {
     "name" : "thread",
-    "value" : "9928-MainThread"
+    "value" : "6572-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -54,10 +54,7 @@
     "value" : "'123456'"
   }, {
     "name" : "phone",
-    "value" : "'1316877554'"
-  }, {
-    "name" : "remember",
-    "value" : "True"
+    "value" : "'13168775546'"
   } ],
   "links" : [ ],
   "hidden" : false,
@@ -68,6 +65,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "99157be2df5f70d4.json",
-  "parameterValues" : [ "'123456'", "'1316877554'", "True" ]
+  "source" : "62de1071a555575b.json",
+  "parameterValues" : [ "'123456'", "'13168775546'" ]
 }

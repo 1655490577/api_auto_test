@@ -1,12 +1,12 @@
 {
-  "uid" : "4736579ad667cab1",
-  "name" : "test_login_002[13168775547-1234-True]",
+  "uid" : "b5c5118bfad78b85",
+  "name" : "test_login_002[13168775546-123-True]",
   "fullName" : "test_case.test_001_login.TestLogin#test_login_002",
-  "historyId" : "9cb0660f2ac3fa9cef4f713148a2f94c",
+  "historyId" : "ad7af6305d88e8acd67c955df8dc1d05",
   "time" : {
-    "start" : 1592808513333,
-    "stop" : 1592808513713,
-    "duration" : 380
+    "start" : 1592980865281,
+    "stop" : 1592980865287,
+    "duration" : 6
   },
   "description" : "\n        用例描述：\n        参数输入错误\n        :param phone: 登录手机号\n        :param password: 登录密码\n        :return:\n        ",
   "descriptionHtml" : "<pre><code>    用例描述：\n    参数输入错误\n    :param phone: 登录手机号\n    :param password: 登录密码\n    :return:\n</code></pre>\n",
@@ -16,11 +16,11 @@
   "beforeStages" : [ ],
   "afterStages" : [ ],
   "labels" : [ {
-    "name" : "story",
-    "value" : "正确手机号，错误密码/错误手机号，正确密码，登录失败"
-  }, {
     "name" : "feature",
     "value" : "登录功能"
+  }, {
+    "name" : "story",
+    "value" : "正确手机号，错误密码/错误手机号，正确密码，登录失败"
   }, {
     "name" : "parentSuite",
     "value" : "test_case"
@@ -35,7 +35,7 @@
     "value" : "DESKTOP-S9OTJ8G"
   }, {
     "name" : "thread",
-    "value" : "9928-MainThread"
+    "value" : "6572-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -51,10 +51,10 @@
   } ],
   "parameters" : [ {
     "name" : "password",
-    "value" : "'1234'"
+    "value" : "'123'"
   }, {
     "name" : "phone",
-    "value" : "'13168775547'"
+    "value" : "'13168775546'"
   }, {
     "name" : "remember",
     "value" : "True"
@@ -68,6 +68,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "4736579ad667cab1.json",
-  "parameterValues" : [ "'1234'", "'13168775547'", "True" ]
+  "source" : "b5c5118bfad78b85.json",
+  "parameterValues" : [ "'123'", "'13168775546'", "True" ]
 }

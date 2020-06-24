@@ -1,15 +1,15 @@
 {
-  "uid" : "dd2d801c111d807",
-  "name" : "test_login_001[13168775547-123456-False]",
-  "fullName" : "test_case.test_001_login.TestLogin#test_login_001",
-  "historyId" : "dc0b096047502830652d73a21b6a09c2",
+  "uid" : "1fcbc15c8c953119",
+  "name" : "test_login_005[123456-True]",
+  "fullName" : "test_case.test_001_login.TestLogin#test_login_005",
+  "historyId" : "8b8aa05248d82b0540efdea7cd4a438c",
   "time" : {
-    "start" : 1592808508978,
-    "stop" : 1592808512185,
-    "duration" : 3207
+    "start" : 1592980865450,
+    "stop" : 1592980865456,
+    "duration" : 6
   },
-  "description" : "\n        用例描述：\n        参数可以登录成功\n        :param phone: 登录手机号\n        :param password: 登录密码\n        :return:\n        ",
-  "descriptionHtml" : "<pre><code>    用例描述：\n    参数可以登录成功\n    :param phone: 登录手机号\n    :param password: 登录密码\n    :return:\n</code></pre>\n",
+  "description" : "\n        用例描述：\n        参数phone不传\n        :param password: 登录密码\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    用例描述：\n    参数phone不传\n    :param password: 登录密码\n    :return:\n</code></pre>\n",
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
@@ -17,7 +17,7 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "story",
-    "value" : "正确账号，正确密码，登录成功"
+    "value" : "参数phone不传，登录失败"
   }, {
     "name" : "feature",
     "value" : "登录功能"
@@ -35,7 +35,7 @@
     "value" : "DESKTOP-S9OTJ8G"
   }, {
     "name" : "thread",
-    "value" : "9928-MainThread"
+    "value" : "6572-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -53,11 +53,8 @@
     "name" : "password",
     "value" : "'123456'"
   }, {
-    "name" : "phone",
-    "value" : "'13168775547'"
-  }, {
     "name" : "remember",
-    "value" : "False"
+    "value" : "True"
   } ],
   "links" : [ ],
   "hidden" : false,
@@ -68,6 +65,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "dd2d801c111d807.json",
-  "parameterValues" : [ "'123456'", "'13168775547'", "False" ]
+  "source" : "1fcbc15c8c953119.json",
+  "parameterValues" : [ "'123456'", "True" ]
 }

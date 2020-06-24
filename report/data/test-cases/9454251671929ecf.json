@@ -1,26 +1,26 @@
 {
-  "uid" : "2e6454a6995d6fb9",
-  "name" : "test_login_001[13168775549-123456-False]",
+  "uid" : "9454251671929ecf",
+  "name" : "test_login_001[13168775546-123456-False]",
   "fullName" : "test_case.test_001_login.TestLogin#test_login_001",
-  "historyId" : "721f99edafe7560b02590fa46cbe1cce",
+  "historyId" : "618ac35779f749f66cd14589e836c69e",
   "time" : {
-    "start" : 1592808512727,
-    "stop" : 1592808512931,
-    "duration" : 204
+    "start" : 1592980865115,
+    "stop" : 1592980865129,
+    "duration" : 14
   },
-  "description" : "\n        用例描述：\n        参数可以登录成功\n        :param phone: 登录手机号\n        :param password: 登录密码\n        :return:\n        ",
-  "descriptionHtml" : "<pre><code>    用例描述：\n    参数可以登录成功\n    :param phone: 登录手机号\n    :param password: 登录密码\n    :return:\n</code></pre>\n",
+  "description" : "\n        用例描述：\n        参数可以登录成功\n        :param phone: 登录手机号\n        :param password: 登录密码\n        ",
+  "descriptionHtml" : "<pre><code>    用例描述：\n    参数可以登录成功\n    :param phone: 登录手机号\n    :param password: 登录密码\n</code></pre>\n",
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ ],
   "afterStages" : [ ],
   "labels" : [ {
-    "name" : "story",
-    "value" : "正确账号，正确密码，登录成功"
-  }, {
     "name" : "feature",
     "value" : "登录功能"
+  }, {
+    "name" : "story",
+    "value" : "正确账号，正确密码，登录成功"
   }, {
     "name" : "parentSuite",
     "value" : "test_case"
@@ -35,7 +35,7 @@
     "value" : "DESKTOP-S9OTJ8G"
   }, {
     "name" : "thread",
-    "value" : "9928-MainThread"
+    "value" : "6572-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -54,7 +54,7 @@
     "value" : "'123456'"
   }, {
     "name" : "phone",
-    "value" : "'13168775549'"
+    "value" : "'13168775546'"
   }, {
     "name" : "remember",
     "value" : "False"
@@ -68,6 +68,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "2e6454a6995d6fb9.json",
-  "parameterValues" : [ "'123456'", "'13168775549'", "False" ]
+  "source" : "9454251671929ecf.json",
+  "parameterValues" : [ "'123456'", "'13168775546'", "False" ]
 }

@@ -17,6 +17,3 @@ def get_data(yaml_file_name):
         pytest.skip(str(ex))    # 读取文件失败时，跳过该用例
     else:
         return yaml_data
-
-
-api_date = get_data('api_data.yml')
