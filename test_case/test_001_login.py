@@ -13,6 +13,7 @@ class TestLogin(object):
         """
         用例描述：
         参数可以登录成功
+        :param remember: 是否记住密码 True False
         :param phone: 登录手机号
         :param password: 登录密码
         """
@@ -28,6 +29,7 @@ class TestLogin(object):
         """
         用例描述：
         参数输入错误
+        :param remember: 是否记住密码 True False
         :param phone: 登录手机号
         :param password: 登录密码
         :return:
@@ -44,6 +46,7 @@ class TestLogin(object):
         """
         用例描述：
         参数输入为空
+        :param remember: 是否记住密码 True False
         :param phone: 登录手机号
         :param password: 登录密码
         :return:
@@ -60,6 +63,7 @@ class TestLogin(object):
         """
         用例描述：
         参数password不传
+        :param remember: 是否记住密码 True False
         :param phone: 登录手机号
         :return:
         """
@@ -75,6 +79,7 @@ class TestLogin(object):
         """
         用例描述：
         参数phone不传
+        :param remember: 是否记住密码 True False
         :param password: 登录密码
         :return:
         """
