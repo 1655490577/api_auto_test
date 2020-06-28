@@ -27,8 +27,8 @@ login_null_fail:
 login_nopassword_fail:
   - ["13168775546",True]
 
-login_nophone_fail:
+login_noPhone_fail:
   - ["123456",True]
 
-login_norememberme_fail:
+login_noRememberMe_fail:
   - ["13168775546","123456"]

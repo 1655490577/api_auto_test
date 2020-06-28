@@ -70,7 +70,7 @@ class TestLogin(object):
         assert r.json()["status"] == "100001"
 
     @allure.story('参数phone不传，登录失败')
-    @pytest.mark.parametrize('password, remember', get_data('login_data.yml')["login_nophone_fail"])
+    @pytest.mark.parametrize('password, remember', get_data('login_data.yml')["login_noPhone_fail"])
     def test_login_005(self, password, remember):
         """
         用例描述：
@@ -85,7 +85,7 @@ class TestLogin(object):
         assert r.json()["status"] == "100001"
 
     @allure.story('参数rememberMe不传，登录失败')
-    @pytest.mark.parametrize('phone, password', get_data('login_data.yml')["login_norememberme_fail"])
+    @pytest.mark.parametrize('phone, password', get_data('login_data.yml')["login_noRememberMe_fail"])
     def test_login_006(self, phone, password):
         """
         用例描述：

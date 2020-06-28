@@ -18,3 +18,5 @@ __pycache__/
 common/__pycache__/
 config/__pycache__/
 venv/
+report/
+temp/
