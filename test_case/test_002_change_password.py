@@ -31,7 +31,7 @@ class Test_change_password(object):
         if login_pwd == change_pwd:
             with allure.step("step4: 重新登录并获取token,cookies"):
                 token2, cookies2 = get_login_token_cookies(phone=login_phone, password=login_pwd+"123", rememberMe=True)
-            with allure.step("step5: 步骤5 ==>> 系统管理员再把各用户的密码由原密码+‘123’变回原密码"):
+            with allure.step("step5: 步骤5 ==>> 用户再把自己的密码由原密码+‘123’变回原密码"):
                 r3 = change_password(cookies2, id=id, name=name, password=login_pwd, phone=login_phone,
                                      token=token2, userid=userId)
         else:
