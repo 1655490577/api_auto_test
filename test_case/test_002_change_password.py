@@ -24,15 +24,22 @@ class Test_change_password(object):
         with allure.step("step1: 步骤1 ==>> 登录并获取token,cookies"):
             token, cookies = get_login_token_cookies(phone=login_phone, password=login_pwd, rememberMe=True)
         with allure.step("step2: 步骤2 ==>> 系统管理员直接开始修改其他人的密码为原密码+‘123’"):
-            r1 = change_password(cookies, id=id, name=name, password=change_pwd+'123',
+            r1 = change_password(cookies, id=id, name=name, password=change_pwd + '123',
                                  phone=login_phone, token=token, userid=userId)
         with allure.step("step3: 步骤3 ==>> 被修改的用户使用新密码登录系统"):
-            r2 = login(phone=change_phone, password=change_pwd+'123', rememberMe=True)
-        with allure.step("step4: 重新登录并获取token,cookies"):
-            token2, cookies2 = get_login_token_cookies(phone=login_phone, password=login_pwd, rememberMe=True)
-        with allure.step("step5: 步骤5 ==>> 系统管理员再把各用户的密码由原密码+‘123’变回原密码"):
-            change_password(cookies2, id=id, name=name, password=change_pwd, phone=login_phone,
-                            token=token2, userid=userId)
+            r2 = login(phone=change_phone, password=change_pwd + '123', rememberMe=True)
+        if login_pwd == change_pwd:
+            with allure.step("step4: 重新登录并获取token,cookies"):
+                token2, cookies2 = get_login_token_cookies(phone=login_phone, password=login_pwd+"123", rememberMe=True)
+            with allure.step("step5: 步骤5 ==>> 系统管理员再把各用户的密码由原密码+‘123’变回原密码"):
+                r3 = change_password(cookies2, id=id, name=name, password=login_pwd, phone=login_phone,
+                                     token=token2, userid=userId)
+        else:
+            with allure.step("step4: 重新登录并获取token,cookies"):
+                token2, cookies2 = get_login_token_cookies(phone=login_phone, password=login_pwd, rememberMe=True)
+            with allure.step("step5: 步骤5 ==>> 系统管理员再把各用户的密码由原密码+‘123’变回原密码"):
+                r3 = change_password(cookies2, id=id, name=name, password=login_pwd, phone=login_phone,
+                                     token=token2, userid=userId)
 
         assert r1.status_code == 200
         assert r1.json()["data"] is None
