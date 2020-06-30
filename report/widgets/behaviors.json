@@ -1,6 +1,17 @@
 {
-  "total" : 5,
+  "total" : 2,
   "items" : [ {
+    "uid" : "6e65a6328d123f4389ef3a86b3b22326",
+    "name" : "修改密码功能",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 23,
+      "unknown" : 0,
+      "total" : 23
+    }
+  }, {
     "uid" : "76c1a89e029bf2806c0ddb06b8505b0b",
     "name" : "登录功能",
     "statistic" : {

@@ -1,270 +1,460 @@
 [ {
-  "uid" : "9454251671929ecf",
-  "name" : "test_login_001[13168775546-123456-False]",
+  "uid" : "d9d93702479c16b7",
+  "name" : "test_update_password_system_fail[263071990410117120-测试组用户02-123456-13168775508-123456-13168775507-263071990242344960]",
   "time" : {
-    "start" : 1592980865115,
-    "stop" : 1592980865129,
-    "duration" : 14
+    "start" : 1593489829897,
+    "stop" : 1593489829966,
+    "duration" : 69
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "1fcbc15c8c953119",
-  "name" : "test_login_005[123456-True]",
-  "time" : {
-    "start" : 1592980865450,
-    "stop" : 1592980865456,
-    "duration" : 6
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "271c2ef9df473ef5",
-  "name" : "test_login_004[13168775546-True]",
-  "time" : {
-    "start" : 1592980865441,
-    "stop" : 1592980865447,
-    "duration" : 6
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "89e241a9f6d97826",
-  "name" : "test_login_001[13168775546-123456-True]",
-  "time" : {
-    "start" : 1592980865002,
-    "stop" : 1592980865111,
-    "duration" : 109
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "62de1071a555575b",
-  "name" : "test_login_006[13168775546-123456]",
-  "time" : {
-    "start" : 1592980865459,
-    "stop" : 1592980865465,
-    "duration" : 6
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "bc817f36e018045d",
+  "uid" : "423766395d8d88da",
   "name" : "test_login_001[13168775548-123456-True]",
   "time" : {
-    "start" : 1592980865203,
-    "stop" : 1592980865217,
-    "duration" : 14
+    "start" : 1593489825707,
+    "stop" : 1593489825738,
+    "duration" : 31
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "a1d6cc8250db25f1",
-  "name" : "test_login_002[13168775547-123-True]",
+  "uid" : "eca6ea7325957211",
+  "name" : "test_update_password_system_fail[263071990154264576-测试部门用户02-123456-13168775506-123456-13168775505-263071990028435456]",
   "time" : {
-    "start" : 1592980865299,
-    "stop" : 1592980865305,
-    "duration" : 6
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b2e441137e632402",
-  "name" : "test_login_002[13168775547-1234-True]",
-  "time" : {
-    "start" : 1592980865308,
-    "stop" : 1592980865315,
-    "duration" : 7
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f21a2e972c7f784b",
-  "name" : "test_login_003[13168775547--True]",
-  "time" : {
-    "start" : 1592980865415,
-    "stop" : 1592980865421,
-    "duration" : 6
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d44f5019302db1a1",
-  "name" : "test_update_password[259726329245597696-测试组用户-123456-13168775549-259726329245597696]",
-  "time" : {
-    "start" : 1592980865758,
-    "stop" : 1592980865840,
-    "duration" : 82
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "712150fb34ccac16",
-  "name" : "test_update_password[259752758511403008-测试系统管理员-123456-13168775546-259752758511403008]",
-  "time" : {
-    "start" : 1592980865468,
-    "stop" : 1592980865569,
-    "duration" : 101
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "15fd7e9da28df365",
-  "name" : "test_login_003[13168775546--True1]",
-  "time" : {
-    "start" : 1592980865405,
-    "stop" : 1592980865412,
-    "duration" : 7
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f05de0720ae3e1b4",
-  "name" : "test_login_002[13168775548-13-True]",
-  "time" : {
-    "start" : 1592980865318,
-    "stop" : 1592980865325,
-    "duration" : 7
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "e99e67879dc39410",
-  "name" : "test_update_password[259725184011862016-测试公司管理员-123456-13168775547-259725184011862016]",
-  "time" : {
-    "start" : 1592980865574,
-    "stop" : 1592980865657,
-    "duration" : 83
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "6f5070e516b9791b",
-  "name" : "test_login_003[13168775546--True0]",
-  "time" : {
-    "start" : 1592980865345,
-    "stop" : 1592980865391,
+    "start" : 1593489829646,
+    "stop" : 1593489829692,
     "duration" : 46
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "8144a06b4b79aa72",
+  "uid" : "67b18e1ad34b8551",
+  "name" : "test_login_001[13168775549-123456-True]",
+  "time" : {
+    "start" : 1593489825781,
+    "stop" : 1593489825804,
+    "duration" : 23
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6a150fcdeec26a37",
+  "name" : "test_update_password_system_fail[263071989688696832-测试公司管理员01-123456-13168775503-123456-13168775505-263071990028435456]",
+  "time" : {
+    "start" : 1593489829582,
+    "stop" : 1593489829641,
+    "duration" : 59
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "31fa315830ff72ad",
+  "name" : "test_update_password_no_login[259726329245597696-测试组用户-123456789-123456-13168775546-259752758511403008]",
+  "time" : {
+    "start" : 1593489830016,
+    "stop" : 1593489830052,
+    "duration" : 36
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5b48f826885b443e",
   "name" : "test_login_001[13168775547-123456-True]",
   "time" : {
-    "start" : 1592980865132,
-    "stop" : 1592980865175,
-    "duration" : 43
+    "start" : 1593489825367,
+    "stop" : 1593489825382,
+    "duration" : 15
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "8e09d90f41fc3f6",
-  "name" : "test_update_password[259815440555966464-测试部门用户-123456-13168775548-259815440555966464]",
+  "uid" : "51d07f19b7d604c5",
+  "name" : "test_login_003[13168775547--True]",
   "time" : {
-    "start" : 1592980865662,
-    "stop" : 1592980865754,
-    "duration" : 92
+    "start" : 1593489826056,
+    "stop" : 1593489826074,
+    "duration" : 18
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "bf71d9324036a377",
-  "name" : "test_login_003[13168775548--True]",
+  "uid" : "dc70fa2b9b49d545",
+  "name" : "test_update_password_system_success[259752758511403008-测试系统管理员-123456-13168775546-123456-13168775546-259752758511403008]",
   "time" : {
-    "start" : 1592980865424,
-    "stop" : 1592980865429,
-    "duration" : 5
+    "start" : 1593489826215,
+    "stop" : 1593489826385,
+    "duration" : 170
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "bdb60b8fdbdfcc76",
-  "name" : "test_login_003[-123456-True]",
+  "uid" : "382d01d412e08397",
+  "name" : "test_update_password_system_fail[263071989407678464-测试系统管理员01-123456-13168775501-123456-13168775507-263071990242344960]",
   "time" : {
-    "start" : 1592980865394,
-    "stop" : 1592980865402,
-    "duration" : 8
+    "start" : 1593489829697,
+    "stop" : 1593489829754,
+    "duration" : 57
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "fc884090302f1726",
-  "name" : "test_login_002[13168775549-1223-True]",
+  "uid" : "478c66d657562ca5",
+  "name" : "test_update_password_system_success[259726329245597696-测试组用户-123456-13168775549-123456-13168775549-259726329245597696]",
   "time" : {
-    "start" : 1592980865328,
-    "stop" : 1592980865337,
-    "duration" : 9
+    "start" : 1593489826723,
+    "stop" : 1593489826895,
+    "duration" : 172
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "fe068cdfed31c790",
-  "name" : "test_login_001[13168775548-123456-False]",
-  "time" : {
-    "start" : 1592980865220,
-    "stop" : 1592980865234,
-    "duration" : 14
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "3187c9812c7eb0f0",
+  "uid" : "2ba723ebc655fdf9",
   "name" : "test_login_001[13168775547-123456-False]",
   "time" : {
-    "start" : 1592980865178,
-    "stop" : 1592980865200,
+    "start" : 1593489825385,
+    "stop" : 1593489825704,
+    "duration" : 319
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a750692719ca1085",
+  "name" : "test_login_002[1316877554-123456-True]",
+  "time" : {
+    "start" : 1593489825845,
+    "stop" : 1593489825860,
+    "duration" : 15
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f18e8f3d02811c33",
+  "name" : "test_login_005[123456-True]",
+  "time" : {
+    "start" : 1593489826162,
+    "stop" : 1593489826194,
+    "duration" : 32
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6a35e7ed946d9d80",
+  "name" : "test_update_password_system_fail[263071989688696832-测试公司管理员01-123456-13168775503-123456-13168775507-263071990242344960]",
+  "time" : {
+    "start" : 1593489829769,
+    "stop" : 1593489829836,
+    "duration" : 67
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cc317a97db21214e",
+  "name" : "test_login_001[13168775549-123456-False]",
+  "time" : {
+    "start" : 1593489825807,
+    "stop" : 1593489825823,
+    "duration" : 16
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e086692e0e1a892c",
+  "name" : "test_login_004[13168775546-True]",
+  "time" : {
+    "start" : 1593489826143,
+    "stop" : 1593489826160,
+    "duration" : 17
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f7c1c5fbbc4afca5",
+  "name" : "test_login_003[13168775546--True1]",
+  "time" : {
+    "start" : 1593489826031,
+    "stop" : 1593489826053,
     "duration" : 22
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "3e3f4cb4f8a807b9",
-  "name" : "test_login_001[13168775549-123456-True]",
+  "uid" : "7545d24c20e90688",
+  "name" : "test_update_password_no_login[259752758511403008-测试系统管理员-123456789-123456-13168775549-259726329245597696]",
   "time" : {
-    "start" : 1592980865237,
-    "stop" : 1592980865261,
-    "duration" : 24
+    "start" : 1593489830056,
+    "stop" : 1593489830093,
+    "duration" : 37
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "50e30a5c0c2bd378",
-  "name" : "test_login_003[13168775549--True]",
+  "uid" : "1fe0dc53c6a60b5f",
+  "name" : "test_update_password_system_fail[263071989407678464-测试系统管理员01-123456-13168775501-123456-13168775503-263071989688696832]",
   "time" : {
-    "start" : 1592980865432,
-    "stop" : 1592980865438,
-    "duration" : 6
+    "start" : 1593489829368,
+    "stop" : 1593489829426,
+    "duration" : 58
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "3d463f9a0f5a3d44",
-  "name" : "test_login_002[1316877554-123456-True]",
+  "uid" : "bd615002381dc6e0",
+  "name" : "test_update_password_system_success[263071990028435456-测试部门用户01-123456-13168775505-123456-13168775503-263071989688696832]",
   "time" : {
-    "start" : 1592980865290,
-    "stop" : 1592980865296,
-    "duration" : 6
+    "start" : 1593489828797,
+    "stop" : 1593489829020,
+    "duration" : 223
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "b5c5118bfad78b85",
+  "uid" : "6c3a8892fd041ea2",
   "name" : "test_login_002[13168775546-123-True]",
   "time" : {
-    "start" : 1592980865281,
-    "stop" : 1592980865287,
-    "duration" : 6
+    "start" : 1593489825826,
+    "stop" : 1593489825842,
+    "duration" : 16
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "2a4a8e072736915b",
-  "name" : "test_login_001[13168775549-123456-False]",
+  "uid" : "9754ff22217ff7eb",
+  "name" : "test_login_006[13168775546-123456]",
   "time" : {
-    "start" : 1592980865264,
-    "stop" : 1592980865278,
+    "start" : 1593489826197,
+    "stop" : 1593489826210,
+    "duration" : 13
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "568ebd884e835784",
+  "name" : "test_update_password_system_success[263071989688696832-测试公司管理员01-123456-13168775503-123456-13168775501-263071989407678464]",
+  "time" : {
+    "start" : 1593489828189,
+    "stop" : 1593489828376,
+    "duration" : 187
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a8bddcf821c90bad",
+  "name" : "test_login_001[13168775546-123456-True]",
+  "time" : {
+    "start" : 1593489825331,
+    "stop" : 1593489825347,
+    "duration" : 16
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6690e15ba4f81be7",
+  "name" : "test_update_password_system_fail[263071989407678464-测试系统管理员01-123456-13168775501-123456-13168775505-263071990028435456]",
+  "time" : {
+    "start" : 1593489829509,
+    "stop" : 1593489829577,
+    "duration" : 68
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "76c0b9a4f407ca2c",
+  "name" : "test_update_password_system_success[263071989567062016-测试系统管理员02-123456-13168775502-123456-13168775501-263071989407678464]",
+  "time" : {
+    "start" : 1593489826900,
+    "stop" : 1593489828184,
+    "duration" : 1284
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1b388f6df1d66d0c",
+  "name" : "test_update_password_no_login[259752758511403008-测试系统管理员-123456-123456-13168775546-259752758511403008]",
+  "time" : {
+    "start" : 1593489829970,
+    "stop" : 1593489830012,
+    "duration" : 42
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1447b294a0a319fb",
+  "name" : "test_update_password_system_success[263071990242344960-测试组用户01-123456-13168775507-123456-13168775501-263071989407678464]",
+  "time" : {
+    "start" : 1593489828545,
+    "stop" : 1593489828748,
+    "duration" : 203
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c4ce82134e69ca40",
+  "name" : "test_login_003[-123456-True]",
+  "time" : {
+    "start" : 1593489825984,
+    "stop" : 1593489826028,
+    "duration" : 44
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c54478349956e0cc",
+  "name" : "test_login_003[13168775548--True]",
+  "time" : {
+    "start" : 1593489826077,
+    "stop" : 1593489826125,
+    "duration" : 48
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c37a461e3193269b",
+  "name" : "test_update_password_system_success[259815440555966464-测试部门用户-123456-13168775548-123456-13168775548-259815440555966464]",
+  "time" : {
+    "start" : 1593489826552,
+    "stop" : 1593489826707,
+    "duration" : 155
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "75e3e94e03686c68",
+  "name" : "test_login_002[13168775547-123-True]",
+  "time" : {
+    "start" : 1593489825863,
+    "stop" : 1593489825871,
+    "duration" : 8
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "674627cd13420150",
+  "name" : "test_login_002[13168775549-1223-True]",
+  "time" : {
+    "start" : 1593489825932,
+    "stop" : 1593489825941,
+    "duration" : 9
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e7097d91eacdbc3b",
+  "name" : "test_login_003[13168775546--True0]",
+  "time" : {
+    "start" : 1593489825944,
+    "stop" : 1593489825981,
+    "duration" : 37
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "33855a16203c738b",
+  "name" : "test_login_001[13168775546-123456-False]",
+  "time" : {
+    "start" : 1593489825350,
+    "stop" : 1593489825364,
     "duration" : 14
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c83d0880042fe63d",
+  "name" : "test_update_password_system_success[263071990028435456-测试部门用户01-123456-13168775505-123456-13168775501-263071989407678464]",
+  "time" : {
+    "start" : 1593489828380,
+    "stop" : 1593489828541,
+    "duration" : 161
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "caffa5b68f543ee5",
+  "name" : "test_login_001[13168775548-123456-False]",
+  "time" : {
+    "start" : 1593489825741,
+    "stop" : 1593489825778,
+    "duration" : 37
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "58797a88ad5148f9",
+  "name" : "test_update_password_system_success[259725184011862016-测试公司管理员-123456-13168775547-123456-13168775547-259725184011862016]",
+  "time" : {
+    "start" : 1593489826390,
+    "stop" : 1593489826546,
+    "duration" : 156
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "189c6eb01b2f2923",
+  "name" : "test_login_002[13168775547-1234-True]",
+  "time" : {
+    "start" : 1593489825874,
+    "stop" : 1593489825908,
+    "duration" : 34
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "df5d06f99369780a",
+  "name" : "test_login_002[13168775548-13-True]",
+  "time" : {
+    "start" : 1593489825911,
+    "stop" : 1593489825929,
+    "duration" : 18
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "918909dda2a3585c",
+  "name" : "test_update_password_system_fail[263071989814525952-测试公司管理员02-123456-13168775504-123456-13168775503-263071989688696832]",
+  "time" : {
+    "start" : 1593489829440,
+    "stop" : 1593489829494,
+    "duration" : 54
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "35cdea2f17d3d9a0",
+  "name" : "test_login_003[13168775549--True]",
+  "time" : {
+    "start" : 1593489826128,
+    "stop" : 1593489826140,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5d5f40e238afba97",
+  "name" : "test_update_password_system_fail[263071990028435456-测试部门用户01-123456-13168775505-123456-13168775507-263071990242344960]",
+  "time" : {
+    "start" : 1593489829846,
+    "stop" : 1593489829892,
+    "duration" : 46
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3044633c12e5c1bd",
+  "name" : "test_update_password_system_success[263071990242344960-测试组用户01-123456-13168775507-123456-13168775503-263071989688696832]",
+  "time" : {
+    "start" : 1593489829025,
+    "stop" : 1593489829203,
+    "duration" : 178
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a09cc3f6a36f8f88",
+  "name" : "test_update_password_system_success[263071990242344960-测试组用户01-123456-13168775507-123456-13168775505-263071990028435456]",
+  "time" : {
+    "start" : 1593489829208,
+    "stop" : 1593489829364,
+    "duration" : 156
   },
   "status" : "passed",
   "severity" : "normal"

@@ -5,6 +5,7 @@ from common.get_token_cookies import get_login_token_cookies
 from api.api_public_method import user
 
 
+@allure.feature('修改密码功能')
 class Test_change_password(object):
 
     @pytest.mark.skipif(user.user_login(phone="admin", password="admin", rememberMe=True).json()["status"] != "0",
