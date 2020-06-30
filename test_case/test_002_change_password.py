@@ -11,17 +11,10 @@ class Test_change_password(object):
                         reason="admin用户登录失败")
     @pytest.mark.parametrize('id,name,change_pwd,change_phone,login_pwd,login_phone,userId',
                              get_data('change_password_data.yml')["test_change_password_success"])
-    def test_update_password_system(self, id, name, change_pwd, change_phone, login_pwd, login_phone, userId):
+    def test_update_password_system_success(self, id, name, change_pwd, change_phone, login_pwd, login_phone, userId):
         """
         用例描述：
-        1.使用系统管理员账号登录并修改自己的密码
-        2.使用公司管理员账号登录并修改自己的密码
-        3.使用部门用户账号登录并修改自己的密码
-        4.使用组用户账号登录并修改自己的密码
-        5.系统管理员修改系统管理员密码
-        6.系统管理员修改公司管理员密码
-        7.系统管理员修改部门用户密码
-        8.系统管理员修改组用户密码
+        用户修改密码（有效等价类）
         """
         with allure.step("step1: 步骤1 ==>> 登录并获取token,cookies"):
             token, cookies = get_login_token_cookies(phone=login_phone, password=login_pwd, rememberMe=True)
@@ -30,6 +23,7 @@ class Test_change_password(object):
                                  phone=login_phone, token=token, userid=userId)
         with allure.step("step3: 步骤3 ==>> 被修改的用户使用新密码登录系统"):
             r2 = login(phone=change_phone, password=change_pwd + '123', rememberMe=True)
+        #   登录手机号与被修改手机号相等为用户修改自己的密码，不相等为修改其他用户密码
         if login_phone == change_phone:
             with allure.step("step4: 重新登录并获取token,cookies"):
                 token2, cookies2 = get_login_token_cookies(phone=login_phone, password=login_pwd + "123",
@@ -53,9 +47,27 @@ class Test_change_password(object):
         assert r2.json()["message"] == "成功"
         assert r2.json()["status"] == "0"
 
+    @pytest.mark.skipif(login(phone="admin", password="admin", rememberMe=True).json()["status"] != "0",
+                        reason="admin用户登录失败")
+    @pytest.mark.parametrize('id,name,change_pwd,change_phone,login_pwd,login_phone,userId',
+                             get_data('change_password_data.yml')["test_change_password_fail"])
+    def test_update_password_system_fail(self, id, name, change_pwd, change_phone, login_pwd, login_phone, userId):
+        """
+        用例描述：
+        用户修改密码（无效等价类）
+        """
+        with allure.step("step1: 步骤1 ==>> 登录并获取token,cookies"):
+            token, cookies = get_login_token_cookies(phone=login_phone, password=login_pwd, rememberMe=True)
+        with allure.step("step2: 步骤2 ==>> 系统管理员直接开始修改其他人的密码为原密码+‘123’"):
+            r1 = change_password(cookies, id=id, name=name, password=change_pwd + '123',
+                                 phone=login_phone, token=token, userid=userId)
+        assert r1.json()["data"] is None
+        assert r1.json()["message"] == "用户没有权限"
+        assert r1.json()["status"] == "100011"
+
     @pytest.mark.parametrize('id,name,change_pwd,login_pwd,phone,userId',
                              get_data('change_password_data.yml')["test_change_password_noLogin"])
-    def test_update_password_no_login_001(self, id, name, change_pwd, login_pwd, phone, userId):
+    def test_update_password_no_login(self, id, name, change_pwd, login_pwd, phone, userId):
         """
         用例描述：
         1.未登录状态，系统管理员修改组用户密码
