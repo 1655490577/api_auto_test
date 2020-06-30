@@ -26,5 +26,8 @@ class User(object):
     def user_list(self, cookies, **kwargs):
         return requests.post(url=self.ip + '/admin/sysadmin/list', json=kwargs, headers=self.headers, cookies=cookies)
 
+    def user_delete(self, cookies, **kwargs):
+        return requests.post(url=self.ip + '/admin/sysadmin/delete', json=kwargs, headers=self.headers, cookies=cookies)
+
 
 user = User()
