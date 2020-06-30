@@ -8,14 +8,23 @@ class User(object):
         self.ip = server_ip()
         self.headers = {'Content-Type': 'application/json'}
 
-    def login(self, **kwargs):
+    def user_login(self, **kwargs):
         return requests.post(url=self.ip + '/admin/sysadmin/login', json=kwargs, headers=self.headers)
 
-    def update(self, cookies, **kwargs):
+    def user_update(self, cookies, **kwargs):
         return requests.post(url=self.ip + '/admin/sysadmin/update', json=kwargs, headers=self.headers, cookies=cookies)
 
-    def save(self, cookies, **kwargs):
+    def user_save(self, cookies, **kwargs):
         return requests.post(url=self.ip + '/admin/sysadmin/save', json=kwargs, headers=self.headers, cookies=cookies)
+
+    def user_reset(self, cookies, **kwargs):
+        return requests.post(url=self.ip + '/admin/sysadmin/reset', json=kwargs, headers=self.headers, cookies=cookies)
+
+    def user_logout(self, cookies, **kwargs):
+        return requests.post(url=self.ip + '/admin/sysadmin/logout', json=kwargs, headers=self.headers, cookies=cookies)
+
+    def user_list(self, cookies, **kwargs):
+        return requests.post(url=self.ip + '/admin/sysadmin/list', json=kwargs, headers=self.headers, cookies=cookies)
 
 
 user = User()
