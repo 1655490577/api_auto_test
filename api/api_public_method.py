@@ -2,36 +2,20 @@ import requests
 from config.config import server_ip
 
 
-def login(**kwargs):
-    """
-    登录接口
-    """
-    url = server_ip() + '/admin/sysadmin/login'
-    headers = {'Content-Type': 'application/json'}
-    jsons = kwargs
-    r = requests.post(url=url, json=jsons, headers=headers)
-    return r
+class User(object):
+
+    def __init__(self):
+        self.ip = server_ip()
+        self.headers = {'Content-Type': 'application/json'}
+
+    def login(self, **kwargs):
+        return requests.post(url=self.ip + '/admin/sysadmin/login', json=kwargs, headers=self.headers)
+
+    def change_password(self, cookies, **kwargs):
+        return requests.post(url=self.ip + '/admin/sysadmin/update', json=kwargs, headers=self.headers, cookies=cookies)
+
+    def add_user(self, cookies, **kwargs):
+        return requests.post(url=self.ip + '/admin/sysadmin/save', json=kwargs, headers=self.headers, cookies=cookies)
 
 
-def change_password(cookies, **kwargs):
-    """
-    修改管理员/修改密码
-    """
-    url = server_ip() + '/admin/sysadmin/update'
-    headers = {'Content-Type': 'application/json'}
-    cookies = cookies
-    jsons = kwargs
-    r = requests.post(url=url, json=jsons, headers=headers, cookies=cookies)
-    return r
-
-
-def add_user(cookies, **kwargs):
-    """
-    新增用户
-    """
-    url = server_ip() + '/admin/sysadmin/save'
-    headers = {'Content-Type': 'application/json'}
-    cookies = cookies
-    jsons = kwargs
-    r = requests.post(url=url, json=jsons, headers=headers, cookies=cookies)
-    return r
+user = User()

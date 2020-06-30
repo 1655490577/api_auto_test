@@ -1,7 +1,7 @@
 import pytest
 import allure
 from common.get_data import get_data
-from api.api_public_method import login
+from api.api_public_method import user
 
 
 @allure.feature('登录功能')
@@ -17,7 +17,7 @@ class TestLogin(object):
         :param phone: 登录手机号
         :param password: 登录密码
         """
-        r = login(phone=phone, password=password, rememberMe=remember)
+        r = user.login(phone=phone, password=password, rememberMe=remember)
         assert r.status_code == 200
         assert r.json()["data"] is not None
         assert r.json()["message"] == "成功"
@@ -34,7 +34,7 @@ class TestLogin(object):
         :param password: 登录密码
         :return:
         """
-        r = login(phone=phone, password=password, rememberMe=remember)
+        r = user.login(phone=phone, password=password, rememberMe=remember)
         assert r.status_code == 200
         assert r.json()['data'] is None
         assert r.json()["message"] == "手机号或密码不存在"
@@ -51,7 +51,7 @@ class TestLogin(object):
         :param password: 登录密码
         :return:
         """
-        r = login(phone=phone, password=password, rememberMe=remember)
+        r = user.login(phone=phone, password=password, rememberMe=remember)
         assert r.status_code == 200
         assert r.json()['data'] is None
         assert ",不能为空" in r.json()["message"]
@@ -67,7 +67,7 @@ class TestLogin(object):
         :param phone: 登录手机号
         :return:
         """
-        r = login(phone=phone, rememberMe=remember)
+        r = user.login(phone=phone, rememberMe=remember)
         assert r.status_code == 200
         assert r.json()['data'] is None
         assert r.json()["message"] == "password,不能为空!"
@@ -83,7 +83,7 @@ class TestLogin(object):
         :param password: 登录密码
         :return:
         """
-        r = login(password=password, rememberMe=remember)
+        r = user.login(password=password, rememberMe=remember)
         assert r.status_code == 200
         assert r.json()['data'] is None
         assert r.json()["message"] == "phone,不能为空!"
@@ -99,7 +99,7 @@ class TestLogin(object):
         :param password: 登录密码
         :return:
         """
-        r = login(phone=phone, password=password)
+        r = user.login(phone=phone, password=password)
         assert r.status_code == 200
         assert r.json()['data'] is None
         assert r.json()["message"] == "rememberMe,不能为空!"
