@@ -1,7 +1,6 @@
 import pytest
 import allure
-from common.get_data import get_data
-from common.get_token_cookies import get_login_token_cookies
+from common.get_data import get_yaml_data, get_login_token_cookies
 from api.api_public_method import user
 
 
@@ -11,7 +10,7 @@ class Test_change_password(object):
     @pytest.mark.skipif(user.user_login(phone="admin", password="admin", rememberMe=True).json()["status"] != "0",
                         reason="admin用户登录失败")
     @pytest.mark.parametrize('id,name,change_pwd,change_phone,login_pwd,login_phone,userId',
-                             get_data('change_password_data.yml')["test_change_password_success"])
+                             get_yaml_data('change_password_data.yml')["test_change_password_success"])
     def test_update_password_system_success(self, id, name, change_pwd, change_phone, login_pwd, login_phone, userId):
         """
         用例描述：
@@ -38,20 +37,23 @@ class Test_change_password(object):
             with allure.step("step5: 步骤5 ==>> 系统管理员再把各用户的密码由原密码+‘123’变回原密码"):
                 user.user_update(cookies2, id=id, name=name, password=change_pwd, phone=login_phone,
                                  token=token2, userid=userId)
-
-        assert r1.status_code == 200
-        assert r1.json()["data"] is None
-        assert r1.json()["message"] == "成功"
-        assert r1.json()["status"] == "0"
-        assert r2.status_code == 200
-        assert r2.json()["data"] is not None
-        assert r2.json()["message"] == "成功"
-        assert r2.json()["status"] == "0"
+        try:
+            assert r1.status_code == 200
+            assert r1.json()["data"] is None
+            assert r1.json()["message"] == "成功"
+            assert r1.json()["status"] == "0"
+            assert r2.status_code == 200
+            assert r2.json()["data"] is not None
+            assert r2.json()["message"] == "成功"
+            assert r2.json()["status"] == "0"
+        except AssertionError as error:
+            print(r1.json()["message"], r2.json()["message"])
+            raise error
 
     @pytest.mark.skipif(user.user_login(phone="admin", password="admin", rememberMe=True).json()["status"] != "0",
                         reason="admin用户登录失败")
     @pytest.mark.parametrize('id,name,change_pwd,change_phone,login_pwd,login_phone,userId',
-                             get_data('change_password_data.yml')["test_change_password_fail"])
+                             get_yaml_data('change_password_data.yml')["test_change_password_fail"])
     def test_update_password_system_fail(self, id, name, change_pwd, change_phone, login_pwd, login_phone, userId):
         """
         用例描述：
@@ -60,14 +62,18 @@ class Test_change_password(object):
         with allure.step("step1: 步骤1 ==>> 登录并获取token,cookies"):
             token, cookies = get_login_token_cookies(phone=login_phone, password=login_pwd, rememberMe=True)
         with allure.step("step2: 步骤2 ==>> 系统管理员直接开始修改其他人的密码为原密码+‘123’"):
-            r1 = user.user_update(cookies, id=id, name=name, password=change_pwd + '123',
-                             phone=login_phone, token=token, userid=userId)
-        assert r1.json()["data"] is None
-        assert r1.json()["message"] == "用户没有权限"
-        assert r1.json()["status"] == "100011"
+            r = user.user_update(cookies, id=id, name=name, password=change_pwd + '123',
+                                 phone=login_phone, token=token, userid=userId)
+        try:
+            assert r.json()["data"] is None
+            assert r.json()["message"] == "用户没有权限"
+            assert r.json()["status"] == "100011"
+        except AssertionError as error:
+            print(r.json()["message"])
+            raise error
 
     @pytest.mark.parametrize('id,name,change_pwd,login_pwd,phone,userId',
-                             get_data('change_password_data.yml')["test_change_password_noLogin"])
+                             get_yaml_data('change_password_data.yml')["test_change_password_noLogin"])
     def test_update_password_no_login(self, id, name, change_pwd, login_pwd, phone, userId):
         """
         用例描述：
@@ -79,10 +85,13 @@ class Test_change_password(object):
             token = get_login_token_cookies(phone=phone, password=login_pwd, rememberMe=True)[0]
         with allure.step("step2: 步骤2 ==>> 直接修改密码"):
             r = user.user_update(None, id=id, name=name, password=change_pwd, userid=userId, token=token)
-
-        assert r.status_code == 200
-        assert r.json()["message"] == "请登录后进行操作!"
-        assert r.json()["status"] == "200006"
+        try:
+            assert r.status_code == 200
+            assert r.json()["message"] == "请登录后进行操作!"
+            assert r.json()["status"] == "200006"
+        except AssertionError as error:
+            print(r.json()["message"])
+            raise error
 
 
 if __name__ == '__main__':

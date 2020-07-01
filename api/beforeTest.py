@@ -1,5 +1,5 @@
 from api.api_public_method import user
-from common.get_token_cookies import get_login_token_cookies
+from common.get_data import get_login_token_cookies
 
 
 def add_test_user():
