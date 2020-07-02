@@ -8,22 +8,26 @@ import os
 class writeTestData(object):
 
     def __init__(self):
+        try:
+            # 查询字典中公司部门及组的相关信息
+            select_data = db.select_db(
+                "SELECT `code`,id,`name` FROM sys_dictionaries WHERE `name` LIKE '测试%' ORDER BY `level`")
+            self.dicCode = select_data[0]['code']
+            self.dicId = select_data[0]['id']
+            self.dicName = select_data[0]['name']
+            self.branchCode = select_data[1]['code']
+            self.branchId = select_data[1]['id']
+            self.branchName = select_data[1]['name']
+            self.groupCode = select_data[2]['code']
+            self.groupId = select_data[2]['id']
+            self.groupName = select_data[2]['name']
+        except Exception as e:
+            print(select_data)
+            raise e
         # 1.清除所有角色信息以及用户信息
         db.execute_db("DELETE FROM sys_role WHERE id !='144596599002103829' "
                       "AND id !='263713039419703296' AND id !='264171233677934592'")
         db.execute_db("DELETE FROM sys_admin WHERE id !='259098505857990656' AND id !='264171330776072192'")
-        # 查询字典中公司部门及组的相关信息
-        select_data = db.select_db(
-            "SELECT `code`,id,`name` FROM sys_dictionaries WHERE `name` LIKE '测试%' ORDER BY `level`")
-        self.dicCode = select_data[0]['code']
-        self.dicId = select_data[0]['id']
-        self.dicName = select_data[0]['name']
-        self.branchCode = select_data[1]['code']
-        self.branchId = select_data[1]['id']
-        self.branchName = select_data[1]['name']
-        self.groupCode = select_data[2]['code']
-        self.groupId = select_data[2]['id']
-        self.groupName = select_data[2]['name']
         # 2.1 admin账号登录，获取token，cookies
         self.token, self.userId, self.cookies = get_login_token_cookies("admin", "admin", True)
         # 通用全权限
