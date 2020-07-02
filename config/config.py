@@ -23,14 +23,19 @@ def mysql_setting():
     database 要使用的数据库
     autocommit 防止事物执行阻塞，默认为false
     """
-    test = {"host": "192.168.30.11",
-            "user": "root",
-            "password": "Yr!@#1230.",
-            "database": "supervisor-test",
-            "autocommit": True}
-    other = {"host": "192.168.30.11",
+    test1 = {"host": "192.168.30.11",
+             "user": "root",
+             "password": "Yr!@#1230.",
+             "database": "supervisor-test",
+             "autocommit": True}
+    test2 = {"host": "192.168.30.11",
              "user": "root",
              "password": "Yr!@#1230.",
              "database": "supervisor",
              "autocommit": True}
-    return test
+    test3 = {"host": "192.168.30.214",
+             "user": "root",
+             "password": "123456",
+             "database": "supervisor-test",
+             "autocommit": True}
+    return test1

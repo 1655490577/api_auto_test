@@ -23,4 +23,4 @@ def get_login_token_cookies(phone, password, rememberMe):
     获取用户登录成功后的token和cookies
     """
     r = user.user_login(phone=phone, password=password, rememberMe=rememberMe)
-    return r.json()['data']['token'], r.cookies.get_dict()
+    return r.json()['data']['token'], r.json()['data']['sysAdmin']['id'], r.cookies.get_dict()

@@ -131,4 +131,4 @@ class TestLogin(object):
 
 
 if __name__ == '__main__':
-    pytest.main()
+    pytest.main('-v', 'test_001_login.py')
