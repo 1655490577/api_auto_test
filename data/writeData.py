@@ -1,6 +1,6 @@
 from common.mysql_operate import db
-from common.get_data import get_login_token_cookies
-from api.api_public_method import user
+from api.api_get_data import get_login_token_cookies
+from api.api_requests import user
 import yaml
 import os
 
@@ -53,7 +53,7 @@ class writeTestData(object):
                     "263449920340492292:263449920340492293:263449920340492294:263449920340492295:263449920340492296:" \
                     "263449920340492290:263449920340492291"
         # 要生成的数据文件的路径
-        self.file_path = os.path.dirname(os.path.dirname(__file__)) + "/Data/"
+        self.file_path = os.path.dirname(os.path.dirname(__file__)) + "/data/"
 
     def add_role(self):
         # 2.2 新增角色(系统角色)
@@ -118,8 +118,28 @@ class writeTestData(object):
                        groupCode=self.groupCode, groupId=self.groupId, groupName=self.groupName)  # 添加测试组用户02
 
     @staticmethod
-    def data_combination():
-        # 3.数据库查询添加的数据，组合测试数据
+    def get_login_testData():
+        data = db.select_db("SELECT phone FROM sys_admin WHERE phone like '131687755%'ORDER BY phone")
+        sysPhone = data[0]['phone']
+        companyPhone = data[2]['phone']
+        branchPhone = data[4]['phone']
+        groupPhone = data[6]['phone']
+        login_data = {"login_success": [[sysPhone, "123456", True], [sysPhone, "123456", False],
+                                        [companyPhone, "123456", True], [companyPhone, "123456", False],
+                                        [branchPhone, "123456", True], [branchPhone, "123456", False],
+                                        [groupPhone, "123456", True], [groupPhone, "123456", False]],
+                      "login_error_fail": [[sysPhone, "123", True], [companyPhone, "123", True],
+                                           [branchPhone, "12", True], [groupPhone, "2142241", True]],
+                      "login_null_fail": [[sysPhone, "", True], ["", "123456", True],
+                                          [sysPhone, "", True], [companyPhone, "", True],
+                                          [branchPhone, "", True], [groupPhone, "", True]],
+                      "login_nopassword_fail": [[sysPhone, True]],
+                      "login_noRememberMe_fail": [[sysPhone, "123456"]]
+                      }
+        return login_data
+
+    @staticmethod
+    def get_change_password_testData():
         data = db.select_db(
             "SELECT id ,`name`,`password`,phone FROM sys_admin WHERE phone like '131687755%'ORDER BY phone")
         sysId01, sysName01, sysPwd01, sysPhone01 = data[0]['id'], data[0]['name'], "123456", data[0]['phone']
@@ -162,24 +182,49 @@ class writeTestData(object):
                  [groupId01, groupName01, groupPwd01, sysPwd01, sysPhone01, sysId01],
                  [sysId01, sysName01, sysPwd01, groupPwd01, groupPhone01, groupId01]]
         }
+        return change_password_Data
 
-        login_data = {"login_success": [[sysPhone01, sysPwd01, True], [sysPhone01, sysPwd01, False],
-                                        [companyPhone01, companyPwd01, True], [companyPhone01, companyPwd01, False],
-                                        [branchPhone01, branchPwd01, True], [branchPhone01, branchPwd01, False],
-                                        [groupPhone01, groupPwd01, True], [groupPhone01, groupPwd01, False]],
-                      "login_error_fail": [[sysPhone01, "123", True], [companyPhone01, "123", True],
-                                           [branchPhone01, "12", True], [groupPhone01, "2142241", True]],
-                      "login_null_fail": [[sysPhone01, "", True], ["", groupPwd01, True],
-                                          [sysPhone01, "", True], [companyPhone01, "", True],
-                                          [branchPhone01, "", True], [groupPhone01, "", True]],
-                      "login_nopassword_fail": [[sysPhone01, True]],
-                      "login_noRememberMe_fail": [[sysPhone01, sysPwd01]]
-                      }
-        return login_data, change_password_Data
+    @staticmethod
+    def get_user_testData():
+        sys01_req = user.user_login(phone="13168775501", password="123456", RememberMe=True)
+        sys02_req = user.user_login(phone="13168775502", password="123456", RememberMe=True)
+        company01_req = user.user_login(phone="13168775503", password="123456", RememberMe=True)
+        company02_req = user.user_login(phone="13168775504", password="123456", RememberMe=True)
+        branch01_req = user.user_login(phone="13168775505", password="123456", RememberMe=True)
+        branch02_req = user.user_login(phone="13168775506", password="123456", RememberMe=True)
+        group01_req = user.user_login(phone="13168775507", password="123456", RememberMe=True)
+        group02_req = user.user_login(phone="13168775508", password="123456", RememberMe=True)
+        user_data = {
+            "sys01": {"token": sys01_req.json()['data']['token'],
+                      "userId": sys01_req.json()['data']['sysAdmin']['id'],
+                      "cookies": sys01_req.cookies.get_dict()},
+            "sys02": {"token": sys02_req.json()['data']['token'],
+                      "userId": sys02_req.json()['data']['sysAdmin']['id'],
+                      "cookies": sys02_req.cookies.get_dict()},
+            "company01": {"token": company01_req.json()['data']['token'],
+                          "userId": company01_req.json()['data']['sysAdmin']['id'],
+                          "cookies": company01_req.cookies.get_dict()},
+            "company02": {"token": company02_req.json()['data']['token'],
+                          "userId": company02_req.json()['data']['sysAdmin']['id'],
+                          "cookies": company02_req.cookies.get_dict()},
+            "branch01": {"token": branch01_req.json()['data']['token'],
+                         "userId": branch01_req.json()['data']['sysAdmin']['id'],
+                         "cookies": branch01_req.cookies.get_dict()},
+            "branch02": {"token": branch02_req.json()['data']['token'],
+                         "userId": branch02_req.json()['data']['sysAdmin']['id'],
+                         "cookies": branch02_req.cookies.get_dict()},
+            "group01": {"token": group01_req.json()['data']['token'],
+                        "userId": group01_req.json()['data']['sysAdmin']['id'],
+                        "cookies": group01_req.cookies.get_dict()},
+            "group02": {"token": group02_req.json()['data']['token'],
+                        "userId": group02_req.json()['data']['sysAdmin']['id'],
+                        "cookies": group02_req.cookies.get_dict()}
+        }
+        return user_data
 
     def write_data(self, data, filename):
         with open(self.file_path + filename, 'w+', encoding='utf-8') as f:
-            yaml.dump(data, f, allow_unicode=True)
+            yaml.safe_dump(data, f, allow_unicode=True)
 
 
 if __name__ == '__main__':
@@ -187,6 +232,9 @@ if __name__ == '__main__':
     w.add_role()
     roleId1, roleId2, roleId3, roleId4 = w.select_role_id()
     w.add_user(roleId1, roleId2, roleId3, roleId4)
-    data1, data2 = w.data_combination()
+    data1 = w.get_login_testData()
+    data2 = w.get_change_password_testData()
+    data3 = w.get_user_testData()
     w.write_data(data1, 'login_data.yml')
     w.write_data(data2, 'change_password_data.yml')
+    w.write_data(data3, 'user_data.yml')

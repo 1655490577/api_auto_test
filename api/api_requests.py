@@ -1,12 +1,11 @@
 import requests
-from config.config import server_ip
+from api.api_base import baseApi
 
 
-class User(object):
+class User(baseApi):
 
     def __init__(self):
-        self.ip = server_ip()
-        self.headers = {'Content-Type': 'application/json'}
+        super().__init__()
 
     def user_login(self, **kwargs):  # 登录
         return requests.post(url=self.ip + '/admin/sysadmin/login', json=kwargs, headers=self.headers)
