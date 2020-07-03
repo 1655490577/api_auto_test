@@ -98,7 +98,7 @@ class writeTestData(object):
         user.user_save(self.cookies, dataType=1, isAdmin=2, name="测试部门用户01", password="123456", phone="13168775505",
                        roleId=branchRoleId, state=1, token=self.token, userid=self.userId,
                        branchCode=self.branchCode, branchId=self.branchId, branchName=self.branchName,
-                       dicCode=self.branchId, dicId=self.dicId, dicName=self.dicName)  # 添加测试部门用户01
+                       dicCode=self.dicCode, dicId=self.dicId, dicName=self.dicName)  # 添加测试部门用户01
 
         user.user_save(self.cookies, dataType=1, isAdmin=2, name="测试部门用户02", password="123456", phone="13168775506",
                        roleId=branchRoleId, state=1, token=self.token, userid=self.userId,
@@ -136,34 +136,31 @@ class writeTestData(object):
         groupId02, groupName02, groupPwd02, groupPhone02 = data[7]['id'], data[7]['name'], "123456", data[7]['phone']
         change_password_Data = {
             "test_change_password_success":
-                [[sysId02, sysName02, sysPwd02, sysPhone02, sysPwd02, sysPhone02, sysId02],
-                 [companyId01, companyName01, companyPwd01, companyPhone01, companyPwd01, companyPhone01,
-                  companyId01],
-                 [branchId01, branchName01, branchPwd01, branchPhone01, branchPwd01, branchPhone01, branchId01],
-                 [groupId01, groupName01, groupPwd01, groupPhone01, groupPwd01, groupPhone01, groupId01],
-                 [sysId02, sysName02, sysPwd02, sysPhone02, sysPwd01, sysPhone01, sysId01],
-                 [companyId01, companyName01, companyPwd01, companyPhone01, sysPwd01, sysPhone01, sysId01],
-                 [branchId01, branchName01, branchPwd01, branchPhone01, sysPwd01, sysPhone01, sysId01],
-                 [groupId01, groupName01, groupPwd01, groupPhone01, sysPwd01, sysPhone01, sysId01],
-                 [branchId01, branchName01, branchPwd01, branchPhone01, companyPwd01, companyPhone01, companyId01],
-                 [groupId01, groupName01, groupPwd01, groupPhone01, companyPwd01, companyPhone01, companyId01],
-                 [groupId01, groupName01, groupPwd01, groupPhone01, branchPwd01, branchPhone01, branchId01]],
+                [[sysId02, sysName02, sysPwd02, sysPhone02, sysPwd02, sysPhone02],
+                 [companyId01, companyName01, companyPwd01, companyPhone01, companyPwd01, companyPhone01],
+                 [branchId01, branchName01, branchPwd01, branchPhone01, branchPwd01, branchPhone01],
+                 [groupId01, groupName01, groupPwd01, groupPhone01, groupPwd01, groupPhone01],
+                 [sysId02, sysName02, sysPwd02, sysPhone02, sysPwd01, sysPhone01],
+                 [companyId01, companyName01, companyPwd01, companyPhone01, sysPwd01, sysPhone01],
+                 [branchId01, branchName01, branchPwd01, branchPhone01, sysPwd01, sysPhone01],
+                 [groupId01, groupName01, groupPwd01, groupPhone01, sysPwd01, sysPhone01],
+                 [branchId01, branchName01, branchPwd01, branchPhone01, companyPwd01, companyPhone01],
+                 [groupId01, groupName01, groupPwd01, groupPhone01, companyPwd01, companyPhone01],
+                 [groupId01, groupName01, groupPwd01, groupPhone01, branchPwd01, branchPhone01]],
             "test_change_password_fail":
-                [[sysId01, sysName01, sysPwd01, sysPhone01, companyPwd01, companyPhone01, companyId01],
-                 [companyId02, companyName02, companyPwd02, companyPhone02, companyPwd01, companyPhone01,
-                  companyId01],
-                 [sysId01, sysName01, sysPwd01, sysPhone01, branchPwd01, branchPhone01, branchId01],
-                 [companyId01, companyName01, companyPwd01, companyPhone01, branchPwd01, branchPhone01,
-                  branchId01],
-                 [branchId02, branchName02, branchPwd02, branchPhone02, branchPwd01, branchPhone01, branchId01],
-                 [sysId01, sysName01, sysPwd01, sysPhone01, groupPwd01, groupPhone01, groupId01],
-                 [companyId01, companyName01, companyPwd01, companyPhone01, groupPwd01, groupPhone01, groupId01],
-                 [branchId01, branchName01, branchPwd01, branchPhone01, groupPwd01, groupPhone01, groupId01],
-                 [groupId02, groupName02, groupPwd02, groupPhone02, groupPwd01, groupPhone01, groupId01]],
+                [[sysId01, sysName01, sysPwd01, sysPhone01, companyPwd01, companyPhone01],
+                 [companyId02, companyName02, companyPwd02, companyPhone02, companyPwd01, companyPhone01],
+                 [sysId01, sysName01, sysPwd01, sysPhone01, branchPwd01, branchPhone01],
+                 [companyId01, companyName01, companyPwd01, companyPhone01, branchPwd01, branchPhone01],
+                 [branchId02, branchName02, branchPwd02, branchPhone02, branchPwd01, branchPhone01],
+                 [sysId01, sysName01, sysPwd01, sysPhone01, groupPwd01, groupPhone01],
+                 [companyId01, companyName01, companyPwd01, companyPhone01, groupPwd01, groupPhone01],
+                 [branchId01, branchName01, branchPwd01, branchPhone01, groupPwd01, groupPhone01],
+                 [groupId02, groupName02, groupPwd02, groupPhone02, groupPwd01, groupPhone01]],
             "test_change_password_noLogin":
-                [[sysId01, sysName01, sysPwd01, sysPhone01, sysPwd01, sysPhone01, sysId01],
-                 [groupId01, groupName01, groupPwd01, groupPhone01, sysPwd01, sysPhone01, sysId01],
-                 [sysId01, sysName01, sysPwd01, sysPhone01, groupPwd01, groupPhone01, groupId01]]
+                [[sysId01, sysName01, sysPwd01, sysPwd01, sysPhone01, sysId01],
+                 [groupId01, groupName01, groupPwd01, sysPwd01, sysPhone01, sysId01],
+                 [sysId01, sysName01, sysPwd01, groupPwd01, groupPhone01, groupId01]]
         }
 
         login_data = {"login_success": [[sysPhone01, sysPwd01, True], [sysPhone01, sysPwd01, False],
@@ -181,8 +178,8 @@ class writeTestData(object):
         return login_data, change_password_Data
 
     def write_data(self, data, filename):
-        with open(self.file_path + filename, 'w+') as f:
-            yaml.dump(data, f)
+        with open(self.file_path + filename, 'w+', encoding='utf-8') as f:
+            yaml.dump(data, f, allow_unicode=True)
 
 
 if __name__ == '__main__':
