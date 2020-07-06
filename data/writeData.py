@@ -1,6 +1,5 @@
 from common.mysql_operate import db
-from api.api_get_data import get_login_token_cookies
-from api.api_requests import user
+from api.api_get_data import getter
 import yaml
 import os
 
@@ -10,26 +9,26 @@ class writeTestData(object):
     def __init__(self):
         try:
             # 查询字典中公司部门及组的相关信息
-            select_data = db.select_db(
+            self.select_data = db.select_db(
                 "SELECT `code`,id,`name` FROM sys_dictionaries WHERE `name` LIKE '测试%' ORDER BY `level`")
-            self.dicCode = select_data[0]['code']
-            self.dicId = select_data[0]['id']
-            self.dicName = select_data[0]['name']
-            self.branchCode = select_data[1]['code']
-            self.branchId = select_data[1]['id']
-            self.branchName = select_data[1]['name']
-            self.groupCode = select_data[2]['code']
-            self.groupId = select_data[2]['id']
-            self.groupName = select_data[2]['name']
+            self.dicCode = self.select_data[0]['code']
+            self.dicId = self.select_data[0]['id']
+            self.dicName = self.select_data[0]['name']
+            self.branchCode = self.select_data[1]['code']
+            self.branchId = self.select_data[1]['id']
+            self.branchName = self.select_data[1]['name']
+            self.groupCode = self.select_data[2]['code']
+            self.groupId = self.select_data[2]['id']
+            self.groupName = self.select_data[2]['name']
         except Exception as e:
-            print(select_data)
+            print(self.select_data)
             raise e
         # 1.清除所有角色信息以及用户信息
         db.execute_db("DELETE FROM sys_role WHERE id !='144596599002103829' "
                       "AND id !='263713039419703296' AND id !='264171233677934592'")
         db.execute_db("DELETE FROM sys_admin WHERE id !='259098505857990656' AND id !='264171330776072192'")
         # 2.1 admin账号登录，获取token，cookies
-        self.token, self.userId, self.cookies = get_login_token_cookies("admin", "admin", True)
+        self.token, self.userId, self.cookies = getter.get_login_token_cookies("admin", "admin", True)
         # 通用全权限
         self.perm = "144596599002103809:144596599002103813:144596599002103814:144596599002103815:144596599002103816:" \
                     "149625711110389767:144596599002103817:144596599002103818:144596599002103819:144596599002103820:" \
@@ -57,19 +56,19 @@ class writeTestData(object):
 
     def add_role(self):
         # 2.2 新增角色(系统角色)
-        user.role_save(self.cookies, name="测试系统角色", perms=self.perm, token=self.token, userid=self.userId)
+        getter.role_save(self.cookies, name="测试系统角色", perms=self.perm, token=self.token, userid=self.userId)
         # 新增角色(公司角色)
-        user.role_save(self.cookies, dicCode=self.dicCode, dicId=self.dicId, dicName=self.dicName, name="测试公司角色",
-                       perms=self.perm, token=self.token, userid=self.userId)
+        getter.role_save(self.cookies, dicCode=self.dicCode, dicId=self.dicId, dicName=self.dicName, name="测试公司角色",
+                         perms=self.perm, token=self.token, userid=self.userId)
         # 新增角色(部门角色)
-        user.role_save(self.cookies, branchCode=self.branchCode, branchId=self.branchId, branchName=self.branchName,
-                       dicCode=self.dicCode, dicId=self.dicId, dicName=self.dicName, name="测试部门角色",
-                       perms=self.perm, token=self.token, userid=self.userId)
+        getter.role_save(self.cookies, branchCode=self.branchCode, branchId=self.branchId, branchName=self.branchName,
+                         dicCode=self.dicCode, dicId=self.dicId, dicName=self.dicName, name="测试部门角色",
+                         perms=self.perm, token=self.token, userid=self.userId)
         # 新增角色(子部门角色《组》)
-        user.role_save(self.cookies, groupCode=self.groupCode, groupId=self.groupId, groupName=self.groupName,
-                       branchCode=self.branchCode, branchId=self.branchId, branchName=self.branchName,
-                       dicCode=self.dicCode, dicId=self.dicId, dicName=self.dicName, name="测试子部门角色",
-                       perms=self.perm, token=self.token, userid=self.userId)
+        getter.role_save(self.cookies, groupCode=self.groupCode, groupId=self.groupId, groupName=self.groupName,
+                         branchCode=self.branchCode, branchId=self.branchId, branchName=self.branchName,
+                         dicCode=self.dicCode, dicId=self.dicId, dicName=self.dicName, name="测试子部门角色",
+                         perms=self.perm, token=self.token, userid=self.userId)
 
     @staticmethod
     def select_role_id():
@@ -81,41 +80,41 @@ class writeTestData(object):
 
     def add_user(self, sysRoleId, companyRoleId, branchRoleId, groupRoleId):
         # 系统管理员2个
-        user.user_save(self.cookies, dataType=1, isAdmin=1, name="测试系统管理员01", password="123456", phone="13168775501",
-                       roleId=sysRoleId, state=1, token=self.token, userid=self.userId)  # 添加测试系统管理员01
+        getter.user_save(self.cookies, dataType=1, isAdmin=1, name="测试系统管理员01", password="123456", phone="13168775501",
+                         roleId=sysRoleId, state=1, token=self.token, userid=self.userId)  # 添加测试系统管理员01
 
-        user.user_save(self.cookies, dataType=1, isAdmin=1, name="测试系统管理员02", password="123456", phone="13168775502",
-                       roleId=sysRoleId, state=1, token=self.token, userid=self.userId)  # 添加测试系统管理员02
+        getter.user_save(self.cookies, dataType=1, isAdmin=1, name="测试系统管理员02", password="123456", phone="13168775502",
+                         roleId=sysRoleId, state=1, token=self.token, userid=self.userId)  # 添加测试系统管理员02
         # 公司管理员2个
-        user.user_save(self.cookies, dataType=1, isAdmin=2, name="测试公司管理员01", password="123456", phone="13168775503",
-                       roleId=companyRoleId, state=1, token=self.token, userid=self.userId,
-                       dicCode=self.dicCode, dicId=self.dicId, dicName=self.dicName)  # 添加测试公司管理员01
+        getter.user_save(self.cookies, dataType=1, isAdmin=2, name="测试公司管理员01", password="123456", phone="13168775503",
+                         roleId=companyRoleId, state=1, token=self.token, userid=self.userId,
+                         dicCode=self.dicCode, dicId=self.dicId, dicName=self.dicName)  # 添加测试公司管理员01
 
-        user.user_save(self.cookies, dataType=1, isAdmin=2, name="测试公司管理员02", password="123456", phone="13168775504",
-                       roleId=companyRoleId, state=1, token=self.token, userid=self.userId,
-                       dicCode=self.dicCode, dicId=self.dicId, dicName=self.dicName)  # 添加测试公司管理员02
+        getter.user_save(self.cookies, dataType=1, isAdmin=2, name="测试公司管理员02", password="123456", phone="13168775504",
+                         roleId=companyRoleId, state=1, token=self.token, userid=self.userId,
+                         dicCode=self.dicCode, dicId=self.dicId, dicName=self.dicName)  # 添加测试公司管理员02
         # 部门用户2个
-        user.user_save(self.cookies, dataType=1, isAdmin=2, name="测试部门用户01", password="123456", phone="13168775505",
-                       roleId=branchRoleId, state=1, token=self.token, userid=self.userId,
-                       branchCode=self.branchCode, branchId=self.branchId, branchName=self.branchName,
-                       dicCode=self.dicCode, dicId=self.dicId, dicName=self.dicName)  # 添加测试部门用户01
+        getter.user_save(self.cookies, dataType=1, isAdmin=2, name="测试部门用户01", password="123456", phone="13168775505",
+                         roleId=branchRoleId, state=1, token=self.token, userid=self.userId,
+                         branchCode=self.branchCode, branchId=self.branchId, branchName=self.branchName,
+                         dicCode=self.dicCode, dicId=self.dicId, dicName=self.dicName)  # 添加测试部门用户01
 
-        user.user_save(self.cookies, dataType=1, isAdmin=2, name="测试部门用户02", password="123456", phone="13168775506",
-                       roleId=branchRoleId, state=1, token=self.token, userid=self.userId,
-                       branchCode=self.branchCode, branchId=self.branchId, branchName=self.branchName,
-                       dicCode=self.dicCode, dicId=self.dicId, dicName=self.dicName)  # 添加测试部门用户02
+        getter.user_save(self.cookies, dataType=1, isAdmin=2, name="测试部门用户02", password="123456", phone="13168775506",
+                         roleId=branchRoleId, state=1, token=self.token, userid=self.userId,
+                         branchCode=self.branchCode, branchId=self.branchId, branchName=self.branchName,
+                         dicCode=self.dicCode, dicId=self.dicId, dicName=self.dicName)  # 添加测试部门用户02
         # 组用户2个
-        user.user_save(self.cookies, dataType=1, isAdmin=2, name="测试组用户01", password="123456", phone="13168775507",
-                       roleId=groupRoleId, state=1, token=self.token, userid=self.userId,
-                       branchCode=self.branchCode, branchId=self.branchId, branchName=self.branchName,
-                       dicCode=self.dicCode, dicId=self.dicId, dicName=self.dicName,
-                       groupCode=self.groupCode, groupId=self.groupId, groupName=self.groupName)  # 添加测试组用户01
+        getter.user_save(self.cookies, dataType=1, isAdmin=2, name="测试组用户01", password="123456", phone="13168775507",
+                         roleId=groupRoleId, state=1, token=self.token, userid=self.userId,
+                         branchCode=self.branchCode, branchId=self.branchId, branchName=self.branchName,
+                         dicCode=self.dicCode, dicId=self.dicId, dicName=self.dicName,
+                         groupCode=self.groupCode, groupId=self.groupId, groupName=self.groupName)  # 添加测试组用户01
 
-        user.user_save(self.cookies, dataType=1, isAdmin=2, name="测试组用户02", password="123456", phone="13168775508",
-                       roleId=groupRoleId, state=1, token=self.token, userid=self.userId,
-                       branchCode=self.branchCode, branchId=self.branchId, branchName=self.branchName,
-                       dicCode=self.dicCode, dicId=self.dicId, dicName=self.dicName,
-                       groupCode=self.groupCode, groupId=self.groupId, groupName=self.groupName)  # 添加测试组用户02
+        getter.user_save(self.cookies, dataType=1, isAdmin=2, name="测试组用户02", password="123456", phone="13168775508",
+                         roleId=groupRoleId, state=1, token=self.token, userid=self.userId,
+                         branchCode=self.branchCode, branchId=self.branchId, branchName=self.branchName,
+                         dicCode=self.dicCode, dicId=self.dicId, dicName=self.dicName,
+                         groupCode=self.groupCode, groupId=self.groupId, groupName=self.groupName)  # 添加测试组用户02
 
     @staticmethod
     def get_login_testData():
@@ -186,14 +185,14 @@ class writeTestData(object):
 
     @staticmethod
     def get_user_testData():
-        sys01_req = user.user_login(phone="13168775501", password="123456", RememberMe=True)
-        sys02_req = user.user_login(phone="13168775502", password="123456", RememberMe=True)
-        company01_req = user.user_login(phone="13168775503", password="123456", RememberMe=True)
-        company02_req = user.user_login(phone="13168775504", password="123456", RememberMe=True)
-        branch01_req = user.user_login(phone="13168775505", password="123456", RememberMe=True)
-        branch02_req = user.user_login(phone="13168775506", password="123456", RememberMe=True)
-        group01_req = user.user_login(phone="13168775507", password="123456", RememberMe=True)
-        group02_req = user.user_login(phone="13168775508", password="123456", RememberMe=True)
+        sys01_req = getter.user_login(phone="13168775501", password="123456", RememberMe=True)
+        sys02_req = getter.user_login(phone="13168775502", password="123456", RememberMe=True)
+        company01_req = getter.user_login(phone="13168775503", password="123456", RememberMe=True)
+        company02_req = getter.user_login(phone="13168775504", password="123456", RememberMe=True)
+        branch01_req = getter.user_login(phone="13168775505", password="123456", RememberMe=True)
+        branch02_req = getter.user_login(phone="13168775506", password="123456", RememberMe=True)
+        group01_req = getter.user_login(phone="13168775507", password="123456", RememberMe=True)
+        group02_req = getter.user_login(phone="13168775508", password="123456", RememberMe=True)
         user_data = {
             "sys01": {"token": sys01_req.json()['data']['token'],
                       "userId": sys01_req.json()['data']['sysAdmin']['id'],

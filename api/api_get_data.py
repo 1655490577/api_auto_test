@@ -1,24 +1,9 @@
-import os
-from common.read_data import data
 from api.api_requests import User
 
 
-class getter(User):
+class get_data(User):
     def __init__(self):
         super().__init__()
-        self.BASE_PATH = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))  # 获取当前项目的绝对路径
-
-    def get_yaml_data(self, yaml_file_name):
-        """
-        拼接读取的yaml文件的绝对路径
-        """
-        try:
-            data_file_path = os.path.join(self.BASE_PATH, "data", yaml_file_name)
-            yaml_data = data.load_yaml(data_file_path)
-        except Exception as ex:
-            raise ex
-        else:
-            return yaml_data
 
     def get_login_token_cookies(self, phone, password, rememberMe):
         """
@@ -29,4 +14,4 @@ class getter(User):
         return token, userId, cookies
 
 
-getEr = getter()
+getter = get_data()
