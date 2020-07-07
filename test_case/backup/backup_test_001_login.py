@@ -3,7 +3,7 @@ import allure
 from api.api_get_data import getter
 
 
-@pytest.mark.skip("不管了")
+# @pytest.mark.skip("不管了")
 @allure.feature('登录功能')
 class TestLogin(object):
 
@@ -131,4 +131,4 @@ class TestLogin(object):
 
 
 if __name__ == '__main__':
-    pytest.main('-v', 'test_001_login.py')
+    pytest.main('-v', 'backup_test_001_login.py')

@@ -2,7 +2,7 @@ import requests
 from api.api_base import baseApi
 
 
-class User(baseApi):
+class Requester(baseApi):
 
     def __init__(self):
         super().__init__()
@@ -115,4 +115,4 @@ class User(baseApi):
         return requests.post(url=self.ip + '/unit/update', json=kwargs,headers=self.headers, cookies=cookies)
 
 
-user = User()
+user = Requester()

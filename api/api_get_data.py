@@ -1,8 +1,8 @@
-from api.api_requests import User
+from api.api_requests import Requester
 from common.read_data import ReadFileData
 
 
-class get_data(User, ReadFileData):
+class get_data(Requester, ReadFileData):
     def __init__(self):
         super().__init__()
         self.BASE_PATH = ReadFileData().BASE_PATH

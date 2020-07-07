@@ -52,7 +52,7 @@ class writeTestData(object):
                     "263449920340492292:263449920340492293:263449920340492294:263449920340492295:263449920340492296:" \
                     "263449920340492290:263449920340492291"
         # 要生成的数据文件的路径
-        self.file_path = os.path.dirname(os.path.dirname(__file__)) + "/data/"
+        self.file_path = os.path.dirname(os.path.dirname(os.path.dirname(__file__))) + "/data/"
 
     def add_role(self):
         # 2.2 新增角色(系统角色)
