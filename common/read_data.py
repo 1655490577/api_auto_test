@@ -13,7 +13,7 @@ class MyConfigParser(ConfigParser):
         return optionStr
 
 
-class ReadFileData:
+class ReadFileData(object):
 
     def __init__(self):
         self.BASE_PATH = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))  # 获取当前项目的绝对路径

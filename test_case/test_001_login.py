@@ -3,11 +3,12 @@ import allure
 from api.api_get_data import getter
 
 
+@pytest.mark.skip("不管了")
 @allure.feature('登录功能')
 class TestLogin(object):
 
     @allure.story('正确账号，正确密码，登录成功')
-    @pytest.mark.parametrize('phone, password, remember', getter.get_yaml_data('login_data.yml')["login_success"])
+    @pytest.mark.parametrize('phone, password, remember', getter.load_yaml('login_data.yml')["login_success"])
     def test_login_001(self, phone, password, remember):
         """
         用例描述：
@@ -27,7 +28,7 @@ class TestLogin(object):
             raise error
 
     @allure.story('正确手机号，错误密码/错误手机号，正确密码，登录失败')
-    @pytest.mark.parametrize('phone, password, remember', getter.get_yaml_data('login_data.yml')["login_error_fail"])
+    @pytest.mark.parametrize('phone, password, remember', getter.load_yaml('login_data.yml')["login_error_fail"])
     def test_login_002(self, phone, password, remember):
         """
         用例描述：
@@ -48,7 +49,7 @@ class TestLogin(object):
             raise error
 
     @allure.story('phone或password或rememberMe为空，登录失败')
-    @pytest.mark.parametrize('phone, password, remember', getter.get_yaml_data('login_data.yml')["login_null_fail"])
+    @pytest.mark.parametrize('phone, password, remember', getter.load_yaml('login_data.yml')["login_null_fail"])
     def test_login_003(self, phone, password, remember):
         """
         用例描述：
@@ -69,7 +70,7 @@ class TestLogin(object):
             raise error
 
     @allure.story('参数password不传，登录失败')
-    @pytest.mark.parametrize('phone, remember', getter.get_yaml_data('login_data.yml')["login_nopassword_fail"])
+    @pytest.mark.parametrize('phone, remember', getter.load_yaml('login_data.yml')["login_nopassword_fail"])
     def test_login_004(self, phone, remember):
         """
         用例描述：
@@ -89,7 +90,7 @@ class TestLogin(object):
             raise error
 
     # @allure.story('参数phone不传，登录失败')
-    # @pytest.mark.parametrize('password, remember', getter.get_yaml_data('login_data.yml')["login_noPhone_fail"])
+    # @pytest.mark.parametrize('password, remember', getter.load_yaml('login_data.yml')["login_noPhone_fail"])
     # def test_login_005(self, password, remember):
     #     """
     #     用例描述：
@@ -109,7 +110,7 @@ class TestLogin(object):
     #         raise error
 
     @allure.story('参数rememberMe不传，登录失败')
-    @pytest.mark.parametrize('phone, password', getter.get_yaml_data('login_data.yml')["login_noRememberMe_fail"])
+    @pytest.mark.parametrize('phone, password', getter.load_yaml('login_data.yml')["login_noRememberMe_fail"])
     def test_login_006(self, phone, password):
         """
         用例描述：

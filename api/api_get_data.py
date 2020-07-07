@@ -1,9 +1,11 @@
 from api.api_requests import User
+from common.read_data import ReadFileData
 
 
-class get_data(User):
+class get_data(User, ReadFileData):
     def __init__(self):
         super().__init__()
+        self.BASE_PATH = ReadFileData().BASE_PATH
 
     def get_login_token_cookies(self, phone, password, rememberMe):
         """

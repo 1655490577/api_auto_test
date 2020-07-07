@@ -102,5 +102,17 @@ class User(baseApi):
         return requests.post(url=self.ip + '/admin/sysdictionaries/update', json=kwargs,
                              headers=self.headers, cookies=cookies)
 
+    def unit_detail(self, cookies, **kwargs):   # 单位
+        return requests.post(url=self.ip + '/unit/detail', json=kwargs,headers=self.headers, cookies=cookies)
+
+    def unit_list(self, cookies, **kwargs):   # 单位
+        return requests.post(url=self.ip + '/unit/list', json=kwargs,headers=self.headers, cookies=cookies)
+
+    def unit_save(self, cookies, **kwargs):   # 单位
+        return requests.post(url=self.ip + '/unit/save', json=kwargs,headers=self.headers, cookies=cookies)
+
+    def unit_update(self, cookies, **kwargs):   # 单位
+        return requests.post(url=self.ip + '/unit/update', json=kwargs,headers=self.headers, cookies=cookies)
+
 
 user = User()

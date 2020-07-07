@@ -80,6 +80,9 @@ class writeTestData(object):
 
     def add_user(self, sysRoleId, companyRoleId, branchRoleId, groupRoleId):
         # 系统管理员2个
+        getter.user_save(self.cookies, dataType=1, isAdmin=1, name="测试账号", password="123456", phone="13168775547",
+                         roleId=sysRoleId, state=1, token=self.token, userid=self.userId)
+
         getter.user_save(self.cookies, dataType=1, isAdmin=1, name="测试系统管理员01", password="123456", phone="13168775501",
                          roleId=sysRoleId, state=1, token=self.token, userid=self.userId)  # 添加测试系统管理员01
 
