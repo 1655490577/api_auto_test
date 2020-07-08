@@ -3,7 +3,7 @@ from api.api_get_data import getter
 from common.mysql_operate import db
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture()
 def clear_sysAdmin():
     db.execute_db("DELETE FROM sys_admin WHERE id NOT IN ('259098505857990656','266683435907547136')")
     db.execute_db("DELETE FROM sys_admin_role WHERE admin_id NOT IN ('259098505857990656','266683435907547136')")
