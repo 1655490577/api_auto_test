@@ -9,6 +9,7 @@ def clear_sysAdmin():
     db.execute_db("DELETE FROM sys_admin_role WHERE admin_id NOT IN ('259098505857990656','266683435907547136')")
 
 
+@pytest.fixture()
 def clear_sysRole():
     db.execute_db(
         "DELETE FROM sys_role WHERE id NOT IN ('144596599002103829','263713039419703296','266683343469281280')")
@@ -16,6 +17,7 @@ def clear_sysRole():
         "DELETE FROM sys_role_menu WHERE role_id NOT IN ('144596599002103829','263713039419703296','266683343469281280')")
 
 
+@pytest.fixture()
 def clear_project():
     db.execute_db("TRUNCATE TABLE tb_construction_project")
     db.execute_db("TRUNCATE TABLE tb_construction_project_bid")
@@ -24,6 +26,7 @@ def clear_project():
     db.execute_db("TRUNCATE TABLE tb_construction_project_bid_unit")
 
 
+@pytest.fixture()
 def clear_projectBid():
     db.execute_db("TRUNCATE TABLE tb_construction_project_bid")
     db.execute_db("TRUNCATE TABLE tb_construction_project_bid_basement")
@@ -31,41 +34,50 @@ def clear_projectBid():
     db.execute_db("TRUNCATE TABLE tb_construction_project_bid_unit")
 
 
+@pytest.fixture()
 def clear_projectBidBasement():
     db.execute_db("TRUNCATE TABLE tb_construction_project_bid_basement")
 
 
+@pytest.fixture()
 def clear_projectBidBuild():
     db.execute_db("TRUNCATE TABLE tb_construction_project_bid_build")
 
 
+@pytest.fixture()
 def clear_projectBidUnit():
     db.execute_db("TRUNCATE TABLE tb_construction_project_bid_unit")
 
 
+@pytest.fixture()
 def clear_tbUnit():
     db.execute_db("TRUNCATE TABLE tb_unit")
     db.execute_db("TRUNCATE TABLE tb_unit_qualification")
 
 
+@pytest.fixture()
 def clear_tbContract():
     db.execute_db("TRUNCATE TABLE tb_contract")
 
 
+@pytest.fixture()
 def clear_questionBase():
     db.execute_db("TRUNCATE TABLE tb_question_base")
     db.execute_db("TRUNCATE TABLE tb_question_part")
 
 
+@pytest.fixture()
 def clear_tbQualityInspectDay():
     db.execute_db("TRUNCATE TABLE tb_quality_inspect_day")
     db.execute_db("TRUNCATE TABLE tb_quality_question_detail")
 
 
+@pytest.fixture()
 def clear_tbQualityQuestion():
     db.execute_db("TRUNCATE TABLE tb_quality_question_detail")
 
 
+@pytest.fixture()
 def add_test_role():
     # 2.2 新增角色(系统角色)
     getter.role_save(cookies, name="测试系统角色", perms=perm, token=token, userid=userId)
@@ -83,6 +95,7 @@ def add_test_role():
                      perms=perm, token=token, userid=userId)
 
 
+@pytest.fixture()
 def add_user():
     sysRoleId = db.select_db("SELECT id FROM sys_role WHERE `name` = '测试系统角色'")[0]['id']
     companyRoleId = db.select_db("SELECT id FROM sys_role WHERE `name` = '测试公司角色'")[0]['id']
