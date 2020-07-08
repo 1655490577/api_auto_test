@@ -20,3 +20,5 @@ config/__pycache__/
 venv/
 report/
 temp/
+!/test_case/
+test_case/backup/
