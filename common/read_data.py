@@ -24,6 +24,11 @@ class ReadFileData(object):
             data_yaml = yaml.safe_load(f)
         return data_yaml
 
+    def write_data(self, writeData, filename):
+        file_path = os.path.join(self.BASE_PATH, 'data')
+        with open(os.path.join(file_path, filename), 'w+', encoding='utf-8') as f:
+            yaml.safe_dump(writeData, f, allow_unicode=True)
+
     @staticmethod
     def load_json(file_path):
         with open(file_path, encoding='utf-8') as f:
