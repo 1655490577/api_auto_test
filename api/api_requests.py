@@ -114,5 +114,8 @@ class Requester(baseApi):
     def unit_update(self, cookies, **kwargs):   # 单位
         return requests.post(url=self.ip + '/unit/update', json=kwargs,headers=self.headers, cookies=cookies)
 
+    def project_list(self, cookies, **kwargs):   # 项目列表
+        return requests.post(url=self.ip + '/construction/project/list', json=kwargs,headers=self.headers, cookies=cookies)
+
 
 user = Requester()

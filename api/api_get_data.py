@@ -7,7 +7,7 @@ class get_data(Requester, ReadFileData):
         super().__init__()
         self.BASE_PATH = ReadFileData().BASE_PATH
 
-    def get_login_token_cookies(self, phone, password, rememberMe):
+    def get_login_token_cookies(self, phone, password, rememberMe=False):
         """
         获取用户登录成功后的token和cookies
         """
