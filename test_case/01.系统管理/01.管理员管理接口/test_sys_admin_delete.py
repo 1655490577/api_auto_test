@@ -9,6 +9,7 @@ import allure
 @pytest.mark.usefixtures("add_dictionaries_company")
 class TestSysAdminDeleteFail(object):
     """
+    不能删除的情况
     参数列表
     "id": "string",
     "token": "string",
@@ -39,6 +40,7 @@ class TestSysAdminDeleteFail(object):
 @pytest.mark.usefixtures('add_user')
 class TestSysAdminDeleteSuccess(object):
     """
+    可以成功删除的情况
     参数列表S
     "id": "string",
     "token": "string",
