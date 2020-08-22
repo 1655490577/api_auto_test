@@ -1,272 +1,63 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Tue Jun 30 12:03:49 CST 2020","Tue Jun 30 12:03:49 CST 2020","69","test_case","test_002_change_password","Test_change_password","","","test_update_password_system_fail[263071990410117120-测试组用户02-123456-13168775508-123456-13168775507-263071990242344960]","
-        用例描述：
-        用户修改密码（无效等价类）
-        "
-"passed","Tue Jun 30 12:03:45 CST 2020","Tue Jun 30 12:03:45 CST 2020","31","test_case","test_001_login","TestLogin","","","test_login_001[13168775548-123456-True]","
-        用例描述：
-        参数可以登录成功
-        :param remember: 是否记住密码 True False
-        :param phone: 登录手机号
-        :param password: 登录密码
-        "
-"passed","Tue Jun 30 12:03:49 CST 2020","Tue Jun 30 12:03:49 CST 2020","46","test_case","test_002_change_password","Test_change_password","","","test_update_password_system_fail[263071990154264576-测试部门用户02-123456-13168775506-123456-13168775505-263071990028435456]","
-        用例描述：
-        用户修改密码（无效等价类）
-        "
-"passed","Tue Jun 30 12:03:45 CST 2020","Tue Jun 30 12:03:45 CST 2020","23","test_case","test_001_login","TestLogin","","","test_login_001[13168775549-123456-True]","
-        用例描述：
-        参数可以登录成功
-        :param remember: 是否记住密码 True False
-        :param phone: 登录手机号
-        :param password: 登录密码
-        "
-"passed","Tue Jun 30 12:03:49 CST 2020","Tue Jun 30 12:03:49 CST 2020","59","test_case","test_002_change_password","Test_change_password","","","test_update_password_system_fail[263071989688696832-测试公司管理员01-123456-13168775503-123456-13168775505-263071990028435456]","
-        用例描述：
-        用户修改密码（无效等价类）
-        "
-"passed","Tue Jun 30 12:03:50 CST 2020","Tue Jun 30 12:03:50 CST 2020","36","test_case","test_002_change_password","Test_change_password","","","test_update_password_no_login[259726329245597696-测试组用户-123456789-123456-13168775546-259752758511403008]","
-        用例描述：
-        1.未登录状态，系统管理员修改组用户密码
-        2.未登录状态，组用户修改系统管理员密码
-        3.未登录状态，修改自己的密码
-        "
-"passed","Tue Jun 30 12:03:45 CST 2020","Tue Jun 30 12:03:45 CST 2020","15","test_case","test_001_login","TestLogin","","","test_login_001[13168775547-123456-True]","
-        用例描述：
-        参数可以登录成功
-        :param remember: 是否记住密码 True False
-        :param phone: 登录手机号
-        :param password: 登录密码
-        "
-"passed","Tue Jun 30 12:03:46 CST 2020","Tue Jun 30 12:03:46 CST 2020","18","test_case","test_001_login","TestLogin","","","test_login_003[13168775547--True]","
-        用例描述：
-        参数输入为空
-        :param remember: 是否记住密码 True False
-        :param phone: 登录手机号
-        :param password: 登录密码
-        :return:
-        "
-"passed","Tue Jun 30 12:03:46 CST 2020","Tue Jun 30 12:03:46 CST 2020","170","test_case","test_002_change_password","Test_change_password","","","test_update_password_system_success[259752758511403008-测试系统管理员-123456-13168775546-123456-13168775546-259752758511403008]","
-        用例描述：
-        用户修改密码（有效等价类）
-        "
-"passed","Tue Jun 30 12:03:49 CST 2020","Tue Jun 30 12:03:49 CST 2020","57","test_case","test_002_change_password","Test_change_password","","","test_update_password_system_fail[263071989407678464-测试系统管理员01-123456-13168775501-123456-13168775507-263071990242344960]","
-        用例描述：
-        用户修改密码（无效等价类）
-        "
-"passed","Tue Jun 30 12:03:46 CST 2020","Tue Jun 30 12:03:46 CST 2020","172","test_case","test_002_change_password","Test_change_password","","","test_update_password_system_success[259726329245597696-测试组用户-123456-13168775549-123456-13168775549-259726329245597696]","
-        用例描述：
-        用户修改密码（有效等价类）
-        "
-"passed","Tue Jun 30 12:03:45 CST 2020","Tue Jun 30 12:03:45 CST 2020","319","test_case","test_001_login","TestLogin","","","test_login_001[13168775547-123456-False]","
-        用例描述：
-        参数可以登录成功
-        :param remember: 是否记住密码 True False
-        :param phone: 登录手机号
-        :param password: 登录密码
-        "
-"passed","Tue Jun 30 12:03:45 CST 2020","Tue Jun 30 12:03:45 CST 2020","15","test_case","test_001_login","TestLogin","","","test_login_002[1316877554-123456-True]","
-        用例描述：
-        参数输入错误
-        :param remember: 是否记住密码 True False
-        :param phone: 登录手机号
-        :param password: 登录密码
-        :return:
-        "
-"passed","Tue Jun 30 12:03:46 CST 2020","Tue Jun 30 12:03:46 CST 2020","32","test_case","test_001_login","TestLogin","","","test_login_005[123456-True]","
-        用例描述：
-        参数phone不传
-        :param remember: 是否记住密码 True False
-        :param password: 登录密码
-        :return:
-        "
-"passed","Tue Jun 30 12:03:49 CST 2020","Tue Jun 30 12:03:49 CST 2020","67","test_case","test_002_change_password","Test_change_password","","","test_update_password_system_fail[263071989688696832-测试公司管理员01-123456-13168775503-123456-13168775507-263071990242344960]","
-        用例描述：
-        用户修改密码（无效等价类）
-        "
-"passed","Tue Jun 30 12:03:45 CST 2020","Tue Jun 30 12:03:45 CST 2020","16","test_case","test_001_login","TestLogin","","","test_login_001[13168775549-123456-False]","
-        用例描述：
-        参数可以登录成功
-        :param remember: 是否记住密码 True False
-        :param phone: 登录手机号
-        :param password: 登录密码
-        "
-"passed","Tue Jun 30 12:03:46 CST 2020","Tue Jun 30 12:03:46 CST 2020","17","test_case","test_001_login","TestLogin","","","test_login_004[13168775546-True]","
-        用例描述：
-        参数password不传
-        :param remember: 是否记住密码 True False
-        :param phone: 登录手机号
-        :return:
-        "
-"passed","Tue Jun 30 12:03:46 CST 2020","Tue Jun 30 12:03:46 CST 2020","22","test_case","test_001_login","TestLogin","","","test_login_003[13168775546--True1]","
-        用例描述：
-        参数输入为空
-        :param remember: 是否记住密码 True False
-        :param phone: 登录手机号
-        :param password: 登录密码
-        :return:
-        "
-"passed","Tue Jun 30 12:03:50 CST 2020","Tue Jun 30 12:03:50 CST 2020","37","test_case","test_002_change_password","Test_change_password","","","test_update_password_no_login[259752758511403008-测试系统管理员-123456789-123456-13168775549-259726329245597696]","
-        用例描述：
-        1.未登录状态，系统管理员修改组用户密码
-        2.未登录状态，组用户修改系统管理员密码
-        3.未登录状态，修改自己的密码
-        "
-"passed","Tue Jun 30 12:03:49 CST 2020","Tue Jun 30 12:03:49 CST 2020","58","test_case","test_002_change_password","Test_change_password","","","test_update_password_system_fail[263071989407678464-测试系统管理员01-123456-13168775501-123456-13168775503-263071989688696832]","
-        用例描述：
-        用户修改密码（无效等价类）
-        "
-"passed","Tue Jun 30 12:03:48 CST 2020","Tue Jun 30 12:03:49 CST 2020","223","test_case","test_002_change_password","Test_change_password","","","test_update_password_system_success[263071990028435456-测试部门用户01-123456-13168775505-123456-13168775503-263071989688696832]","
-        用例描述：
-        用户修改密码（有效等价类）
-        "
-"passed","Tue Jun 30 12:03:45 CST 2020","Tue Jun 30 12:03:45 CST 2020","16","test_case","test_001_login","TestLogin","","","test_login_002[13168775546-123-True]","
-        用例描述：
-        参数输入错误
-        :param remember: 是否记住密码 True False
-        :param phone: 登录手机号
-        :param password: 登录密码
-        :return:
-        "
-"passed","Tue Jun 30 12:03:46 CST 2020","Tue Jun 30 12:03:46 CST 2020","13","test_case","test_001_login","TestLogin","","","test_login_006[13168775546-123456]","
-        用例描述：
-        参数rememberMe不传
-        :param phone: 登录手机号
-        :param password: 登录密码
-        :return:
-        "
-"passed","Tue Jun 30 12:03:48 CST 2020","Tue Jun 30 12:03:48 CST 2020","187","test_case","test_002_change_password","Test_change_password","","","test_update_password_system_success[263071989688696832-测试公司管理员01-123456-13168775503-123456-13168775501-263071989407678464]","
-        用例描述：
-        用户修改密码（有效等价类）
-        "
-"passed","Tue Jun 30 12:03:45 CST 2020","Tue Jun 30 12:03:45 CST 2020","16","test_case","test_001_login","TestLogin","","","test_login_001[13168775546-123456-True]","
-        用例描述：
-        参数可以登录成功
-        :param remember: 是否记住密码 True False
-        :param phone: 登录手机号
-        :param password: 登录密码
-        "
-"passed","Tue Jun 30 12:03:49 CST 2020","Tue Jun 30 12:03:49 CST 2020","68","test_case","test_002_change_password","Test_change_password","","","test_update_password_system_fail[263071989407678464-测试系统管理员01-123456-13168775501-123456-13168775505-263071990028435456]","
-        用例描述：
-        用户修改密码（无效等价类）
-        "
-"passed","Tue Jun 30 12:03:46 CST 2020","Tue Jun 30 12:03:48 CST 2020","1284","test_case","test_002_change_password","Test_change_password","","","test_update_password_system_success[263071989567062016-测试系统管理员02-123456-13168775502-123456-13168775501-263071989407678464]","
-        用例描述：
-        用户修改密码（有效等价类）
-        "
-"passed","Tue Jun 30 12:03:49 CST 2020","Tue Jun 30 12:03:50 CST 2020","42","test_case","test_002_change_password","Test_change_password","","","test_update_password_no_login[259752758511403008-测试系统管理员-123456-123456-13168775546-259752758511403008]","
-        用例描述：
-        1.未登录状态，系统管理员修改组用户密码
-        2.未登录状态，组用户修改系统管理员密码
-        3.未登录状态，修改自己的密码
-        "
-"passed","Tue Jun 30 12:03:48 CST 2020","Tue Jun 30 12:03:48 CST 2020","203","test_case","test_002_change_password","Test_change_password","","","test_update_password_system_success[263071990242344960-测试组用户01-123456-13168775507-123456-13168775501-263071989407678464]","
-        用例描述：
-        用户修改密码（有效等价类）
-        "
-"passed","Tue Jun 30 12:03:45 CST 2020","Tue Jun 30 12:03:46 CST 2020","44","test_case","test_001_login","TestLogin","","","test_login_003[-123456-True]","
-        用例描述：
-        参数输入为空
-        :param remember: 是否记住密码 True False
-        :param phone: 登录手机号
-        :param password: 登录密码
-        :return:
-        "
-"passed","Tue Jun 30 12:03:46 CST 2020","Tue Jun 30 12:03:46 CST 2020","48","test_case","test_001_login","TestLogin","","","test_login_003[13168775548--True]","
-        用例描述：
-        参数输入为空
-        :param remember: 是否记住密码 True False
-        :param phone: 登录手机号
-        :param password: 登录密码
-        :return:
-        "
-"passed","Tue Jun 30 12:03:46 CST 2020","Tue Jun 30 12:03:46 CST 2020","155","test_case","test_002_change_password","Test_change_password","","","test_update_password_system_success[259815440555966464-测试部门用户-123456-13168775548-123456-13168775548-259815440555966464]","
-        用例描述：
-        用户修改密码（有效等价类）
-        "
-"passed","Tue Jun 30 12:03:45 CST 2020","Tue Jun 30 12:03:45 CST 2020","8","test_case","test_001_login","TestLogin","","","test_login_002[13168775547-123-True]","
-        用例描述：
-        参数输入错误
-        :param remember: 是否记住密码 True False
-        :param phone: 登录手机号
-        :param password: 登录密码
-        :return:
-        "
-"passed","Tue Jun 30 12:03:45 CST 2020","Tue Jun 30 12:03:45 CST 2020","9","test_case","test_001_login","TestLogin","","","test_login_002[13168775549-1223-True]","
-        用例描述：
-        参数输入错误
-        :param remember: 是否记住密码 True False
-        :param phone: 登录手机号
-        :param password: 登录密码
-        :return:
-        "
-"passed","Tue Jun 30 12:03:45 CST 2020","Tue Jun 30 12:03:45 CST 2020","37","test_case","test_001_login","TestLogin","","","test_login_003[13168775546--True0]","
-        用例描述：
-        参数输入为空
-        :param remember: 是否记住密码 True False
-        :param phone: 登录手机号
-        :param password: 登录密码
-        :return:
-        "
-"passed","Tue Jun 30 12:03:45 CST 2020","Tue Jun 30 12:03:45 CST 2020","14","test_case","test_001_login","TestLogin","","","test_login_001[13168775546-123456-False]","
-        用例描述：
-        参数可以登录成功
-        :param remember: 是否记住密码 True False
-        :param phone: 登录手机号
-        :param password: 登录密码
-        "
-"passed","Tue Jun 30 12:03:48 CST 2020","Tue Jun 30 12:03:48 CST 2020","161","test_case","test_002_change_password","Test_change_password","","","test_update_password_system_success[263071990028435456-测试部门用户01-123456-13168775505-123456-13168775501-263071989407678464]","
-        用例描述：
-        用户修改密码（有效等价类）
-        "
-"passed","Tue Jun 30 12:03:45 CST 2020","Tue Jun 30 12:03:45 CST 2020","37","test_case","test_001_login","TestLogin","","","test_login_001[13168775548-123456-False]","
-        用例描述：
-        参数可以登录成功
-        :param remember: 是否记住密码 True False
-        :param phone: 登录手机号
-        :param password: 登录密码
-        "
-"passed","Tue Jun 30 12:03:46 CST 2020","Tue Jun 30 12:03:46 CST 2020","156","test_case","test_002_change_password","Test_change_password","","","test_update_password_system_success[259725184011862016-测试公司管理员-123456-13168775547-123456-13168775547-259725184011862016]","
-        用例描述：
-        用户修改密码（有效等价类）
-        "
-"passed","Tue Jun 30 12:03:45 CST 2020","Tue Jun 30 12:03:45 CST 2020","34","test_case","test_001_login","TestLogin","","","test_login_002[13168775547-1234-True]","
-        用例描述：
-        参数输入错误
-        :param remember: 是否记住密码 True False
-        :param phone: 登录手机号
-        :param password: 登录密码
-        :return:
-        "
-"passed","Tue Jun 30 12:03:45 CST 2020","Tue Jun 30 12:03:45 CST 2020","18","test_case","test_001_login","TestLogin","","","test_login_002[13168775548-13-True]","
-        用例描述：
-        参数输入错误
-        :param remember: 是否记住密码 True False
-        :param phone: 登录手机号
-        :param password: 登录密码
-        :return:
-        "
-"passed","Tue Jun 30 12:03:49 CST 2020","Tue Jun 30 12:03:49 CST 2020","54","test_case","test_002_change_password","Test_change_password","","","test_update_password_system_fail[263071989814525952-测试公司管理员02-123456-13168775504-123456-13168775503-263071989688696832]","
-        用例描述：
-        用户修改密码（无效等价类）
-        "
-"passed","Tue Jun 30 12:03:46 CST 2020","Tue Jun 30 12:03:46 CST 2020","12","test_case","test_001_login","TestLogin","","","test_login_003[13168775549--True]","
-        用例描述：
-        参数输入为空
-        :param remember: 是否记住密码 True False
-        :param phone: 登录手机号
-        :param password: 登录密码
-        :return:
-        "
-"passed","Tue Jun 30 12:03:49 CST 2020","Tue Jun 30 12:03:49 CST 2020","46","test_case","test_002_change_password","Test_change_password","","","test_update_password_system_fail[263071990028435456-测试部门用户01-123456-13168775505-123456-13168775507-263071990242344960]","
-        用例描述：
-        用户修改密码（无效等价类）
-        "
-"passed","Tue Jun 30 12:03:49 CST 2020","Tue Jun 30 12:03:49 CST 2020","178","test_case","test_002_change_password","Test_change_password","","","test_update_password_system_success[263071990242344960-测试组用户01-123456-13168775507-123456-13168775503-263071989688696832]","
-        用例描述：
-        用户修改密码（有效等价类）
-        "
-"passed","Tue Jun 30 12:03:49 CST 2020","Tue Jun 30 12:03:49 CST 2020","156","test_case","test_002_change_password","Test_change_password","","","test_update_password_system_success[263071990242344960-测试组用户01-123456-13168775507-123456-13168775505-263071990028435456]","
-        用例描述：
-        用户修改密码（有效等价类）
-        "
+"passed","Sat Aug 22 17:04:51 CST 2020","Sat Aug 22 17:04:51 CST 2020","106","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_login","TestSysAdminLogin","","","test_user_login_fail[13200000055-123456789-True-手机号或密码不存在-100005]",""
+"failed","Sat Aug 22 17:04:16 CST 2020","Sat Aug 22 17:04:17 CST 2020","331","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_delete","TestSysAdminDeleteFail","","","test_delete_fail[13100000013-123456789-13100000013-123456789-用户没有权限-100011]",""
+"passed","Sat Aug 22 17:04:40 CST 2020","Sat Aug 22 17:04:40 CST 2020","343","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_name_list[13100000005-123456789-部门-exist_data6-notExist_data6-成功-0]",""
+"passed","Sat Aug 22 17:04:25 CST 2020","Sat Aug 22 17:04:26 CST 2020","744","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_delete","TestSysAdminDeleteSuccess","","","test_delete_success[13100000009-123456789-13100000015-123456789-成功-0-手机号或密码不存在-100005]",""
+"passed","Sat Aug 22 17:04:34 CST 2020","Sat Aug 22 17:04:35 CST 2020","409","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_base_list[13100000009-123456789-exist_data2-notExist_data2-成功-0]",""
+"passed","Sat Aug 22 17:04:39 CST 2020","Sat Aug 22 17:04:39 CST 2020","374","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_name_list[13100000001-123456789-组-exist_data3-notExist_data3-成功-0]",""
+"passed","Sat Aug 22 17:04:52 CST 2020","Sat Aug 22 17:04:52 CST 2020","111","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_login","TestSysAdminLogin","","","test_user_login_fail[13200000002-123456789--rememberMe,不能为空!-100001]",""
+"passed","Sat Aug 22 17:04:51 CST 2020","Sat Aug 22 17:04:51 CST 2020","224","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_login","TestSysAdminLogin","","","test_user_login_success[13200000003-123456789-True-成功-0]",""
+"passed","Sat Aug 22 17:04:35 CST 2020","Sat Aug 22 17:04:36 CST 2020","417","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_phone_list[13100000001-123456789-1310-exist_data1-notExist_data1-成功-0]",""
+"passed","Sat Aug 22 17:04:24 CST 2020","Sat Aug 22 17:04:25 CST 2020","722","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_delete","TestSysAdminDeleteSuccess","","","test_delete_success[13100000005-123456789-13100000011-123456789-成功-0-手机号或密码不存在-100005]",""
+"passed","Sat Aug 22 17:04:25 CST 2020","Sat Aug 22 17:04:25 CST 2020","713","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_delete","TestSysAdminDeleteSuccess","","","test_delete_success[13100000005-123456789-13100000014-123456789-成功-0-手机号或密码不存在-100005]",""
+"passed","Sat Aug 22 17:04:22 CST 2020","Sat Aug 22 17:04:23 CST 2020","678","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_delete","TestSysAdminDeleteSuccess","","","test_delete_success[13100000001-123456789-13100000006-123456789-成功-0-手机号或密码不存在-100005]",""
+"passed","Sat Aug 22 17:04:12 CST 2020","Sat Aug 22 17:04:13 CST 2020","576","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_delete","TestSysAdminDeleteFail","","","test_delete_fail[13100000009-123456789-13100000010-123456789-用户没有权限-100011]",""
+"passed","Sat Aug 22 17:04:51 CST 2020","Sat Aug 22 17:04:52 CST 2020","110","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_login","TestSysAdminLogin","","","test_user_login_fail[13200000001-123-True-手机号或密码不存在-100005]",""
+"passed","Sat Aug 22 17:04:52 CST 2020","Sat Aug 22 17:04:52 CST 2020","115","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_login","TestSysAdminLogin","","","test_user_login_fail[13200000004--True-except_message8-100001]",""
+"passed","Sat Aug 22 17:04:23 CST 2020","Sat Aug 22 17:04:24 CST 2020","665","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_delete","TestSysAdminDeleteSuccess","","","test_delete_success[13100000001-123456789-13100000013-123456789-成功-0-手机号或密码不存在-100005]",""
+"passed","Sat Aug 22 17:04:38 CST 2020","Sat Aug 22 17:04:38 CST 2020","344","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_name_list[13100000001-123456789-系统-exist_data0-notExist_data0-成功-0]",""
+"skipped","Sat Aug 22 17:04:54 CST 2020","Sat Aug 22 17:04:54 CST 2020","0","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_logout","TestSysAdminLogout","","","test_user_logout",""
+"passed","Sat Aug 22 17:04:13 CST 2020","Sat Aug 22 17:04:14 CST 2020","590","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_delete","TestSysAdminDeleteFail","","","test_delete_fail[13100000013-123456789-13100000008-123456789-用户没有权限-100011]",""
+"passed","Sat Aug 22 17:04:13 CST 2020","Sat Aug 22 17:04:13 CST 2020","634","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_delete","TestSysAdminDeleteFail","","","test_delete_fail[13100000013-123456789-13100000004-123456789-用户没有权限-100011]",""
+"passed","Sat Aug 22 17:04:33 CST 2020","Sat Aug 22 17:04:34 CST 2020","428","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_base_list[13100000001-123456789-exist_data0-notExist_data0-成功-0]",""
+"passed","Sat Aug 22 17:04:34 CST 2020","Sat Aug 22 17:04:34 CST 2020","357","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_base_list[13100000005-123456789-exist_data1-notExist_data1-成功-0]",""
+"passed","Sat Aug 22 17:04:14 CST 2020","Sat Aug 22 17:04:14 CST 2020","594","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_delete","TestSysAdminDeleteFail","","","test_delete_fail[13100000013-123456789-13100000011-123456789-用户没有权限-100011]",""
+"passed","Sat Aug 22 17:04:37 CST 2020","Sat Aug 22 17:04:38 CST 2020","340","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_phone_list[13100000013-123456789-2-exist_data6-notExist_data6-成功-0]",""
+"passed","Sat Aug 22 17:04:14 CST 2020","Sat Aug 22 17:04:15 CST 2020","610","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_delete","TestSysAdminDeleteFail","","","test_delete_fail[13100000013-123456789-13100000014-123456789-用户没有权限-100011]",""
+"passed","Sat Aug 22 17:04:41 CST 2020","Sat Aug 22 17:04:41 CST 2020","359","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_name_list[13100000009-123456789-系统-exist_data8-notExist_data8-成功-0]",""
+"failed","Sat Aug 22 17:04:16 CST 2020","Sat Aug 22 17:04:16 CST 2020","330","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_delete","TestSysAdminDeleteFail","","","test_delete_fail[13100000005-123456789-13100000005-123456789-用户没有权限-100011]",""
+"passed","Sat Aug 22 17:04:36 CST 2020","Sat Aug 22 17:04:37 CST 2020","392","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_phone_list[13100000005-123456789-1310-exist_data3-notExist_data3-成功-0]",""
+"passed","Sat Aug 22 17:04:42 CST 2020","Sat Aug 22 17:04:42 CST 2020","349","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_name_list[13100000009-123456789-组-exist_data11-notExist_data11-成功-0]",""
+"passed","Sat Aug 22 17:04:50 CST 2020","Sat Aug 22 17:04:51 CST 2020","222","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_login","TestSysAdminLogin","","","test_user_login_success[13200000002-123456789-True-成功-0]",""
+"passed","Sat Aug 22 17:04:10 CST 2020","Sat Aug 22 17:04:11 CST 2020","560","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_delete","TestSysAdminDeleteFail","","","test_delete_fail[13100000005-123456789-13100000006-123456789-用户没有权限-100011]",""
+"passed","Sat Aug 22 17:04:43 CST 2020","Sat Aug 22 17:04:43 CST 2020","348","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_name_list[13100000013-123456789-部门-exist_data14-notExist_data14-成功-0]",""
+"passed","Sat Aug 22 17:04:52 CST 2020","Sat Aug 22 17:04:52 CST 2020","110","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_login","TestSysAdminLogin","","","test_user_login_fail[---except_message6-100001]",""
+"passed","Sat Aug 22 17:04:41 CST 2020","Sat Aug 22 17:04:42 CST 2020","315","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_name_list[13100000009-123456789-公司-exist_data9-notExist_data9-成功-0]",""
+"passed","Sat Aug 22 17:04:51 CST 2020","Sat Aug 22 17:04:51 CST 2020","243","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_login","TestSysAdminLogin","","","test_user_login_success[13200000004-123456789-True-成功-0]",""
+"passed","Sat Aug 22 17:04:38 CST 2020","Sat Aug 22 17:04:38 CST 2020","383","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_phone_list[13100000013-123456789-131-exist_data7-notExist_data7-成功-0]",""
+"passed","Sat Aug 22 17:04:51 CST 2020","Sat Aug 22 17:04:51 CST 2020","108","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_login","TestSysAdminLogin","","","test_user_login_fail[1320000000-123456789-True-手机号或密码不存在-100005]",""
+"passed","Sat Aug 22 17:04:35 CST 2020","Sat Aug 22 17:04:35 CST 2020","385","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_base_list[13100000013-123456789-exist_data3-notExist_data3-成功-0]",""
+"passed","Sat Aug 22 17:04:42 CST 2020","Sat Aug 22 17:04:42 CST 2020","358","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_name_list[13100000009-123456789-部门-exist_data10-notExist_data10-成功-0]",""
+"passed","Sat Aug 22 17:04:36 CST 2020","Sat Aug 22 17:04:36 CST 2020","357","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_phone_list[13100000005-123456789-2-exist_data2-notExist_data2-成功-0]",""
+"passed","Sat Aug 22 17:04:11 CST 2020","Sat Aug 22 17:04:11 CST 2020","640","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_delete","TestSysAdminDeleteFail","","","test_delete_fail[13100000009-123456789-13100000003-123456789-用户没有权限-100011]",""
+"passed","Sat Aug 22 17:04:39 CST 2020","Sat Aug 22 17:04:39 CST 2020","382","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_name_list[13100000001-123456789-部门-exist_data2-notExist_data2-成功-0]",""
+"passed","Sat Aug 22 17:04:23 CST 2020","Sat Aug 22 17:04:23 CST 2020","668","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_delete","TestSysAdminDeleteSuccess","","","test_delete_success[13100000001-123456789-13100000010-123456789-成功-0-手机号或密码不存在-100005]",""
+"passed","Sat Aug 22 17:04:11 CST 2020","Sat Aug 22 17:04:12 CST 2020","609","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_delete","TestSysAdminDeleteFail","","","test_delete_fail[13100000009-123456789-13100000007-123456789-用户没有权限-100011]",""
+"passed","Sat Aug 22 17:04:38 CST 2020","Sat Aug 22 17:04:39 CST 2020","324","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_name_list[13100000001-123456789-公司-exist_data1-notExist_data1-成功-0]",""
+"passed","Sat Aug 22 17:04:40 CST 2020","Sat Aug 22 17:04:41 CST 2020","381","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_name_list[13100000005-123456789-组-exist_data7-notExist_data7-成功-0]",""
+"passed","Sat Aug 22 17:04:39 CST 2020","Sat Aug 22 17:04:40 CST 2020","319","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_name_list[13100000005-123456789-系统-exist_data4-notExist_data4-成功-0]",""
+"passed","Sat Aug 22 17:04:40 CST 2020","Sat Aug 22 17:04:40 CST 2020","314","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_name_list[13100000005-123456789-公司-exist_data5-notExist_data5-成功-0]",""
+"passed","Sat Aug 22 17:04:52 CST 2020","Sat Aug 22 17:04:52 CST 2020","120","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_login","TestSysAdminLogin","","","test_user_login_fail[13200000003---except_message7-100001]",""
+"passed","Sat Aug 22 17:04:21 CST 2020","Sat Aug 22 17:04:22 CST 2020","739","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_delete","TestSysAdminDeleteSuccess","","","test_delete_success[13100000001-123456789-13100000002-123456789-成功-0-手机号或密码不存在-100005]",""
+"passed","Sat Aug 22 17:04:37 CST 2020","Sat Aug 22 17:04:37 CST 2020","374","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_phone_list[13100000009-123456789-2-exist_data4-notExist_data4-成功-0]",""
+"passed","Sat Aug 22 17:04:43 CST 2020","Sat Aug 22 17:04:43 CST 2020","363","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_name_list[13100000013-123456789-公司-exist_data13-notExist_data13-成功-0]",""
+"passed","Sat Aug 22 17:04:52 CST 2020","Sat Aug 22 17:04:52 CST 2020","108","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_login","TestSysAdminLogin","","","test_user_login_fail[13200000001--True-password,不能为空!-100001]",""
+"passed","Sat Aug 22 17:04:10 CST 2020","Sat Aug 22 17:04:10 CST 2020","654","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_delete","TestSysAdminDeleteFail","","","test_delete_fail[13100000005-123456789-13100000002-123456789-用户没有权限-100011]",""
+"failed","Sat Aug 22 17:04:15 CST 2020","Sat Aug 22 17:04:15 CST 2020","364","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_delete","TestSysAdminDeleteFail","","","test_delete_fail[13100000001-123456789-13100000001-123456789-用户没有权限-100011]",""
+"failed","Sat Aug 22 17:04:16 CST 2020","Sat Aug 22 17:04:16 CST 2020","312","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_delete","TestSysAdminDeleteFail","","","test_delete_fail[13100000009-123456789-13100000009-123456789-用户没有权限-100011]",""
+"passed","Sat Aug 22 17:04:37 CST 2020","Sat Aug 22 17:04:37 CST 2020","362","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_phone_list[13100000009-123456789-1310-exist_data5-notExist_data5-成功-0]",""
+"passed","Sat Aug 22 17:04:52 CST 2020","Sat Aug 22 17:04:52 CST 2020","129","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_login","TestSysAdminLogin","","","test_user_login_fail[-123456789-True-phone,不能为空!-100001]",""
+"passed","Sat Aug 22 17:04:35 CST 2020","Sat Aug 22 17:04:35 CST 2020","378","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_phone_list[13100000001-123456789-2-exist_data0-notExist_data0-成功-0]",""
+"passed","Sat Aug 22 17:04:43 CST 2020","Sat Aug 22 17:04:44 CST 2020","365","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_name_list[13100000013-123456789-组-exist_data15-notExist_data15-成功-0]",""
+"passed","Sat Aug 22 17:04:50 CST 2020","Sat Aug 22 17:04:50 CST 2020","220","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_login","TestSysAdminLogin","","","test_user_login_success[13200000001-123456789-True-成功-0]",""
+"passed","Sat Aug 22 17:04:42 CST 2020","Sat Aug 22 17:04:43 CST 2020","356","test_case.01.系统管理.01.管理员管理接口","test_sys_admin_list_nothing","TestSysAdminList","","","test_sys_admin_user_name_list[13100000013-123456789-系统-exist_data12-notExist_data12-成功-0]",""

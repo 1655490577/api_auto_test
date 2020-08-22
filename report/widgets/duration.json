@@ -1,460 +1,620 @@
 [ {
-  "uid" : "d9d93702479c16b7",
-  "name" : "test_update_password_system_fail[263071990410117120-测试组用户02-123456-13168775508-123456-13168775507-263071990242344960]",
+  "uid" : "a5c8df52abb6f34",
+  "name" : "test_user_login_fail[13200000055-123456789-True-手机号或密码不存在-100005]",
   "time" : {
-    "start" : 1593489829897,
-    "stop" : 1593489829966,
-    "duration" : 69
+    "start" : 1598087091757,
+    "stop" : 1598087091863,
+    "duration" : 106
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "423766395d8d88da",
-  "name" : "test_login_001[13168775548-123456-True]",
+  "uid" : "a2daeeb761d4b1fe",
+  "name" : "test_delete_fail[13100000013-123456789-13100000013-123456789-用户没有权限-100011]",
   "time" : {
-    "start" : 1593489825707,
-    "stop" : 1593489825738,
-    "duration" : 31
+    "start" : 1598087056743,
+    "stop" : 1598087057074,
+    "duration" : 331
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "2a23914adcf5e2aa",
+  "name" : "test_sys_admin_user_name_list[13100000005-123456789-部门-exist_data6-notExist_data6-成功-0]",
+  "time" : {
+    "start" : 1598087080614,
+    "stop" : 1598087080957,
+    "duration" : 343
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "eca6ea7325957211",
-  "name" : "test_update_password_system_fail[263071990154264576-测试部门用户02-123456-13168775506-123456-13168775505-263071990028435456]",
+  "uid" : "92e7ae2f1cedd15d",
+  "name" : "test_delete_success[13100000009-123456789-13100000015-123456789-成功-0-手机号或密码不存在-100005]",
   "time" : {
-    "start" : 1593489829646,
-    "stop" : 1593489829692,
-    "duration" : 46
+    "start" : 1598087065877,
+    "stop" : 1598087066621,
+    "duration" : 744
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "67b18e1ad34b8551",
-  "name" : "test_login_001[13168775549-123456-True]",
+  "uid" : "4cad889fd4bef8d",
+  "name" : "test_sys_admin_user_base_list[13100000009-123456789-exist_data2-notExist_data2-成功-0]",
   "time" : {
-    "start" : 1593489825781,
-    "stop" : 1593489825804,
-    "duration" : 23
+    "start" : 1598087074666,
+    "stop" : 1598087075075,
+    "duration" : 409
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "6a150fcdeec26a37",
-  "name" : "test_update_password_system_fail[263071989688696832-测试公司管理员01-123456-13168775503-123456-13168775505-263071990028435456]",
+  "uid" : "5a4617895a32ca11",
+  "name" : "test_sys_admin_user_name_list[13100000001-123456789-组-exist_data3-notExist_data3-成功-0]",
   "time" : {
-    "start" : 1593489829582,
-    "stop" : 1593489829641,
-    "duration" : 59
+    "start" : 1598087079592,
+    "stop" : 1598087079966,
+    "duration" : 374
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "31fa315830ff72ad",
-  "name" : "test_update_password_no_login[259726329245597696-测试组用户-123456789-123456-13168775546-259752758511403008]",
+  "uid" : "8320c51541c23744",
+  "name" : "test_user_login_fail[13200000002-123456789--rememberMe,不能为空!-100001]",
   "time" : {
-    "start" : 1593489830016,
-    "stop" : 1593489830052,
-    "duration" : 36
+    "start" : 1598087092253,
+    "stop" : 1598087092364,
+    "duration" : 111
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "5b48f826885b443e",
-  "name" : "test_login_001[13168775547-123456-True]",
+  "uid" : "4e64fc169484a85",
+  "name" : "test_user_login_success[13200000003-123456789-True-成功-0]",
   "time" : {
-    "start" : 1593489825367,
-    "stop" : 1593489825382,
-    "duration" : 15
+    "start" : 1598087091171,
+    "stop" : 1598087091395,
+    "duration" : 224
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "51d07f19b7d604c5",
-  "name" : "test_login_003[13168775547--True]",
+  "uid" : "30ff6428866a79e4",
+  "name" : "test_sys_admin_user_phone_list[13100000001-123456789-1310-exist_data1-notExist_data1-成功-0]",
   "time" : {
-    "start" : 1593489826056,
-    "stop" : 1593489826074,
-    "duration" : 18
+    "start" : 1598087075852,
+    "stop" : 1598087076269,
+    "duration" : 417
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "dc70fa2b9b49d545",
-  "name" : "test_update_password_system_success[259752758511403008-测试系统管理员-123456-13168775546-123456-13168775546-259752758511403008]",
+  "uid" : "4ddf1718c23cf587",
+  "name" : "test_delete_success[13100000005-123456789-13100000011-123456789-成功-0-手机号或密码不存在-100005]",
   "time" : {
-    "start" : 1593489826215,
-    "stop" : 1593489826385,
-    "duration" : 170
+    "start" : 1598087064431,
+    "stop" : 1598087065153,
+    "duration" : 722
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "382d01d412e08397",
-  "name" : "test_update_password_system_fail[263071989407678464-测试系统管理员01-123456-13168775501-123456-13168775507-263071990242344960]",
+  "uid" : "fcfc8bab0761524d",
+  "name" : "test_delete_success[13100000005-123456789-13100000014-123456789-成功-0-手机号或密码不存在-100005]",
   "time" : {
-    "start" : 1593489829697,
-    "stop" : 1593489829754,
-    "duration" : 57
+    "start" : 1598087065159,
+    "stop" : 1598087065872,
+    "duration" : 713
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "478c66d657562ca5",
-  "name" : "test_update_password_system_success[259726329245597696-测试组用户-123456-13168775549-123456-13168775549-259726329245597696]",
+  "uid" : "9a72e5b19f51710b",
+  "name" : "test_delete_success[13100000001-123456789-13100000006-123456789-成功-0-手机号或密码不存在-100005]",
   "time" : {
-    "start" : 1593489826723,
-    "stop" : 1593489826895,
-    "duration" : 172
+    "start" : 1598087062405,
+    "stop" : 1598087063083,
+    "duration" : 678
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "2ba723ebc655fdf9",
-  "name" : "test_login_001[13168775547-123456-False]",
+  "uid" : "ac57d4827dd2976b",
+  "name" : "test_delete_fail[13100000009-123456789-13100000010-123456789-用户没有权限-100011]",
   "time" : {
-    "start" : 1593489825385,
-    "stop" : 1593489825704,
+    "start" : 1598087052586,
+    "stop" : 1598087053162,
+    "duration" : 576
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3f341ac3e1118f34",
+  "name" : "test_user_login_fail[13200000001-123-True-手机号或密码不存在-100005]",
+  "time" : {
+    "start" : 1598087091893,
+    "stop" : 1598087092003,
+    "duration" : 110
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2f6fe3997651e9f7",
+  "name" : "test_user_login_fail[13200000004--True-except_message8-100001]",
+  "time" : {
+    "start" : 1598087092613,
+    "stop" : 1598087092728,
+    "duration" : 115
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bdc105f5ea7b9b9e",
+  "name" : "test_delete_success[13100000001-123456789-13100000013-123456789-成功-0-手机号或密码不存在-100005]",
+  "time" : {
+    "start" : 1598087063761,
+    "stop" : 1598087064426,
+    "duration" : 665
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b1c6fabe717a82c8",
+  "name" : "test_sys_admin_user_name_list[13100000001-123456789-系统-exist_data0-notExist_data0-成功-0]",
+  "time" : {
+    "start" : 1598087078526,
+    "stop" : 1598087078870,
+    "duration" : 344
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "48185cab97801546",
+  "name" : "test_user_logout",
+  "time" : {
+    "start" : 1598087094930,
+    "stop" : 1598087094930,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "2af8c4e2630abbfe",
+  "name" : "test_delete_fail[13100000013-123456789-13100000008-123456789-用户没有权限-100011]",
+  "time" : {
+    "start" : 1598087053806,
+    "stop" : 1598087054396,
+    "duration" : 590
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "73f0bb959829a4c4",
+  "name" : "test_delete_fail[13100000013-123456789-13100000004-123456789-用户没有权限-100011]",
+  "time" : {
+    "start" : 1598087053167,
+    "stop" : 1598087053801,
+    "duration" : 634
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "487c00e2c3cea6f8",
+  "name" : "test_sys_admin_user_base_list[13100000001-123456789-exist_data0-notExist_data0-成功-0]",
+  "time" : {
+    "start" : 1598087073863,
+    "stop" : 1598087074291,
+    "duration" : 428
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "43c96a50790c08e1",
+  "name" : "test_sys_admin_user_base_list[13100000005-123456789-exist_data1-notExist_data1-成功-0]",
+  "time" : {
+    "start" : 1598087074295,
+    "stop" : 1598087074652,
+    "duration" : 357
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e187504663975c06",
+  "name" : "test_delete_fail[13100000013-123456789-13100000011-123456789-用户没有权限-100011]",
+  "time" : {
+    "start" : 1598087054400,
+    "stop" : 1598087054994,
+    "duration" : 594
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1025d5e1eb9b16e3",
+  "name" : "test_sys_admin_user_phone_list[13100000013-123456789-2-exist_data6-notExist_data6-成功-0]",
+  "time" : {
+    "start" : 1598087077793,
+    "stop" : 1598087078133,
+    "duration" : 340
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9a0c112c311405a2",
+  "name" : "test_delete_fail[13100000013-123456789-13100000014-123456789-用户没有权限-100011]",
+  "time" : {
+    "start" : 1598087054997,
+    "stop" : 1598087055607,
+    "duration" : 610
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3304c46c93d7b988",
+  "name" : "test_sys_admin_user_name_list[13100000009-123456789-系统-exist_data8-notExist_data8-成功-0]",
+  "time" : {
+    "start" : 1598087081348,
+    "stop" : 1598087081707,
+    "duration" : 359
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1349ace01fbba807",
+  "name" : "test_delete_fail[13100000005-123456789-13100000005-123456789-用户没有权限-100011]",
+  "time" : {
+    "start" : 1598087056082,
+    "stop" : 1598087056412,
+    "duration" : 330
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "b6232eb6ec13ea7c",
+  "name" : "test_sys_admin_user_phone_list[13100000005-123456789-1310-exist_data3-notExist_data3-成功-0]",
+  "time" : {
+    "start" : 1598087076649,
+    "stop" : 1598087077041,
+    "duration" : 392
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6261def0eb312273",
+  "name" : "test_sys_admin_user_name_list[13100000009-123456789-组-exist_data11-notExist_data11-成功-0]",
+  "time" : {
+    "start" : 1598087082395,
+    "stop" : 1598087082744,
+    "duration" : 349
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "679d2f2398d73972",
+  "name" : "test_user_login_success[13200000002-123456789-True-成功-0]",
+  "time" : {
+    "start" : 1598087090945,
+    "stop" : 1598087091167,
+    "duration" : 222
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ec145abaa135174",
+  "name" : "test_delete_fail[13100000005-123456789-13100000006-123456789-用户没有权限-100011]",
+  "time" : {
+    "start" : 1598087050765,
+    "stop" : 1598087051325,
+    "duration" : 560
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a0e3e06a22fbebe3",
+  "name" : "test_sys_admin_user_name_list[13100000013-123456789-部门-exist_data14-notExist_data14-成功-0]",
+  "time" : {
+    "start" : 1598087083491,
+    "stop" : 1598087083839,
+    "duration" : 348
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3bf0cde4bc77d9b0",
+  "name" : "test_user_login_fail[---except_message6-100001]",
+  "time" : {
+    "start" : 1598087092369,
+    "stop" : 1598087092479,
+    "duration" : 110
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6b8d51a3cf4e2578",
+  "name" : "test_sys_admin_user_name_list[13100000009-123456789-公司-exist_data9-notExist_data9-成功-0]",
+  "time" : {
+    "start" : 1598087081712,
+    "stop" : 1598087082027,
+    "duration" : 315
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8cd6f702415e306a",
+  "name" : "test_user_login_success[13200000004-123456789-True-成功-0]",
+  "time" : {
+    "start" : 1598087091399,
+    "stop" : 1598087091642,
+    "duration" : 243
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "88f950a947efd9eb",
+  "name" : "test_sys_admin_user_phone_list[13100000013-123456789-131-exist_data7-notExist_data7-成功-0]",
+  "time" : {
+    "start" : 1598087078138,
+    "stop" : 1598087078521,
+    "duration" : 383
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8fc0b007845d2e4f",
+  "name" : "test_user_login_fail[1320000000-123456789-True-手机号或密码不存在-100005]",
+  "time" : {
+    "start" : 1598087091646,
+    "stop" : 1598087091754,
+    "duration" : 108
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1fe6c6f666841cad",
+  "name" : "test_sys_admin_user_base_list[13100000013-123456789-exist_data3-notExist_data3-成功-0]",
+  "time" : {
+    "start" : 1598087075079,
+    "stop" : 1598087075464,
+    "duration" : 385
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "20977b85cf9265df",
+  "name" : "test_sys_admin_user_name_list[13100000009-123456789-部门-exist_data10-notExist_data10-成功-0]",
+  "time" : {
+    "start" : 1598087082032,
+    "stop" : 1598087082390,
+    "duration" : 358
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "248268d16527fa04",
+  "name" : "test_sys_admin_user_phone_list[13100000005-123456789-2-exist_data2-notExist_data2-成功-0]",
+  "time" : {
+    "start" : 1598087076273,
+    "stop" : 1598087076630,
+    "duration" : 357
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "94977635f585d904",
+  "name" : "test_delete_fail[13100000009-123456789-13100000003-123456789-用户没有权限-100011]",
+  "time" : {
+    "start" : 1598087051329,
+    "stop" : 1598087051969,
+    "duration" : 640
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c8e550e2a2a9a6e",
+  "name" : "test_sys_admin_user_name_list[13100000001-123456789-部门-exist_data2-notExist_data2-成功-0]",
+  "time" : {
+    "start" : 1598087079205,
+    "stop" : 1598087079587,
+    "duration" : 382
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e447beeced933085",
+  "name" : "test_delete_success[13100000001-123456789-13100000010-123456789-成功-0-手机号或密码不存在-100005]",
+  "time" : {
+    "start" : 1598087063088,
+    "stop" : 1598087063756,
+    "duration" : 668
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6c1a353069179aa5",
+  "name" : "test_delete_fail[13100000009-123456789-13100000007-123456789-用户没有权限-100011]",
+  "time" : {
+    "start" : 1598087051973,
+    "stop" : 1598087052582,
+    "duration" : 609
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6d850e2fa717124",
+  "name" : "test_sys_admin_user_name_list[13100000001-123456789-公司-exist_data1-notExist_data1-成功-0]",
+  "time" : {
+    "start" : 1598087078875,
+    "stop" : 1598087079199,
+    "duration" : 324
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f76a8d6ab24a4771",
+  "name" : "test_sys_admin_user_name_list[13100000005-123456789-组-exist_data7-notExist_data7-成功-0]",
+  "time" : {
+    "start" : 1598087080962,
+    "stop" : 1598087081343,
+    "duration" : 381
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "396d097a7fc439f4",
+  "name" : "test_sys_admin_user_name_list[13100000005-123456789-系统-exist_data4-notExist_data4-成功-0]",
+  "time" : {
+    "start" : 1598087079971,
+    "stop" : 1598087080290,
     "duration" : 319
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "a750692719ca1085",
-  "name" : "test_login_002[1316877554-123456-True]",
+  "uid" : "7d6addf84a4fe030",
+  "name" : "test_sys_admin_user_name_list[13100000005-123456789-公司-exist_data5-notExist_data5-成功-0]",
   "time" : {
-    "start" : 1593489825845,
-    "stop" : 1593489825860,
-    "duration" : 15
+    "start" : 1598087080295,
+    "stop" : 1598087080609,
+    "duration" : 314
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "f18e8f3d02811c33",
-  "name" : "test_login_005[123456-True]",
+  "uid" : "6bcf4c69aa682306",
+  "name" : "test_user_login_fail[13200000003---except_message7-100001]",
   "time" : {
-    "start" : 1593489826162,
-    "stop" : 1593489826194,
-    "duration" : 32
+    "start" : 1598087092489,
+    "stop" : 1598087092609,
+    "duration" : 120
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "6a35e7ed946d9d80",
-  "name" : "test_update_password_system_fail[263071989688696832-测试公司管理员01-123456-13168775503-123456-13168775507-263071990242344960]",
+  "uid" : "e235322421476e46",
+  "name" : "test_delete_success[13100000001-123456789-13100000002-123456789-成功-0-手机号或密码不存在-100005]",
   "time" : {
-    "start" : 1593489829769,
-    "stop" : 1593489829836,
-    "duration" : 67
+    "start" : 1598087061661,
+    "stop" : 1598087062400,
+    "duration" : 739
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "cc317a97db21214e",
-  "name" : "test_login_001[13168775549-123456-False]",
+  "uid" : "2c9acda5e0beaffb",
+  "name" : "test_sys_admin_user_phone_list[13100000009-123456789-2-exist_data4-notExist_data4-成功-0]",
   "time" : {
-    "start" : 1593489825807,
-    "stop" : 1593489825823,
-    "duration" : 16
+    "start" : 1598087077046,
+    "stop" : 1598087077420,
+    "duration" : 374
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e086692e0e1a892c",
-  "name" : "test_login_004[13168775546-True]",
+  "uid" : "dcc1be08b44ca40a",
+  "name" : "test_sys_admin_user_name_list[13100000013-123456789-公司-exist_data13-notExist_data13-成功-0]",
   "time" : {
-    "start" : 1593489826143,
-    "stop" : 1593489826160,
-    "duration" : 17
+    "start" : 1598087083123,
+    "stop" : 1598087083486,
+    "duration" : 363
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "f7c1c5fbbc4afca5",
-  "name" : "test_login_003[13168775546--True1]",
+  "uid" : "23addf2fac70e9a3",
+  "name" : "test_user_login_fail[13200000001--True-password,不能为空!-100001]",
   "time" : {
-    "start" : 1593489826031,
-    "stop" : 1593489826053,
-    "duration" : 22
+    "start" : 1598087092141,
+    "stop" : 1598087092249,
+    "duration" : 108
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "7545d24c20e90688",
-  "name" : "test_update_password_no_login[259752758511403008-测试系统管理员-123456789-123456-13168775549-259726329245597696]",
+  "uid" : "1170ae3502459df2",
+  "name" : "test_delete_fail[13100000005-123456789-13100000002-123456789-用户没有权限-100011]",
   "time" : {
-    "start" : 1593489830056,
-    "stop" : 1593489830093,
-    "duration" : 37
+    "start" : 1598087050106,
+    "stop" : 1598087050760,
+    "duration" : 654
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "1fe0dc53c6a60b5f",
-  "name" : "test_update_password_system_fail[263071989407678464-测试系统管理员01-123456-13168775501-123456-13168775503-263071989688696832]",
+  "uid" : "773c0bb672472634",
+  "name" : "test_delete_fail[13100000001-123456789-13100000001-123456789-用户没有权限-100011]",
   "time" : {
-    "start" : 1593489829368,
-    "stop" : 1593489829426,
-    "duration" : 58
+    "start" : 1598087055613,
+    "stop" : 1598087055977,
+    "duration" : 364
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "edc68afcddf54646",
+  "name" : "test_delete_fail[13100000009-123456789-13100000009-123456789-用户没有权限-100011]",
+  "time" : {
+    "start" : 1598087056421,
+    "stop" : 1598087056733,
+    "duration" : 312
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "94704099d46336ce",
+  "name" : "test_sys_admin_user_phone_list[13100000009-123456789-1310-exist_data5-notExist_data5-成功-0]",
+  "time" : {
+    "start" : 1598087077426,
+    "stop" : 1598087077788,
+    "duration" : 362
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "bd615002381dc6e0",
-  "name" : "test_update_password_system_success[263071990028435456-测试部门用户01-123456-13168775505-123456-13168775503-263071989688696832]",
+  "uid" : "625acad81ed72754",
+  "name" : "test_user_login_fail[-123456789-True-phone,不能为空!-100001]",
   "time" : {
-    "start" : 1593489828797,
-    "stop" : 1593489829020,
-    "duration" : 223
+    "start" : 1598087092008,
+    "stop" : 1598087092137,
+    "duration" : 129
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "6c3a8892fd041ea2",
-  "name" : "test_login_002[13168775546-123-True]",
+  "uid" : "8f98591d81cd859d",
+  "name" : "test_sys_admin_user_phone_list[13100000001-123456789-2-exist_data0-notExist_data0-成功-0]",
   "time" : {
-    "start" : 1593489825826,
-    "stop" : 1593489825842,
-    "duration" : 16
+    "start" : 1598087075469,
+    "stop" : 1598087075847,
+    "duration" : 378
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "9754ff22217ff7eb",
-  "name" : "test_login_006[13168775546-123456]",
+  "uid" : "310a0bf5ad0247fa",
+  "name" : "test_sys_admin_user_name_list[13100000013-123456789-组-exist_data15-notExist_data15-成功-0]",
   "time" : {
-    "start" : 1593489826197,
-    "stop" : 1593489826210,
-    "duration" : 13
+    "start" : 1598087083844,
+    "stop" : 1598087084209,
+    "duration" : 365
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "568ebd884e835784",
-  "name" : "test_update_password_system_success[263071989688696832-测试公司管理员01-123456-13168775503-123456-13168775501-263071989407678464]",
+  "uid" : "4c07780b0556c3ce",
+  "name" : "test_user_login_success[13200000001-123456789-True-成功-0]",
   "time" : {
-    "start" : 1593489828189,
-    "stop" : 1593489828376,
-    "duration" : 187
+    "start" : 1598087090721,
+    "stop" : 1598087090941,
+    "duration" : 220
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "a8bddcf821c90bad",
-  "name" : "test_login_001[13168775546-123456-True]",
+  "uid" : "1b09b7b0cb912e01",
+  "name" : "test_sys_admin_user_name_list[13100000013-123456789-系统-exist_data12-notExist_data12-成功-0]",
   "time" : {
-    "start" : 1593489825331,
-    "stop" : 1593489825347,
-    "duration" : 16
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "6690e15ba4f81be7",
-  "name" : "test_update_password_system_fail[263071989407678464-测试系统管理员01-123456-13168775501-123456-13168775505-263071990028435456]",
-  "time" : {
-    "start" : 1593489829509,
-    "stop" : 1593489829577,
-    "duration" : 68
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "76c0b9a4f407ca2c",
-  "name" : "test_update_password_system_success[263071989567062016-测试系统管理员02-123456-13168775502-123456-13168775501-263071989407678464]",
-  "time" : {
-    "start" : 1593489826900,
-    "stop" : 1593489828184,
-    "duration" : 1284
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "1b388f6df1d66d0c",
-  "name" : "test_update_password_no_login[259752758511403008-测试系统管理员-123456-123456-13168775546-259752758511403008]",
-  "time" : {
-    "start" : 1593489829970,
-    "stop" : 1593489830012,
-    "duration" : 42
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "1447b294a0a319fb",
-  "name" : "test_update_password_system_success[263071990242344960-测试组用户01-123456-13168775507-123456-13168775501-263071989407678464]",
-  "time" : {
-    "start" : 1593489828545,
-    "stop" : 1593489828748,
-    "duration" : 203
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c4ce82134e69ca40",
-  "name" : "test_login_003[-123456-True]",
-  "time" : {
-    "start" : 1593489825984,
-    "stop" : 1593489826028,
-    "duration" : 44
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c54478349956e0cc",
-  "name" : "test_login_003[13168775548--True]",
-  "time" : {
-    "start" : 1593489826077,
-    "stop" : 1593489826125,
-    "duration" : 48
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c37a461e3193269b",
-  "name" : "test_update_password_system_success[259815440555966464-测试部门用户-123456-13168775548-123456-13168775548-259815440555966464]",
-  "time" : {
-    "start" : 1593489826552,
-    "stop" : 1593489826707,
-    "duration" : 155
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "75e3e94e03686c68",
-  "name" : "test_login_002[13168775547-123-True]",
-  "time" : {
-    "start" : 1593489825863,
-    "stop" : 1593489825871,
-    "duration" : 8
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "674627cd13420150",
-  "name" : "test_login_002[13168775549-1223-True]",
-  "time" : {
-    "start" : 1593489825932,
-    "stop" : 1593489825941,
-    "duration" : 9
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "e7097d91eacdbc3b",
-  "name" : "test_login_003[13168775546--True0]",
-  "time" : {
-    "start" : 1593489825944,
-    "stop" : 1593489825981,
-    "duration" : 37
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "33855a16203c738b",
-  "name" : "test_login_001[13168775546-123456-False]",
-  "time" : {
-    "start" : 1593489825350,
-    "stop" : 1593489825364,
-    "duration" : 14
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c83d0880042fe63d",
-  "name" : "test_update_password_system_success[263071990028435456-测试部门用户01-123456-13168775505-123456-13168775501-263071989407678464]",
-  "time" : {
-    "start" : 1593489828380,
-    "stop" : 1593489828541,
-    "duration" : 161
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "caffa5b68f543ee5",
-  "name" : "test_login_001[13168775548-123456-False]",
-  "time" : {
-    "start" : 1593489825741,
-    "stop" : 1593489825778,
-    "duration" : 37
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "58797a88ad5148f9",
-  "name" : "test_update_password_system_success[259725184011862016-测试公司管理员-123456-13168775547-123456-13168775547-259725184011862016]",
-  "time" : {
-    "start" : 1593489826390,
-    "stop" : 1593489826546,
-    "duration" : 156
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "189c6eb01b2f2923",
-  "name" : "test_login_002[13168775547-1234-True]",
-  "time" : {
-    "start" : 1593489825874,
-    "stop" : 1593489825908,
-    "duration" : 34
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "df5d06f99369780a",
-  "name" : "test_login_002[13168775548-13-True]",
-  "time" : {
-    "start" : 1593489825911,
-    "stop" : 1593489825929,
-    "duration" : 18
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "918909dda2a3585c",
-  "name" : "test_update_password_system_fail[263071989814525952-测试公司管理员02-123456-13168775504-123456-13168775503-263071989688696832]",
-  "time" : {
-    "start" : 1593489829440,
-    "stop" : 1593489829494,
-    "duration" : 54
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "35cdea2f17d3d9a0",
-  "name" : "test_login_003[13168775549--True]",
-  "time" : {
-    "start" : 1593489826128,
-    "stop" : 1593489826140,
-    "duration" : 12
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5d5f40e238afba97",
-  "name" : "test_update_password_system_fail[263071990028435456-测试部门用户01-123456-13168775505-123456-13168775507-263071990242344960]",
-  "time" : {
-    "start" : 1593489829846,
-    "stop" : 1593489829892,
-    "duration" : 46
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "3044633c12e5c1bd",
-  "name" : "test_update_password_system_success[263071990242344960-测试组用户01-123456-13168775507-123456-13168775503-263071989688696832]",
-  "time" : {
-    "start" : 1593489829025,
-    "stop" : 1593489829203,
-    "duration" : 178
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a09cc3f6a36f8f88",
-  "name" : "test_update_password_system_success[263071990242344960-测试组用户01-123456-13168775507-123456-13168775505-263071990028435456]",
-  "time" : {
-    "start" : 1593489829208,
-    "stop" : 1593489829364,
-    "duration" : 156
+    "start" : 1598087082748,
+    "stop" : 1598087083104,
+    "duration" : 356
   },
   "status" : "passed",
   "severity" : "normal"

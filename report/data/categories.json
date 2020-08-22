@@ -1,5 +1,65 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert '成功' == '用户没有权限'\n  - 用户没有权限\n  + 成功",
+      "children" : [ {
+        "name" : "test_delete_fail[13100000001-123456789-13100000001-123456789-用户没有权限-100011]",
+        "uid" : "773c0bb672472634",
+        "parentUid" : "14ea8e3959f44941206aea6a86bd9125",
+        "status" : "failed",
+        "time" : {
+          "start" : 1598087055613,
+          "stop" : 1598087055977,
+          "duration" : 364
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'用户没有权限'", "'100011'", "'123456789'", "'13100000001'", "'123456789'", "'13100000001'" ]
+      }, {
+        "name" : "test_delete_fail[13100000005-123456789-13100000005-123456789-用户没有权限-100011]",
+        "uid" : "1349ace01fbba807",
+        "parentUid" : "14ea8e3959f44941206aea6a86bd9125",
+        "status" : "failed",
+        "time" : {
+          "start" : 1598087056082,
+          "stop" : 1598087056412,
+          "duration" : 330
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'用户没有权限'", "'100011'", "'123456789'", "'13100000005'", "'123456789'", "'13100000005'" ]
+      }, {
+        "name" : "test_delete_fail[13100000009-123456789-13100000009-123456789-用户没有权限-100011]",
+        "uid" : "edc68afcddf54646",
+        "parentUid" : "14ea8e3959f44941206aea6a86bd9125",
+        "status" : "failed",
+        "time" : {
+          "start" : 1598087056421,
+          "stop" : 1598087056733,
+          "duration" : 312
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'用户没有权限'", "'100011'", "'123456789'", "'13100000009'", "'123456789'", "'13100000009'" ]
+      }, {
+        "name" : "test_delete_fail[13100000013-123456789-13100000013-123456789-用户没有权限-100011]",
+        "uid" : "a2daeeb761d4b1fe",
+        "parentUid" : "14ea8e3959f44941206aea6a86bd9125",
+        "status" : "failed",
+        "time" : {
+          "start" : 1598087056743,
+          "stop" : 1598087057074,
+          "duration" : 331
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'用户没有权限'", "'100011'", "'123456789'", "'13100000013'", "'123456789'", "'13100000013'" ]
+      } ],
+      "uid" : "14ea8e3959f44941206aea6a86bd9125"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
 }
