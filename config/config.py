@@ -37,4 +37,9 @@ def mysql_setting():
              "password": "123456",
              "database": "supervisor-test",
              "autocommit": True}
+    test4 = {"host": "47.102.106.48",
+             "user": "root",
+             "password": "Yr!@#1230.",
+             "database": "supervisor-test",
+             "autocommit": True}
     return test1
