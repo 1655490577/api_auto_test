@@ -21,8 +21,9 @@ def add_user():
     companyRoleId = db.select_db("SELECT id FROM sys_role WHERE `name`='测试公司角色'")[0]['id']
     branchRoleId = db.select_db("SELECT id FROM sys_role WHERE `name`='测试部门角色'")[0]['id']
     groupRoleId = db.select_db("SELECT id FROM sys_role WHERE `name`='测试子部门角色'")[0]['id']
+    projectId = db.select_db("SELECT id FROM tb_construction_project WHERE `name`='预置项目'")[0]['id']
     getter.user_save(cookies, dataType=1, isAdmin=2, name="测试组用户", password="123456789", phone="13168775547",
-                     proSelected=["272459479822368768"], projects="272459479822368768",
+                     proSelected=[projectId], projects=projectId,
                      roleId=groupRoleId, state=1, token=token, userid=userId,
                      branchCode=branchCode, branchId=branchId, branchName=branchName,
                      dicCode=dicCode, dicId=dicId, dicName=dicName,
@@ -34,20 +35,20 @@ def add_user():
 
         getter.user_save(cookies, dataType=1, isAdmin=2, name=f"测试公司管理员0{i}",
                          password="123456789", phone=str(13100000004+i),
-                         proSelected=["272459479822368768"], projects="272459479822368768",
+                         proSelected=[projectId], projects=projectId,
                          roleId=companyRoleId, state=1, token=token, userid=userId,
                          dicCode=dicCode, dicId=dicId, dicName=dicName)  # 添加测试公司管理员01-04
 
         getter.user_save(cookies, dataType=1, isAdmin=2, name=f"测试部门用户0{i}",
                          password="123456789", phone=str(13100000008+i),
-                         proSelected=["272459479822368768"], projects="272459479822368768",
+                         proSelected=[projectId], projects=projectId,
                          roleId=branchRoleId, state=1, token=token, userid=userId,
                          branchCode=branchCode, branchId=branchId, branchName=branchName,
                          dicCode=dicCode, dicId=dicId, dicName=dicName)  # 添加测试部门用户01-04
 
         getter.user_save(cookies, dataType=1, isAdmin=2, name=f"测试组用户0{i}",
                          password="123456789", phone=str(13100000012+i),
-                         proSelected=["272459479822368768"], projects="272459479822368768",
+                         proSelected=[projectId], projects=projectId,
                          roleId=groupRoleId, state=1, token=token, userid=userId,
                          branchCode=branchCode, branchId=branchId, branchName=branchName,
                          dicCode=dicCode, dicId=dicId, dicName=dicName,

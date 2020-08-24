@@ -14,7 +14,6 @@ class TestSysAdminResetSuccess(object):
     token           token唯一标识
     userid          用户id唯一标识
     """
-
     @pytest.mark.parametrize(('login_phone', 'login_password', 'update_user_phone', 'update_user_password',
                               'except_message', 'except_status'),
                              getter.load_yaml('SystemManagementData.yml')['test_sys_admin_reset'][
@@ -46,7 +45,6 @@ class TestSysAdminResetFail(object):
     token           token唯一标识
     userid          用户id唯一标识
     """
-
     @pytest.mark.parametrize(('login_phone', 'login_password', 'update_user_phone', 'update_user_password',
                               'except_message', 'except_status'),
                              getter.load_yaml('SystemManagementData.yml')['test_sys_admin_reset'][

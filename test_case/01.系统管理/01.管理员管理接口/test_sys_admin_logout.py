@@ -15,4 +15,4 @@ class TestSysAdminLogout(object):
 
 
 if __name__ == '__main__':
-    pytest.main('-s', 'test_sys_admin_logout.py')
+    pytest.main(['-s', 'test_sys_admin_logout.py'])

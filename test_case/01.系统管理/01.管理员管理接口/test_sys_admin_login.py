@@ -41,4 +41,4 @@ class TestSysAdminLogin(object):
 
 
 if __name__ == '__main__':
-    pytest.main('-s', 'test_sys_admin_login.py')
+    pytest.main(['-s', 'test_sys_admin_login.py'])
