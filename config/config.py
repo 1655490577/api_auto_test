@@ -30,7 +30,7 @@ def mysql_setting():
     test2 = {"host": "192.168.30.11",
              "user": "root",
              "password": "Yr!@#1230.",
-             "database": "supervisor",
+             "database": "supervisor-dev",
              "autocommit": True}
     test3 = {"host": "192.168.30.214",
              "user": "root",

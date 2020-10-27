@@ -10,8 +10,6 @@ import allure
 class TestSysAdminSave(object):
     """
     参数列表:
-      "area": "区",
-      "areaCode": "区编码",
       "branchCode": "部门编码",
       "branchId": "部门id",
       "branchName": "部门名称",
@@ -32,23 +30,6 @@ class TestSysAdminSave(object):
       "token": "token唯一标识",
       "userid": "用户id唯一标识"
     """
-    # dictionaryData = db.select_db("SELECT id,name,code FROM sys_dictionaries WHERE `name` LIKE '测试%' ORDER BY `code` ")
-    # roleData = db.select_db("SELECT id FROM sys_role WHERE name LIKE '测试%'")
-    # print(roleData)
-    # projectId = db.select_db("SELECT id FROM tb_construction_project WHERE `name`='预置项目'")[0]['id']
-    # _companyId = dictionaryData[0]['id']
-    # _companyName = dictionaryData[0]['name']
-    # _companyCode = dictionaryData[0]['code']
-    # _branchId = dictionaryData[1]['id']
-    # _branchName = dictionaryData[1]['name']
-    # _branchCode = dictionaryData[1]['code']
-    # _groupId = dictionaryData[2]['id']
-    # _groupName = dictionaryData[2]['name']
-    # _groupCode = dictionaryData[2]['code']
-    # _sysRoleId = roleData[0]['id']
-    # _companyRoleId = roleData[1]['id']
-    # _branchRoleId = roleData[2]['id']
-    # _groupRoleId = roleData[3]['id']
     _count = 0
 
     @pytest.mark.parametrize(('login_phone', 'login_password', 'except_message_save', 'except_status_save',
@@ -66,7 +47,7 @@ class TestSysAdminSave(object):
 
         with allure.step("step2: 步骤2 ==>> 使用当前登录账号添加系统用户"):
             rsp_save_sys = getter.user_save(cookies, dataType=1, isAdmin=1,
-                                            userName=f'测试添加系统用户账号{TestSysAdminSave._count}',
+                                            userName=str(13800000000 + TestSysAdminSave._count),
                                             name=f'测试添加系统用户账号{TestSysAdminSave._count}',
                                             phone=str(13800000000 + TestSysAdminSave._count),
                                             password='1', proSelected=[], projects='',
@@ -111,7 +92,7 @@ class TestSysAdminSave(object):
 
         with allure.step("step2: 步骤2 ==>> 使用当前登录账号添加系统用户"):
             rsp_save_sys = getter.user_save(cookies, dataType=1, isAdmin=2,
-                                            userName=f'测试添加系统用户账号{TestSysAdminSave._count}',
+                                            userName=str(13800000000 + TestSysAdminSave._count),
                                             name=f'测试添加系统用户账号{TestSysAdminSave._count}',
                                             phone=str(13800000000 + TestSysAdminSave._count),
                                             password='1', proSelected=[projectId], projects=projectId,
@@ -151,7 +132,7 @@ class TestSysAdminSave(object):
             dictionaryData = db.select_db(
                 "SELECT id,name,code FROM sys_dictionaries WHERE `name` LIKE '测试%' ORDER BY `code` ")
             projectId = db.select_db("SELECT id FROM tb_construction_project WHERE `name`='预置项目'")[0]['id']
-            companyRoleId = roleData[1]['id']
+            branchRoleId = roleData[1]['id']
             companyId = dictionaryData[0]['id']
             companyName = dictionaryData[0]['name']
             companyCode = dictionaryData[0]['code']
@@ -161,11 +142,11 @@ class TestSysAdminSave(object):
 
         with allure.step("step2: 步骤2 ==>> 使用当前登录账号添加系统用户"):
             rsp_save_sys = getter.user_save(cookies, dataType=1, isAdmin=2,
-                                            userName=f'测试添加系统用户账号{TestSysAdminSave._count}',
+                                            userName=str(13800000000 + TestSysAdminSave._count),
                                             name=f'测试添加系统用户账号{TestSysAdminSave._count}',
                                             phone=str(13800000000 + TestSysAdminSave._count),
                                             password='1', proSelected=[projectId], projects=projectId,
-                                            roleId=companyRoleId, state=1, token=token, userid=userId,
+                                            roleId=branchRoleId, state=1, token=token, userid=userId,
                                             dicCode=companyCode, dicId=companyId, dicName=companyName,
                                             branchId=branchId, branchName=branchName, branchCode=branchCode)
 
@@ -190,8 +171,8 @@ class TestSysAdminSave(object):
                               'except_message_login', 'except_status_login'),
                              getter.load_yaml('SystemManagementData.yml')['test_sys_admin_save'][
                                  'test_user_save_branch'])
-    def test_user_save_branch(self, login_phone, login_password, except_message_save, except_status_save,
-                              except_message_login, except_status_login):
+    def test_user_save_group(self, login_phone, login_password, except_message_save, except_status_save,
+                             except_message_login, except_status_login):
         # 不同账号新增组用户
         with allure.step("step1: 步骤1 ==>> 登录并获取token,userid,cookies"):
             token, userId, cookies = getter.get_login_token_cookies(login_phone, login_password)
@@ -202,7 +183,7 @@ class TestSysAdminSave(object):
             dictionaryData = db.select_db(
                 "SELECT id,name,code FROM sys_dictionaries WHERE `name` LIKE '测试%' ORDER BY `code` ")
             projectId = db.select_db("SELECT id FROM tb_construction_project WHERE `name`='预置项目'")[0]['id']
-            companyRoleId = roleData[1]['id']
+            groupRoleId = roleData[1]['id']
             companyId = dictionaryData[0]['id']
             companyName = dictionaryData[0]['name']
             companyCode = dictionaryData[0]['code']
@@ -215,11 +196,11 @@ class TestSysAdminSave(object):
 
         with allure.step("step2: 步骤2 ==>> 使用当前登录账号添加系统用户"):
             rsp_save_sys = getter.user_save(cookies, dataType=1, isAdmin=2,
-                                            userName=f'测试添加系统用户账号{TestSysAdminSave._count}',
+                                            userName=str(13800000000 + TestSysAdminSave._count),
                                             name=f'测试添加系统用户账号{TestSysAdminSave._count}',
                                             phone=str(13800000000 + TestSysAdminSave._count),
                                             password='1', proSelected=[projectId], projects=projectId,
-                                            roleId=companyRoleId, state=1, token=token, userid=userId,
+                                            roleId=groupRoleId, state=1, token=token, userid=userId,
                                             dicCode=companyCode, dicId=companyId, dicName=companyName,
                                             branchId=branchId, branchName=branchName, branchCode=branchCode,
                                             groupId=groupId, groupName=groupName, groupCode=groupCode)
